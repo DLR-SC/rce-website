@@ -106,7 +106,14 @@
 						</div><!-- /.follow-us --> 
 
 
-						<!-- comment DISQUS -->
+						{% if DISQUS_SITENAME %}
+        					<div id="comments" class="comments-area">
+							<h3 class="comments-title"> 
+								 Comments 
+							</h3><!-- /.comments-title -->
+        					{% include "disqus.html" %}
+        					</div>
+    					{% endif %}
 
 					</div><!-- /.news-single -->
 					
