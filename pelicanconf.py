@@ -33,7 +33,7 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 # Static paths
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'pages/images']
 
 # Plugins
 PLUGIN_PATHS = ["plugins", "d:\\rce\\plugins"]
