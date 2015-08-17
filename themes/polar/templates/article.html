@@ -9,7 +9,7 @@
 					{{ article.title }} 
 				</h2>
 				<div class="page-location">
-					<a href="/">Home</a> <a href="#">News</a> <span>{{ article.title }}</span>
+					<a href="{{ SITEURL }}/">Home</a> <a href="#">News</a> <span>{{ article.title }}</span>
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.overlay -->
@@ -24,13 +24,13 @@
 						<article class="type-post single-news single-post">
 							{% if article.image %} 
 								<div class="post-thumbnail">
-									<img src="images/{{ article.image }}" alt="Event Post Thumbnail Image">   
+									<img src="{{ SITEURL }}/images/{{ article.image }}" alt="Event Post Thumbnail Image">   
 								</div><!-- /.post-thumbnail --> 	
 							{% endif %}
 
 
 							<div class="post-author-avatar">
-								<img src="images/authors/{{ article.author}}.jpg" alt="Post Author Avatar">
+								<img src="{{ SITEURL }}/images/authors/{{ article.author}}.jpg" alt="Post Author Avatar">
 							</div>
 
 							<h2 class="post-title">

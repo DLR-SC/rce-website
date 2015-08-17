@@ -64,7 +64,7 @@ def reserve():
 
 def preview():
     """Build production version of site"""
-    local('pelican -s publishconf.py')
+    local('pelican -s publishconf.py -t themes/polar')
 
 def cf_upload():
     """Publish to Rackspace Cloud Files"""
@@ -89,6 +89,7 @@ def publish():
 
 def gh_pages():
     """Publish to GitHub Pages"""
-    rebuild()
+    clean()
+    preview()
     local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
     local("git push origin {github_pages_branch}".format(**env))

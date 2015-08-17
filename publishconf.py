@@ -10,7 +10,8 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://rcenvironment.de'
+#SITEURL = 'http://rcenvironment.de'
+SITEURL = 'http://onyame.github.io/rce-website/'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
