@@ -97,7 +97,7 @@
 		<div class="container">
 			<section class="row about-us section-padding pb0">
 				<div class="col-md-6 md-bm-50">
-					<h2 class="section-title">What is RCE?</h2>
+					<h3 class="section-title">What is RCE?</h3>
 					<p>
 						RCE is an Open Source distributed, workflow-driven integration environment. It is used by engineers and scientists to design and simulate complex systems (e.g., aircraft, ships, or satellites) by using and integrating their own design and simulation tools.<br/>
 
@@ -119,7 +119,7 @@
 		
 
 			<section id="news" class="news row section-padding pb0">
-				<div class="row">
+				<!-- <div class="row"> -->
 					<div class="col-md-9">
 						<div class="blog-page"> 
 
@@ -194,33 +194,37 @@
 
 							</article> 
 							{% endfor %}
+
+
+
+							<nav class="pagination paging-navigation" role="navigation">
+								{% if articles_page.has_previous() %}
+								{% set num = articles_page.previous_page_number() %}
+	    							<a class="prev page-numbers" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html"><i class="fa fa-angle-double-left"></i></a>
+								{% else %}
+	    							<a class="prev disabled" href="#"><i class="fa fa-angle-double-left"></i></a>
+								{% endif %}
+
+								{% for num in range( 1, 1 + articles_paginator.num_pages ) %}
+	    							<a class="page-numbers {{ 'active' if num == articles_page.number else '' }}" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">{{ num }}</a>
+								{% endfor %}
+
+								{% if articles_page.has_next() %}
+	    							<a class="next page-numbers" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html" title="Next"><i class="fa fa-angle-double-right"></i></a>
+								{% else %}
+							    	<a class="next disabled" href="#"><i class="fa fa-angle-double-right"></i></a>
+								{% endif %}
+							</nav><!-- /.paging-navigation -->
+
+
+
+
 						</div><!-- /.blog-page -->
 
 
-						<nav class="paging-navigation" role="navigation">
-						{% if articles_page.has_previous() %}
-							{% set num = articles_page.previous_page_number() %}
-    						<a class="prev page-numbers" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html"><i class="fa fa-angle-double-left"></i></a>
-						{% else %}
-    						<a class="prev disabled" href="#"><i class="fa fa-angle-double-left"></i></a>
-						{% endif %}
-
-						{% for num in range( 1, 1 + articles_paginator.num_pages ) %}
-    						<a class="page-numbers {{ 'active' if num == articles_page.number else '' }}" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">{{ num }}</a>
-						{% endfor %}
-
-						{% if articles_page.has_next() %}
-    						<a class="next page-numbers" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html" title="Next"><i class="fa fa-angle-double-right"></i></a>
-						{% else %}
-						    <a class="next disabled" href="#"><i class="fa fa-angle-double-right"></i></a>
-						{% endif %}
-						</nav><!-- /.paging-navigation -->
-
-					
-
 					</div><!-- /.col-md-9 -->
 
-				</div><!-- /.row -->
+			<!--	</div><!-- /.row --> 
 			</section><!-- /.news -->		
 
 		</div><!-- /.container --> 
