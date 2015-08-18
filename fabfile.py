@@ -34,7 +34,7 @@ def clean():
 
 def build():
     """Build local version of site"""
-    local('pelican -s pelicanconf.py -t themes/polar')
+    local('pelican -s pelicanconf.py')
 
 def rebuild():
     """`clean` then `build`"""
@@ -43,7 +43,7 @@ def rebuild():
 
 def regenerate():
     """Automatically regenerate site upon file modification"""
-    local('pelican -r -s pelicanconf.py -t themes/polar')
+    local('pelican -r -s pelicanconf.py')
 
 def serve():
     """Serve site at http://localhost:8000/"""
@@ -64,7 +64,7 @@ def reserve():
 
 def preview():
     """Build production version of site"""
-    local('pelican -s publishconf.py -t themes/polar')
+    local('pelican -s publishconf.py')
 
 def cf_upload():
     """Publish to Rackspace Cloud Files"""
