@@ -1444,7 +1444,7 @@ a:focus{
 	max-width: inherit;
 }
 .post-title {
-	font-size: 2.3125em;
+	font-size: 2.3125em; /*2.3125 */
 	font-weight: 300;
 	margin-top: 5px;
 	padding-bottom: 20px;
@@ -1493,7 +1493,7 @@ article.type-post {
 /* 16 - Blog Page 
 ******************************************************/
 .blog-page>article {
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 }
 .blog-page>article:last-child {
 	padding-bottom: 60px;
@@ -2003,6 +2003,10 @@ div.wpcf7-mail-sent-ok {
 
 /* 23 - Pagination  
 ******************************************************/ 
+.pagination {
+	padding-bottom: 25px;
+}
+
 .paging-navigation .page-numbers {
  	display: inline-block; 
  	border:1px solid #d9d9d9;
