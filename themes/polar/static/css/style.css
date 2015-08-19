@@ -411,6 +411,7 @@ a:focus{
 	margin: auto;
 	padding-top: 30px;
 	padding-bottom: 55px;
+	font-weight: 800;
 }
 .button-container,
 .next-section {
