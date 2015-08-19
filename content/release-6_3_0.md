@@ -1,8 +1,7 @@
 Title: Release 6.3.0 
 Date: 2015-07-29 10:20
 Category: Releases
-Author: Doreen Seider
-Tags: 6xx,components,workflow,integration
+Author: RCE
 
 ## Synopsis
 
