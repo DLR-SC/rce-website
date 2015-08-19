@@ -55,9 +55,21 @@ fab reserve
 
 ## Writing Content
 
-Use either Markdown or HTML for new articles...
+Use either [Markdown](http://daringfireball.net/projects/markdown/) or HTML for new articles, as described in [Writing content](http://docs.getpelican.com/en/3.6.3/content.html).
+
+Add new articles to `content`.
 
 ### Metadata
+
+The required meta data for RCE release announcements are:
+```
+Title: Release 6.3.0 
+Date: 2015-07-29 10:20
+Category: Releases
+Author: RCE
+```
+
+
 
 ### Image sizes
  * Article image: 870x440 px
