@@ -98,7 +98,11 @@
 	</div>
 	<span id="page-top"></span>
 	<!-- Main Menu -->
+	{% if page_name == "index" %}
 	<div class="main-menu-container transparent-nav fix-top">
+	{% else %}
+	<div class="main-menu-container navbar-fixed-top-">
+	{% endif %}
 		<div id="main-menu" class="navbar navbar-default" role="navigation">
 			<div class="container">
 
@@ -119,28 +123,27 @@
 				<nav class="collapse navbar-collapse">
 					<!-- Main navigation -->
 					<ul id="mainNavigation" class="main-mav nav navbar-nav pull-right">
-						<li class="has-sub-menu"><a class="active" href="{{ SITEURL }}/#page-top">Home</a>
+						<li><a {% if page_name != "index" %}class="not-in-home"{% endif %}class="active" href="{{ SITEURL }}/#page-top">Home</a>
 						</li>
 
 
 					<!--	<li><a href="{{ SITEURL }}/#contents">What is RCE?</a></li>   -->
 						
-						<li><a href="{{ SITEURL }}/#contents">What is RCE?</a></li>
-
-						<li><a href="{{ SITEURL }}/#news">News</a></li>
+						<li><a {% if page_name != "index" %}class="not-in-home"{% endif %} href="{{ SITEURL }}/#contents">What is RCE?</a></li>
+						<li><a {% if page_name != "index" %}class="not-in-home"{% endif %} href="{{ SITEURL }}/#news">News</a></li>
 
 						{% for title, link in MENUITEMS %}
-            			<li><a href="{{ link }}">{{ title }}</a></li>
+            			<li><a class="not-in-home" href="{{ link }}">{{ title }}</a></li>
         				{% endfor %}
  
         				{% if DISPLAY_PAGES_ON_MENU %}
           					{% for p in pages %}
-            					<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+            					<li{% if p == page %} class="active"{% endif %}><a class="not-in-home" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
           					{% endfor %}
         				{% else %}
          					{% if DISPLAY_CATEGORIES_ON_MENU %}
             					{% for cat, null in categories %}
-              					<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              					<li{% if cat == category %} class="active"{% endif %}><a class="not-in-home" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
             					{% endfor %}
           					{% endif %}
         				{% endif %}
