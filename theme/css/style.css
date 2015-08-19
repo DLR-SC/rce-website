@@ -149,8 +149,8 @@ a:focus{
 	line-height: 34px;
 }
 .section-padding {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .subsection-padding {
@@ -411,6 +411,7 @@ a:focus{
 	margin: auto;
 	padding-top: 30px;
 	padding-bottom: 55px;
+	font-weight: 500;
 }
 .button-container,
 .next-section {
