@@ -124,10 +124,10 @@
 		<div class="overlay">
 			<div class="container">
 				<h2 class="page-title m0">
-					Release 6.3.0 
+					Release 6.1.0 
 				</h2>
 				<div class="page-location">
-					<a href="http://dlr-sc.github.io/rce-website/">Home</a> <a href="#">News</a> <span>Release 6.3.0</span>
+					<a href="http://dlr-sc.github.io/rce-website/">Home</a> <a href="#">News</a> <span>Release 6.1.0</span>
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.overlay -->
@@ -147,7 +147,7 @@
 							</div>
 
 							<h2 class="post-title">
-								<a href="http://dlr-sc.github.io/rce-website/release-630.html">Release 6.3.0</a>
+								<a href="http://dlr-sc.github.io/rce-website/release-610.html">Release 6.1.0</a>
 							</h2> 
 
 							<footer class="entry-meta">
@@ -159,10 +159,10 @@
 								</span>
 								<span class="entry-date">
 									<i class="fa fa-calendar-o"></i>
-									<span class="date">Mi 29 Juli 2015</span>
+									<span class="date">Do 16 April 2015</span>
 								</span>
 								<span class="comments-link">
-									<a href="http://dlr-sc.github.io/rce-website/release-630.html" rel="link">
+									<a href="http://dlr-sc.github.io/rce-website/release-610.html" rel="link">
 										<i class="fa fa-link"></i>
 											Permalink
 									</a>
@@ -175,51 +175,98 @@
 
 							</footer><!-- /.entry-meta --> 
 							<div class="entry">
-								<h2>Synopsis</h2>
+								<h3>Workflow Components</h3>
 <ul>
-<li>This release fixes a security issue; users that run components on untrusted machines should upgrade to 6.3.0 as soon as possible</li>
-<li>Various minor bugfixes and improvements</li>
-<li>Workflow Data Browser: Added icons to the top-level workflow entries that show the final state of workflows </li>
+<li>Added new component: Switch <ul>
+<li>Directs data on the base of a condition to one of two outputs </li>
 </ul>
-<h3>Components</h3>
-<ul>
-<li>XML Merger: Added input handling "queue" to static input "XML to integrate"</li>
-<li>Design of Experiments: Improved cleanup of temp directories</li>
-<li>Design of Experiments: The component can now be used in outer loops</li>
-<li>Design of Experiments: Improved validation</li>
-<li>Input Provider: Fixed selection of files and folders in imported projects or projects located outside the workspace</li>
-<li>CPACS Writer: Improved cleanup of temp directories</li>
+</li>
+<li>Added new component: Design of Experiments (DOE) <ul>
+<li>Supports sampling of a bounded solution space </li>
 </ul>
-<h3>Workflow Data Browser</h3>
-<ul>
-<li>Added icons to the top-level workflow entries that show the final state of finished workflows; running workflows keep the default workflow icon</li>
-<li>Fixed saving of execution log files in case of an error</li>
-<li>Fixed working directory to be shown for CPACS components</li>
+</li>
+<li>Converger: Replaced "maximum iterations" by "maximum convergence checks" </li>
+<li>Parametric Study: Added option "fit to bounds"</li>
+<li>Optimizer <ul>
+<li>Added support for mixed integer optimization </li>
+<li>Integrated new algorithm method called NOMAD, which is more applicable for mixed integer optimization </li>
+</ul>
+</li>
 </ul>
 <h3>Tool Integration</h3>
 <ul>
-<li>Added a file containing the running workflow's name to the working directory of tools ("rce-workflow-information.txt")</li>
-<li>Fixed "Run only on changed inputs" option</li>
-<li>Fixed path for directory inputs when using placeholder variables</li>
+<li>Extended options for the deletion of working directories: they can be kept in the case of an error now</li>
+<li>Pre and post processing scripts now have the "shutil" module imported by default to simplify file and directory copying</li>
+<li>Enabled tabbing through the "Tool Description" page of the tool integration wizard </li>
 </ul>
-<h3>Security</h3>
+<h3>Workflow Editor</h3>
 <ul>
-<li>This release fixes a security issue; users that run components on untrusted machines should upgrade to 6.3.0 as soon as possible</li>
+<li>Added possibility to define custom connection paths</li>
+<li>Added support for workflow labels </li>
 </ul>
-<h3>Console Commands</h3>
+<h3>Workflow Data Browser</h3>
 <ul>
-<li>The output of "wf run" now includes the workflow id needed for other commands</li>
-<li>Added a <code>"--compact-output"</code> flag to "wf run" to simplify scripted usage</li>
+<li>Improved performance when fetching the list of workflows and when expanding timelines</li>
+<li>Fixed an error in the graphical tree view which sometimes occured when deleting workflows ("Comparison method violates contract")</li>
+<li>Fixed an error which allowed running workflows to be deleted under certain circumstances </li>
+</ul>
+<h3>Workflow Data Management</h3>
+<ul>
+<li>Improved stability and performance (especially for workflows with a high number of component runs - in the order of &gt;10,000 runs) </li>
+</ul>
+<h3>GUI Miscellaneous</h3>
+<ul>
+<li>Improved the performance of the workflow list view (workflows and their states were updated very slowly from remote workflow hosts)</li>
+<li>Changed the font (Courier) for the command console and script editing areas (the Script component's editor and the tool integration wizard's pre and post processing pages)</li>
+<li>Fixed layout of the input table of the OutputWriter component</li>
+<li>Validation of workflow components' configuration is now only done when saving the workflow; this improves GUI performance</li>
+<li>Validation errors and/or warnings are now checked at workflow start again and are shown to the user with a popup dialog</li>
+<li>Workflow execution wizards shows the actual instance names as they appear in the network view</li>
+<li>The "Apply to all" button in the placeholder page of the workflow execution wizard copies the placeholder only to other placeholders of the same data type and the same component type now</li>
+<li>Improved the insert locations of pasted workflow nodes; prevented the case where inserted components have the same position, which made them hard to tell apart</li>
+<li>Connection Editor: Inputs which are required but not connected yet are marked with a red asterisk </li>
 </ul>
 <h3>Remote Access</h3>
 <ul>
-<li>Made a minor protocol change that allows consistent behavior for Debian 7 clients</li>
+<li>Added a command to only list components that are compatible with the "run-tool" requirements</li>
+<li>Made command output easier to parse by client code (used by upcoming C/C++ API)</li>
+<li>Added a default version ("1") to published workflows so "run-wf" and "run-tool" can use the same API calls </li>
 </ul>
-<h3>Internal</h3>
+<h3>Console Commands</h3>
 <ul>
-<li>Increased the heap size setting for RCE instances running on 32-bit Java by 20%</li>
-<li>Various minor bugfixes and improvements</li>
-<li>Reduced debug log output volume to make it easier to inspect</li>
+<li>Added console commands to pause, resume, cancel, and dispose workflows</li>
+<li>Added console command to list all active workflows (wf list) </li>
+</ul>
+<h3>Configuration</h3>
+<ul>
+<li>Changed the embedded SSH server's "host" parameter to "ip" for clarity ("host" still works, but a warning is logged)</li>
+<li>Fixed some configuration documentation issues </li>
+</ul>
+<h3>Deployment</h3>
+<ul>
+<li>Provided 32-bit .deb packages (in addition to existing 64-bit packages) </li>
+</ul>
+<h3>Documentation</h3>
+<ul>
+<li>Added documentation for concept behind the CPACS mapping of integrated CPACS-capable tools </li>
+</ul>
+<h3>CPACS</h3>
+<ul>
+<li>Updated namespace for map in cpacs mapping files (old one still works, but a warning is logged) </li>
+</ul>
+<h3>Miscellaneous</h3>
+<ul>
+<li>Disabled the "<profile>/output/console.combined.*.log" files to conserve disk space; if you were using them, please contact us for discussion of this feature</li>
+<li>Removed irrelevant stack traces to reduce log volume</li>
+<li>Improved log output of network error situations</li>
+<li>Added "--profile" option as an alternative/alias to "-p"</li>
+<li>Fixed the profile directory's name not being used for the temp directory prefix (was always "default")</li>
+<li>Cleaned up the command console's "help" output</li>
+<li>Script component (Jython) now sends unique NaV values to the affected outputs within one run</li>
+<li>A workflow component, which triggers that a workflow is finished, doesn't forward the finish information anymore (this led to warnings in the log)</li>
+<li>Reduced callback attempts of a workflow component if its workflow controller is not reachable anymore; reduced number of error messages in the log</li>
+<li>Increased the automated test coverage (especially, workflow engine, data management, workflow components)</li>
+<li>Generation of "Output/autoExportOnStartup.json" is now optional (default: off) </li>
 </ul>  
 							</div><!-- /.entry --> 
 						</article>
@@ -260,7 +307,7 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'rcenvironment'; 
-    var disqus_title = 'Release 6.3.0';
+    var disqus_title = 'Release 6.1.0';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

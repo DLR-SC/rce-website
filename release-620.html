@@ -8,6 +8,7 @@
 
 
     <link href="http://dlr-sc.github.io/rce-website/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="RCE Full Atom Feed" />
+    <link href="http://dlr-sc.github.io/rce-website/feeds/releases.atom.xml" type="application/atom+xml" rel="alternate" title="RCE Categories Atom Feed" />
 	
 	<!-- META DATA -->
 	<meta name="description" content="RCE is a distributed, workflow-driven integration environment." >
@@ -117,26 +118,208 @@
 	</div><!-- /.main-menu-container -->
 	<!-- Main Menu End -->
 
-<h1>Archives for RCE</h1>
+<section id="content">
 
-<dl>
-    <dt>Mi 29 Juli 2015</dt>
-    <dd><a href="http://dlr-sc.github.io/rce-website/release-630.html">Release 6.3.0</a></dd>
-    <dt>Mi 24 Juni 2015</dt>
-    <dd><a href="http://dlr-sc.github.io/rce-website/release-621.html">Release 6.2.1</a></dd>
-    <dt>Fr 12 Juni 2015</dt>
-    <dd><a href="http://dlr-sc.github.io/rce-website/release-620.html">Release 6.2.0</a></dd>
-    <dt>Do 16 April 2015</dt>
-    <dd><a href="http://dlr-sc.github.io/rce-website/release-610.html">Release 6.1.0</a></dd>
-    <dt>Di 03 Februar 2015</dt>
-    <dd><a href="http://dlr-sc.github.io/rce-website/release-603.html">Release 6.0.3</a></dd>
-    <dt>Mi 28 Januar 2015</dt>
-    <dd><a href="http://dlr-sc.github.io/rce-website/release-602.html">Release 6.0.2</a></dd>
-    <dt>Do 22 Januar 2015</dt>
-    <dd><a href="http://dlr-sc.github.io/rce-website/release-601.html">Release 6.0.1</a></dd>
-    <dt>Do 15 Januar 2015</dt>
-    <dd><a href="http://dlr-sc.github.io/rce-website/release-600.html">Release 6.0.0</a></dd>
-</dl>
+	<div class="page-name background-bg page-name-bg">
+		<div class="overlay">
+			<div class="container">
+				<h2 class="page-title m0">
+					Release 6.2.0 
+				</h2>
+				<div class="page-location">
+					<a href="http://dlr-sc.github.io/rce-website/">Home</a> <a href="#">News</a> <span>Release 6.2.0</span>
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.overlay -->
+	</div><!-- /.page-name -->
+
+
+	<div id="contents"> 
+		<div class="container section-padding"> 
+			<div class="row">
+				<div class="col-md-9">
+					<div class="news-single"> 
+						<article class="type-post single-news single-post">
+
+
+							<div class="post-author-avatar">
+								<img src="http://dlr-sc.github.io/rce-website/images/authors/RCE.jpg" alt="Post Author Avatar">
+							</div>
+
+							<h2 class="post-title">
+								<a href="http://dlr-sc.github.io/rce-website/release-620.html">Release 6.2.0</a>
+							</h2> 
+
+							<footer class="entry-meta">
+								<span class="author">
+									<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
+										<i class="fa fa-user"></i>
+										RCE
+									</a> 
+								</span>
+								<span class="entry-date">
+									<i class="fa fa-calendar-o"></i>
+									<span class="date">Fr 12 Juni 2015</span>
+								</span>
+								<span class="comments-link">
+									<a href="http://dlr-sc.github.io/rce-website/release-620.html" rel="link">
+										<i class="fa fa-link"></i>
+											Permalink
+									</a>
+								</span>
+ 
+									<span class="cat-links">
+										<i class="fa fa-folder-o"></i>
+										<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
+									</span>
+
+							</footer><!-- /.entry-meta --> 
+							<div class="entry">
+								<h2>Synopsis</h2>
+<ul>
+<li>Improved usability of various graphical user elements including log messages</li>
+<li>Extended and improved the access of tools and workflows via SSH (remote access)</li>
+<li>Fixed minor bugs</li>
+<li>Internal improvements (e.g., improved quality assurance by increasing unit test coverage) </li>
+</ul>
+<h3>Usability</h3>
+<ul>
+<li>Script component<ul>
+<li>Files and directories (received as input values) keep their name (affects e.g. the name shown in the workflow data browser)</li>
+<li>Added support to show whitespace characters in the text field used to write the Python script </li>
+</ul>
+</li>
+<li>Tool integration dialog<ul>
+<li>Added support for editing values (inputs, outputs, properties etc.) on double click</li>
+<li>Added dialog which helps to create Python commands to copy files or directories within the pre or post execution script </li>
+</ul>
+</li>
+<li>Workflow data browser<ul>
+<li>The host instance of each workflow component is now shown</li>
+<li>Added possibility to open CPACS files in the TiGL viewer from the workflow data browser's context menu </li>
+</ul>
+</li>
+<li>Workflow list<ul>
+<li>Workflows can be deleted now with the Del key</li>
+<li>Fixed default sorting (now by time) </li>
+</ul>
+</li>
+<li>Command console: added feature to clear command console line on Esc</li>
+<li>Workflow console: added possibility to copy either a whole console line or just the message itself</li>
+<li>Announce syntax errors in the main configuration file of RCE at start up</li>
+<li>Workflow execution<ul>
+<li>Improved warning shown in the workflow execution dialog if workflow components are not available or only available with other versions (which prevents the user from executing a workflow at all)</li>
+<li>Improved warning when component versions of workflow file and current installation don't match</li>
+<li>Added the new placeholders "${profileName}" and "${version}" to instance name configuration; this is intended to simplify deployments with many instances </li>
+</ul>
+</li>
+</ul>
+<h3>Remote Access (access of tools and workflows via SSH)</h3>
+<ul>
+<li>Workflows published with the "ra-admin publish-wf" command are now persistent by default (ie, they are still available after restarting the RCE instance)</li>
+<li>Tools on the RCE instance running the SSH server must now be explicitly published to be available</li>
+<li>Clients can now explicitly select the instance of a tool that is available on multiple RCE instances</li>
+<li>Filtered the "list-tools" output to tools that actually match the Remote Access requirements</li>
+<li>The client's tool selection is now checked against the published/available tools before execution; before this, invalid values simply caused the generated workflow to fail</li>
+<li>Improved error handling and feedback messages </li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>Joiner component: fixed the configuration GUI of the joiner component so that its elements are applied correctly after undo or redo</li>
+<li>Command console: Fixed pasting from clipboard into the command console on linux systems (fixed delay and issue with line break)</li>
+<li>Fixed writing integer values to outputs of type float in script component and post script of integrated tools</li>
+<li>Workflow data browser: fixed exporting directories from the workflow data browser</li>
+<li>Files and projects can be deleted from workspace projects now even if they were opened beforehand</li>
+<li>Workflow editor: workflow components, which are not available, can be now copied/cutted and pasted as they were be available</li>
+<li>Fixed resource leaks in workflow data browser and workflow timeline view</li>
+<li>Workflow engine: constant inputs of loop driver components (e.g. Optimizer, DOE, ... ) are now reset if loop was reset (mainly affects loop drivers of nested loops) </li>
+</ul>
+<h3>Internal Improvements</h3>
+<ul>
+<li>Improved quality assurance by increasing unit test coverage</li>
+<li>Refactor the code base responsible for loading, mapping, and saving XML files</li>
+</ul>  
+							</div><!-- /.entry --> 
+						</article>
+
+						<div class="follow-us follow-share social-share">
+							<div class="follow-title">
+								<span>Share on Social Network</span>
+							</div>
+							<div class="social-btn text-center">
+								<a href="#" class="facebook">
+									<i class="fa fa-facebook"></i>
+									<span>Facebook</span>
+								</a>
+								<a href="#" class="google-plus">
+									<i class="fa fa-google-plus"></i>
+									<span>Google +</span>
+								</a>
+								<a href="#" class="twitter">
+									<i class="fa fa-twitter"></i>
+									<span>Twitter</span>
+								</a>
+								<a href="#" class="linked-in">
+									<i class="fa fa-linkedin"></i>
+									<span>linked in</span>
+								</a>
+								<a href="#" class="instagram">
+									<i class="fa fa-instagram"></i>
+									<span>Instagram</span>		
+								</a>
+							</div><!-- /.social-btn --> 
+						</div><!-- /.follow-us --> 
+
+
+        					<div id="comments" class="comments-area">
+							<h3 class="comments-title"> 
+								 Comments 
+							</h3><!-- /.comments-title -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'rcenvironment'; 
+    var disqus_title = 'Release 6.2.0';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        					</div>
+
+					</div><!-- /.news-single -->
+					
+				</div><!-- /.col-md-9 -->
+
+				<div class="col-md-3">
+					<div class="sidebar">
+						<aside class="widget widget_recent_comments">
+							<h3 class="widget-title">
+								Categories
+							</h3><!-- /.widget-title -->
+							<ul id="recentcomments">
+									<li class="recentcomments">
+										<span class="comment-author-link">
+											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
+										</span> 
+									</li>
+   
+							</ul>
+						</aside><!-- /.widget -->
+
+
+
+					</div><!-- /.sidebar -->
+				</div><!-- /.col-md-3 --> 
+
+
+		</div><!-- /.container -->  
+	</div><!-- /.contents -->
+
+
+</section><!-- /#content -->
 
     <div class="footer-area ">
 
