@@ -245,7 +245,7 @@
 										 
 
 								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-630.html">Release 6.3.0</a>
+									<a href="http://dlr-sc.github.io/rce-website/release-300.html">Release 3.0.0</a>
 								</h2> 
 
 								<footer class="entry-meta">
@@ -257,11 +257,11 @@
 									</span>
 									<span class="entry-date">
 										<i class="fa fa-calendar-o"></i>
-										<span class="date">Mi 29 Juli 2015</span>
+										<span class="date">Fr 02 August 2013</span>
 
 									</span>
 									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-630.html" rel="link">
+										<a href="http://dlr-sc.github.io/rce-website/release-300.html" rel="link">
 											<i class="fa fa-link"></i>
 											Permalink
 										</a>
@@ -284,18 +284,14 @@
 								</footer><!-- /.entry-meta --> 
 								<div class="entry"> 
 									<p>
-										<h2>Synopsis</h2>
+										<h3>Changelog</h3>
 <ul>
-<li>This release fixes a security issue; users that run components on untrusted machines should upgrade to 6.3.0 as soon as possible</li>
-<li>Various minor bugfixes and improvements</li>
-<li>Workflow Data Browser: Added icons to the top-level workflow entries that show the final state of workflows </li>
-</ul>
-<h3>Components</h3>
-<ul>
-<li>XML Merger: Added ...</li></ul>  
+<li>Added support for remote upload of large files</li>
+<li>Unified data types of input values and output values which are used by workflow components (Note: all workflow files created with RCE &lt; 3.0.0 will be updated by RCE when opening them for the first time)</li>
+<li>Replace the Python workflow ...</li></ul>  
 								</div><!-- /.entry --> 
 								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-630.html" class="read-more">
+									<a href="http://dlr-sc.github.io/rce-website/release-300.html" class="read-more">
 										Learn more <i class="fa fa-arrow-circle-o-right"></i>
 									</a>
 								</div>
@@ -306,7 +302,7 @@
 										 
 
 								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-621.html">Release 6.2.1</a>
+									<a href="http://dlr-sc.github.io/rce-website/release-252.html">Release 2.5.2</a>
 								</h2> 
 
 								<footer class="entry-meta">
@@ -318,11 +314,11 @@
 									</span>
 									<span class="entry-date">
 										<i class="fa fa-calendar-o"></i>
-										<span class="date">Mi 24 Juni 2015</span>
+										<span class="date">Fr 21 Juni 2013</span>
 
 									</span>
 									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-621.html" rel="link">
+										<a href="http://dlr-sc.github.io/rce-website/release-252.html" rel="link">
 											<i class="fa fa-link"></i>
 											Permalink
 										</a>
@@ -345,14 +341,13 @@
 								</footer><!-- /.entry-meta --> 
 								<div class="entry"> 
 									<p>
-										<h2>Synopsis</h2>
+										<h3>Changelog</h3>
 <ul>
-<li>Fixed broken directory structure for files and directories, which are received as input values by the script component and by integrated tools</li>
-<li>Removed reliably XSLT mapping files from working directories of integrated CPACS tools (in some cases they are left)</li>
-<li>Endpoints can be deleted again even if they are ...</li></ul>  
+<li>fixed problem in Excel component: it occurred if the Excel component was run in a distributed scenario </li>
+</ul>  
 								</div><!-- /.entry --> 
 								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-621.html" class="read-more">
+									<a href="http://dlr-sc.github.io/rce-website/release-252.html" class="read-more">
 										Learn more <i class="fa fa-arrow-circle-o-right"></i>
 									</a>
 								</div>
@@ -363,7 +358,7 @@
 										 
 
 								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-620.html">Release 6.2.0</a>
+									<a href="http://dlr-sc.github.io/rce-website/release-251.html">Release 2.5.1</a>
 								</h2> 
 
 								<footer class="entry-meta">
@@ -375,11 +370,11 @@
 									</span>
 									<span class="entry-date">
 										<i class="fa fa-calendar-o"></i>
-										<span class="date">Fr 12 Juni 2015</span>
+										<span class="date">Mo 10 Juni 2013</span>
 
 									</span>
 									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-620.html" rel="link">
+										<a href="http://dlr-sc.github.io/rce-website/release-251.html" rel="link">
 											<i class="fa fa-link"></i>
 											Permalink
 										</a>
@@ -402,20 +397,16 @@
 								</footer><!-- /.entry-meta --> 
 								<div class="entry"> 
 									<p>
-										<h2>Synopsis</h2>
+										<h3>Changelog</h3>
 <ul>
-<li>Improved usability of various graphical user elements including log messages</li>
-<li>Extended and improved the access of tools and workflows via SSH (remote access)</li>
-<li>Fixed minor bugs</li>
-<li>Internal improvements (e.g., improved quality assurance by increasing unit test coverage) </li>
-</ul>
-<h3>Usability</h3>
-<ul>
-<li>Script component<ul>
-<li>Files and directories (received as input values) keep ...</li></ul></li></ul>  
+<li>extended Converger component to add support for nested loops</li>
+<li>added workflow status icons to workflow runtime tab</li>
+<li>added support for macros to Excel component's export function</li>
+<li>Excel component exports to clipboard with Excel-like insertion</li>
+<li>fixed copying a workflow component in the workflow editor (the copied component had the ...</li></ul>  
 								</div><!-- /.entry --> 
 								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-620.html" class="read-more">
+									<a href="http://dlr-sc.github.io/rce-website/release-251.html" class="read-more">
 										Learn more <i class="fa fa-arrow-circle-o-right"></i>
 									</a>
 								</div>
@@ -426,7 +417,7 @@
 										 
 
 								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-610.html">Release 6.1.0</a>
+									<a href="http://dlr-sc.github.io/rce-website/release-250.html">Release 2.5.0</a>
 								</h2> 
 
 								<footer class="entry-meta">
@@ -438,11 +429,11 @@
 									</span>
 									<span class="entry-date">
 										<i class="fa fa-calendar-o"></i>
-										<span class="date">Do 16 April 2015</span>
+										<span class="date">Fr 05 April 2013</span>
 
 									</span>
 									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-610.html" rel="link">
+										<a href="http://dlr-sc.github.io/rce-website/release-250.html" rel="link">
 											<i class="fa fa-link"></i>
 											Permalink
 										</a>
@@ -465,23 +456,84 @@
 								</footer><!-- /.entry-meta --> 
 								<div class="entry"> 
 									<p>
-										<h3>Workflow Components</h3>
+										<h3>Changelog</h3>
 <ul>
-<li>Added new component: Switch <ul>
-<li>Directs data on the base of a condition to one of two outputs </li>
+<li>A new component for submitting cluster jobs was added</li>
+<li>Major rework of the optimizer component<ul>
+<li>Updating a pre 2.5.0 workflow file containing an optimizer component will remove all previous method configuration </li>
 </ul>
 </li>
-<li>Added new component: Design of Experiments (DOE) <ul>
-<li>Supports sampling of a bounded solution space </li>
+<li>improved workflow updater</li>
+<li>improved logging for failing python component</li>
+<li>improved error handling in optimizer component</li>
+<li>added ...</li></ul>  
+								</div><!-- /.entry --> 
+								<div class="btn-container">
+									<a href="http://dlr-sc.github.io/rce-website/release-250.html" class="read-more">
+										Learn more <i class="fa fa-arrow-circle-o-right"></i>
+									</a>
+								</div>
+
+							</article> 
+
+							<article class="type-post single-news single-post">
+										 
+
+								<h2 class="post-title">
+									<a href="http://dlr-sc.github.io/rce-website/release-242.html">Release 2.4.2</a>
+								</h2> 
+
+								<footer class="entry-meta">
+									<span class="author">
+										<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
+											<i class="fa fa-user"></i>
+											RCE
+										</a> 
+									</span>
+									<span class="entry-date">
+										<i class="fa fa-calendar-o"></i>
+										<span class="date">Mi 13 März 2013</span>
+
+									</span>
+									<span class="comments-link">
+										<a href="http://dlr-sc.github.io/rce-website/release-242.html" rel="link">
+											<i class="fa fa-link"></i>
+											Permalink
+										</a>
+									</span>
+									<!--
+									<span class="comments-link">
+										<i class="fa fa-comment-o"></i>
+										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
+									</span>
+									-->
+ 
+										<span class="cat-links">
+											<i class="fa fa-folder-o"></i>
+											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
+										</span>
+
+										
+
+
+								</footer><!-- /.entry-meta --> 
+								<div class="entry"> 
+									<p>
+										<h3>Changelog</h3>
+<ul>
+<li>added new workflow component "Input Provider": user can define input values for other components, like text, numbers, or files</li>
+<li>improved workflow editor handling<ul>
+<li>improved support for short cuts</li>
+<li>fixed minor issues </li>
 </ul>
 </li>
-<li>Converger: Replaced "maximum iterations" by "maximum convergence checks" </li>
-<li>Parametric Study: Added option "fit to bounds"</li>
-<li>Optimizer <ul>
-<li>Added ...</li></ul></li></ul>  
+<li>improved logging of workflow status during execution</li>
+<li>improved workflow execution in batch mode<ul>
+<li>improved performance</li>
+<li>enabled workflow execution ...</li></ul></li></ul>  
 								</div><!-- /.entry --> 
 								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-610.html" class="read-more">
+									<a href="http://dlr-sc.github.io/rce-website/release-242.html" class="read-more">
 										Learn more <i class="fa fa-arrow-circle-o-right"></i>
 									</a>
 								</div>
@@ -492,7 +544,7 @@
 										 
 
 								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-603.html">Release 6.0.3</a>
+									<a href="http://dlr-sc.github.io/rce-website/release-241.html">Release 2.4.1</a>
 								</h2> 
 
 								<footer class="entry-meta">
@@ -504,11 +556,11 @@
 									</span>
 									<span class="entry-date">
 										<i class="fa fa-calendar-o"></i>
-										<span class="date">Di 03 Februar 2015</span>
+										<span class="date">Mi 23 Januar 2013</span>
 
 									</span>
 									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-603.html" rel="link">
+										<a href="http://dlr-sc.github.io/rce-website/release-241.html" rel="link">
 											<i class="fa fa-link"></i>
 											Permalink
 										</a>
@@ -531,235 +583,18 @@
 								</footer><!-- /.entry-meta --> 
 								<div class="entry"> 
 									<p>
-										<ul>
-<li>Reduced heap size (declared in rce.ini) for Windows 32bit version of RCE</li>
-<li>Added configuration parameter for RCE profiles to the windows service installation script </li>
-</ul>  
-								</div><!-- /.entry --> 
-								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-603.html" class="read-more">
-										Learn more <i class="fa fa-arrow-circle-o-right"></i>
-									</a>
-								</div>
-
-							</article> 
-
-							<article class="type-post single-news single-post">
-										 
-
-								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-602.html">Release 6.0.2</a>
-								</h2> 
-
-								<footer class="entry-meta">
-									<span class="author">
-										<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
-											<i class="fa fa-user"></i>
-											RCE
-										</a> 
-									</span>
-									<span class="entry-date">
-										<i class="fa fa-calendar-o"></i>
-										<span class="date">Mi 28 Januar 2015</span>
-
-									</span>
-									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-602.html" rel="link">
-											<i class="fa fa-link"></i>
-											Permalink
-										</a>
-									</span>
-									<!--
-									<span class="comments-link">
-										<i class="fa fa-comment-o"></i>
-										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
-									</span>
-									-->
- 
-										<span class="cat-links">
-											<i class="fa fa-folder-o"></i>
-											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
-										</span>
-
-										
-
-
-								</footer><!-- /.entry-meta --> 
-								<div class="entry"> 
-									<p>
-										<ul>
-<li>Fixed tool integration wizard, which failed to integrate a tool under some certain circumstances</li>
-<li>Converger and optimizer component sent value, whether the loop was converged/optimized on each iteration again (In 6.0.0 and 6.0.1, it was sent only once at the end as loop was converged ...</li></ul>  
-								</div><!-- /.entry --> 
-								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-602.html" class="read-more">
-										Learn more <i class="fa fa-arrow-circle-o-right"></i>
-									</a>
-								</div>
-
-							</article> 
-
-							<article class="type-post single-news single-post">
-										 
-
-								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-601.html">Release 6.0.1</a>
-								</h2> 
-
-								<footer class="entry-meta">
-									<span class="author">
-										<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
-											<i class="fa fa-user"></i>
-											RCE
-										</a> 
-									</span>
-									<span class="entry-date">
-										<i class="fa fa-calendar-o"></i>
-										<span class="date">Do 22 Januar 2015</span>
-
-									</span>
-									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-601.html" rel="link">
-											<i class="fa fa-link"></i>
-											Permalink
-										</a>
-									</span>
-									<!--
-									<span class="comments-link">
-										<i class="fa fa-comment-o"></i>
-										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
-									</span>
-									-->
- 
-										<span class="cat-links">
-											<i class="fa fa-folder-o"></i>
-											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
-										</span>
-
-										
-
-
-								</footer><!-- /.entry-meta --> 
-								<div class="entry"> 
-									<p>
-										<ul>
-<li>Fixed scheduling of script component - problem occured if it was enabled, that the script component should run on each new input value </li>
-</ul>  
-								</div><!-- /.entry --> 
-								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-601.html" class="read-more">
-										Learn more <i class="fa fa-arrow-circle-o-right"></i>
-									</a>
-								</div>
-
-							</article> 
-
-							<article class="type-post single-news single-post">
-										 
-
-								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-600.html">Release 6.0.0</a>
-								</h2> 
-
-								<footer class="entry-meta">
-									<span class="author">
-										<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
-											<i class="fa fa-user"></i>
-											RCE
-										</a> 
-									</span>
-									<span class="entry-date">
-										<i class="fa fa-calendar-o"></i>
-										<span class="date">Do 15 Januar 2015</span>
-
-									</span>
-									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-600.html" rel="link">
-											<i class="fa fa-link"></i>
-											Permalink
-										</a>
-									</span>
-									<!--
-									<span class="comments-link">
-										<i class="fa fa-comment-o"></i>
-										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
-									</span>
-									-->
- 
-										<span class="cat-links">
-											<i class="fa fa-folder-o"></i>
-											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
-										</span>
-
-										
-
-
-								</footer><!-- /.entry-meta --> 
-								<div class="entry"> 
-									<p>
-										<h3>Workflow Editor</h3>
+										<h3>Changelog</h3>
 <ul>
-<li>Components in a workflow can now be temporarily disabled: during workflow execution, these components and all their connections are treated as if they didn't exist</li>
-<li>Added an option to show the number of connections represented by a line between two components</li>
-<li>The connection editor dialog can now ...</li></ul>  
-								</div><!-- /.entry --> 
-								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-600.html" class="read-more">
-										Learn more <i class="fa fa-arrow-circle-o-right"></i>
-									</a>
-								</div>
-
-							</article> 
-
-							<article class="type-post single-news single-post">
-										 
-
-								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-521.html">Release 5.2.1</a>
-								</h2> 
-
-								<footer class="entry-meta">
-									<span class="author">
-										<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
-											<i class="fa fa-user"></i>
-											RCE
-										</a> 
-									</span>
-									<span class="entry-date">
-										<i class="fa fa-calendar-o"></i>
-										<span class="date">Fr 29 August 2014</span>
-
-									</span>
-									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-521.html" rel="link">
-											<i class="fa fa-link"></i>
-											Permalink
-										</a>
-									</span>
-									<!--
-									<span class="comments-link">
-										<i class="fa fa-comment-o"></i>
-										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
-									</span>
-									-->
- 
-										<span class="cat-links">
-											<i class="fa fa-folder-o"></i>
-											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
-										</span>
-
-										
-
-
-								</footer><!-- /.entry-meta --> 
-								<div class="entry"> 
-									<p>
-										<ul>
-<li>Fixed error when integrating a tool using a template of type 'Common' </li>
+<li>added boolean channeltype in Python component</li>
+<li>added mechanism to support wildcard entries in publishedComponents configuration</li>
+<li>added configuration for rce-tmp folder</li>
+<li>fixed various bugs in SimpleWrapper component (i.e. regarding the use of input channels in pre/post process)</li>
+<li>fixed bug in converger</li>
+<li>minor fixes and improvements </li>
 </ul>  
 								</div><!-- /.entry --> 
 								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-521.html" class="read-more">
+									<a href="http://dlr-sc.github.io/rce-website/release-241.html" class="read-more">
 										Learn more <i class="fa fa-arrow-circle-o-right"></i>
 									</a>
 								</div>
@@ -770,7 +605,7 @@
 										 
 
 								<h2 class="post-title">
-									<a href="http://dlr-sc.github.io/rce-website/release-520.html">Release 5.2.0</a>
+									<a href="http://dlr-sc.github.io/rce-website/release-240.html">Release 2.4.0</a>
 								</h2> 
 
 								<footer class="entry-meta">
@@ -782,11 +617,11 @@
 									</span>
 									<span class="entry-date">
 										<i class="fa fa-calendar-o"></i>
-										<span class="date">Mo 25 August 2014</span>
+										<span class="date">Mo 17 Dezember 2012</span>
 
 									</span>
 									<span class="comments-link">
-										<a href="http://dlr-sc.github.io/rce-website/release-520.html" rel="link">
+										<a href="http://dlr-sc.github.io/rce-website/release-240.html" rel="link">
 											<i class="fa fa-link"></i>
 											Permalink
 										</a>
@@ -809,22 +644,196 @@
 								</footer><!-- /.entry-meta --> 
 								<div class="entry"> 
 									<p>
-										<h3>General</h3>
+										<h3>Changelog</h3>
 <ul>
-<li>Improved clean up of RCE's temp directory </li>
+<li>Major rework of the network/communication system; changes include:<ul>
+<li>significant performance improvements</li>
+<li>simplified setup of ad-hoc networks; in typical use cases, clients only a single line of configuration to connect to a network</li>
+<li>simplified handling of firewalled systems and subnets </li>
 </ul>
-<h3>GUI</h3>
-<ul>
-<li>General performance improvement in workflow data browser</li>
-<li>Fixed handling of scripts that were openend in an editor at the same time and that belong to different script components </li>
-</ul>
-<h3>Workflow components</h3>
-<ul>
-<li>Optimizer component<ul>
-<li>Improved behavior if optimizer fails or isn't ...</li></ul></li></ul>  
+</li>
+<li>reduced supported languages to English to avoid language mixups ...</li></ul>  
 								</div><!-- /.entry --> 
 								<div class="btn-container">
-									<a href="http://dlr-sc.github.io/rce-website/release-520.html" class="read-more">
+									<a href="http://dlr-sc.github.io/rce-website/release-240.html" class="read-more">
+										Learn more <i class="fa fa-arrow-circle-o-right"></i>
+									</a>
+								</div>
+
+							</article> 
+
+							<article class="type-post single-news single-post">
+										 
+
+								<h2 class="post-title">
+									<a href="http://dlr-sc.github.io/rce-website/release-238.html">Release 2.3.8</a>
+								</h2> 
+
+								<footer class="entry-meta">
+									<span class="author">
+										<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
+											<i class="fa fa-user"></i>
+											RCE
+										</a> 
+									</span>
+									<span class="entry-date">
+										<i class="fa fa-calendar-o"></i>
+										<span class="date">Di 13 November 2012</span>
+
+									</span>
+									<span class="comments-link">
+										<a href="http://dlr-sc.github.io/rce-website/release-238.html" rel="link">
+											<i class="fa fa-link"></i>
+											Permalink
+										</a>
+									</span>
+									<!--
+									<span class="comments-link">
+										<i class="fa fa-comment-o"></i>
+										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
+									</span>
+									-->
+ 
+										<span class="cat-links">
+											<i class="fa fa-folder-o"></i>
+											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
+										</span>
+
+										
+
+
+								</footer><!-- /.entry-meta --> 
+								<div class="entry"> 
+									<p>
+										<h3>Changelog</h3>
+<ul>
+<li>add updating mechanism for workflow files containing at least one Python component (it is not upwards compatible)</li>
+<li>fixed bug in Simple Wrapper component (occurred if used as first component within an workflow)</li>
+<li>fixed bug in Python component regarding array inputs</li>
+<li>fixed bug in SQL component regarding array inputs </li>
+</ul>  
+								</div><!-- /.entry --> 
+								<div class="btn-container">
+									<a href="http://dlr-sc.github.io/rce-website/release-238.html" class="read-more">
+										Learn more <i class="fa fa-arrow-circle-o-right"></i>
+									</a>
+								</div>
+
+							</article> 
+
+							<article class="type-post single-news single-post">
+										 
+
+								<h2 class="post-title">
+									<a href="http://dlr-sc.github.io/rce-website/release-237.html">Release 2.3.7</a>
+								</h2> 
+
+								<footer class="entry-meta">
+									<span class="author">
+										<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
+											<i class="fa fa-user"></i>
+											RCE
+										</a> 
+									</span>
+									<span class="entry-date">
+										<i class="fa fa-calendar-o"></i>
+										<span class="date">Mi 07 November 2012</span>
+
+									</span>
+									<span class="comments-link">
+										<a href="http://dlr-sc.github.io/rce-website/release-237.html" rel="link">
+											<i class="fa fa-link"></i>
+											Permalink
+										</a>
+									</span>
+									<!--
+									<span class="comments-link">
+										<i class="fa fa-comment-o"></i>
+										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
+									</span>
+									-->
+ 
+										<span class="cat-links">
+											<i class="fa fa-folder-o"></i>
+											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
+										</span>
+
+										
+
+
+								</footer><!-- /.entry-meta --> 
+								<div class="entry"> 
+									<p>
+										<h3>Changelog</h3>
+<ul>
+<li>added new concept for sensitive workflow configuration values</li>
+<li>re-designed Excel workflow component for stability and usability purposes</li>
+<li>added support for Optimizer component (Dakota) in Linux versions</li>
+<li>added view for cluster job monitoring</li>
+<li>fixed bug in configuration GUI of Simple Wrapper component (occured only in Linux versions)</li>
+<li>fixed bug in ...</li></ul>  
+								</div><!-- /.entry --> 
+								<div class="btn-container">
+									<a href="http://dlr-sc.github.io/rce-website/release-237.html" class="read-more">
+										Learn more <i class="fa fa-arrow-circle-o-right"></i>
+									</a>
+								</div>
+
+							</article> 
+
+							<article class="type-post single-news single-post">
+										 
+
+								<h2 class="post-title">
+									<a href="http://dlr-sc.github.io/rce-website/release-236.html">Release 2.3.6</a>
+								</h2> 
+
+								<footer class="entry-meta">
+									<span class="author">
+										<a href="http://dlr-sc.github.io/rce-website/author/rce.html" rel="author">
+											<i class="fa fa-user"></i>
+											RCE
+										</a> 
+									</span>
+									<span class="entry-date">
+										<i class="fa fa-calendar-o"></i>
+										<span class="date">Do 18 Oktober 2012</span>
+
+									</span>
+									<span class="comments-link">
+										<a href="http://dlr-sc.github.io/rce-website/release-236.html" rel="link">
+											<i class="fa fa-link"></i>
+											Permalink
+										</a>
+									</span>
+									<!--
+									<span class="comments-link">
+										<i class="fa fa-comment-o"></i>
+										<a href="#" title="comment on Saving Polar Bears" >3 Comments </a>
+									</span>
+									-->
+ 
+										<span class="cat-links">
+											<i class="fa fa-folder-o"></i>
+											<a href="http://dlr-sc.github.io/rce-website/category/releases.html">Releases</a>
+										</span>
+
+										
+
+
+								</footer><!-- /.entry-meta --> 
+								<div class="entry"> 
+									<p>
+										<h3>Changelog</h3>
+<ul>
+<li>added option to create a workflow examples project (new -&gt; other -&gt; RCE)</li>
+<li>fixed problems and inaccurate problem descriptions in optimizer component</li>
+<li>fixed some gui issues in optimizer component</li>
+<li>fixed minor issues </li>
+</ul>  
+								</div><!-- /.entry --> 
+								<div class="btn-container">
+									<a href="http://dlr-sc.github.io/rce-website/release-236.html" class="read-more">
 										Learn more <i class="fa fa-arrow-circle-o-right"></i>
 									</a>
 								</div>
@@ -834,14 +843,14 @@
 
 
 							<nav class="pagination paging-navigation" role="navigation">
-	    							<a class="prev disabled" href="#"><i class="fa fa-angle-double-left"></i></a>
+	    							<a class="prev page-numbers" href="http://dlr-sc.github.io/rce-website/author/rce2.html"><i class="fa fa-angle-double-left"></i></a>
 
-	    							<a class="page-numbers active" href="http://dlr-sc.github.io/rce-website/author/rce.html">1</a>
+	    							<a class="page-numbers " href="http://dlr-sc.github.io/rce-website/author/rce.html">1</a>
 	    							<a class="page-numbers " href="http://dlr-sc.github.io/rce-website/author/rce2.html">2</a>
-	    							<a class="page-numbers " href="http://dlr-sc.github.io/rce-website/author/rce3.html">3</a>
+	    							<a class="page-numbers active" href="http://dlr-sc.github.io/rce-website/author/rce3.html">3</a>
 	    							<a class="page-numbers " href="http://dlr-sc.github.io/rce-website/author/rce4.html">4</a>
 
-	    							<a class="next page-numbers" href="http://dlr-sc.github.io/rce-website/author/rce2.html" title="Next"><i class="fa fa-angle-double-right"></i></a>
+	    							<a class="next page-numbers" href="http://dlr-sc.github.io/rce-website/author/rce4.html" title="Next"><i class="fa fa-angle-double-right"></i></a>
 							</nav><!-- /.paging-navigation -->
 
 
