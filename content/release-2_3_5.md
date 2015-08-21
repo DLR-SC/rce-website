@@ -6,7 +6,7 @@ Author: RCE
 
 ### Changelog
 
- * fixed bug that caused an error in running a distributed workflow
+* fixed bug that caused an error in running a distributed workflow
 * fixed bug in merger component
 * fixed bug in merger and converger components gui
 * workflow data browser nodes can now be deleted
