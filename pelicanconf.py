@@ -38,8 +38,11 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 # Static paths
-STATIC_PATHS = ['images', 'pages/images']
+STATIC_PATHS = ['images', 'pages/images', 'extra/CNAME']
 
 # Plugins
 PLUGIN_PATHS = ["plugins", "d:\\rce\\plugins"]
 PLUGINS = ['pelican-page-hierarchy.page_hierarchy',]
+
+# Github pages domain name
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
