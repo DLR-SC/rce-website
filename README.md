@@ -40,7 +40,7 @@ PORT = 8001
 fab build
 ```
 
- * Start local server for testing
+ * Start local server for testing (accessible via http://localhost:[port]/)
   ```
 fab serve
 ```
@@ -50,14 +50,7 @@ fab serve
 fab reserve
 ```
 
-
-## Output
-
-See the website by entering "localhost:8001 in" your web browser.
-
 ## Deployment
-
-
 
 ## Writing Content
 
@@ -79,7 +72,7 @@ Author: RCE
 
 ### Image sizes
 
- * Article image: 870x440 px (not for the image at the top)
+ * Article image: 870x440 px (doesn't apply for the overview image of the article)
  * Thumbnail large: 100x108
  * Thumbnail small: 67x73
 
