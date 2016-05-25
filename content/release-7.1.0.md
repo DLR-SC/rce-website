@@ -1,5 +1,5 @@
 Title: RCE 7.1 
-Date: 2016-24-05 15:00
+Date: 2016-05-24 15:00
 Category: Releases
 Author: RCE
 Image: release-7.1/general.png
@@ -36,8 +36,8 @@ Secondly, it is now possible to use published workflows via the remote access.
 
 Many components got some improvements, the most important are:
 
-In the **XML Merger**, the mapping file can now be sent to the XML Merger as an input.
-The **Output Writer** got some new placeholders for naming the output file: "original filename" and "execution count"
-Failure tolerant loops can now be used with the **Evaluation Memory**
-The data type "Matrix" is now available in the **Script Component*.
-For the **Converger**, a new selection of behaviour if check limit is reached was added.
+In the **XML Merger**, the mapping file can now be sent to the XML Merger as an input.  
+The **Output Writer** got some new placeholders for naming the output file: "original filename" and "execution count".  
+Failure tolerant loops can now be used with the **Evaluation Memory**.  
+The data type "Matrix" is now available in the **Script Component**.  
+For the **Converger**, a new selection of behaviour if check limit is reached was added.  
