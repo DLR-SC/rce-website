@@ -20,12 +20,13 @@ pip install ghp-import
  * Clone rce-website
 
   ```
-git clone https://github.com/onyame/rce-website.git
+git clone https://github.com/DLR-SC/rce-website
 ```
+* Change to ```rce-website/```
 
 ### Configuration
 
- * Set proper port for local testing, which works on your machine in `fabfile.py`
+ * Set proper port for local testing which works on your machine in `fabfile.py`
 
   ```
 # Port for `serve`
