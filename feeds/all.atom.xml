@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE</title><link href="http://rcenvironment.de/" rel="alternate"></link><link href="http://rcenvironment.de/feeds/all.atom.xml" rel="self"></link><id>http://rcenvironment.de/</id><updated>2015-12-01T15:00:00+01:00</updated><entry><title>RCE 7</title><link href="http://rcenvironment.de/rce-7.html" rel="alternate"></link><updated>2015-12-01T15:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-12-01:rce-7.html</id><summary type="html">&lt;p&gt;We are proud to announce RCE 7. A major release with a lot of features and various improvements. Below you find a selection of some features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE</title><link href="http://rcenvironment.de/" rel="alternate"></link><link href="http://rcenvironment.de/feeds/all.atom.xml" rel="self"></link><id>http://rcenvironment.de/</id><updated>2016-05-24T15:00:00+02:00</updated><entry><title>RCE 7.1</title><link href="http://rcenvironment.de/rce-71.html" rel="alternate"></link><updated>2016-05-24T15:00:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2016-05-24:rce-71.html</id><summary type="html">&lt;p&gt;With RCE 7.1 we release a new minor version with some major improvements for RCE. As always, here is a selection of some improvements.
+Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;h3&gt;Reworked Help System&lt;/h3&gt;
+&lt;p&gt;In this release, we present the new RCE help system. You can open it by going to "Help -&amp;gt; Help Contents" in the menu bar. There you find not only all of the component's help, but also Tool Integration help and the user and developer guides.
+The new system has a much better usability, being able to search through all help content and having a much better navigation. Also, the dynamic help for components got a unified and cleaner look.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7.1/help_system.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;Outline View&lt;/h3&gt;
+&lt;p&gt;When workflows use many components, they get quite big. For keeping track of the workflow, we added a new outline view. This view displays the complete workflow in a small image and shows which area of the workflow is currently shown in the workflow editor.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7.1/outline_view.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;Canceling of Component Runs&lt;/h3&gt;
+&lt;p&gt;It is now possible, to cancel integrated components, the Script component and the Cluster component during their execution. This can be useful, if a script or tool runs for a very long time, but it is already clear that the results won't be valid for example. You can then cancel the worfklow and save resources and time.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7.1/canceled.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;SSH Remote Access Improvements&lt;/h3&gt;
+&lt;p&gt;The SSH Remote Access was extended with the feature to use key file authentication. 
+Secondly, it is now possible to use published workflows via the remote access.&lt;/p&gt;
+&lt;h3&gt;Component Improvements&lt;/h3&gt;
+&lt;p&gt;Many components got some improvements, the most important are:&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;XML Merger&lt;/strong&gt;, the mapping file can now be sent to the XML Merger as an input.&lt;br /&gt;
+The &lt;strong&gt;Output Writer&lt;/strong&gt; got some new placeholders for naming the output file: "original filename" and "execution count".&lt;br /&gt;
+Failure tolerant loops can now be used with the &lt;strong&gt;Evaluation Memory&lt;/strong&gt;.&lt;br /&gt;
+The data type "Matrix" is now available in the &lt;strong&gt;Script Component&lt;/strong&gt;.&lt;br /&gt;
+For the &lt;strong&gt;Converger&lt;/strong&gt;, a new selection of behaviour if check limit is reached was added.  &lt;/p&gt;</summary></entry><entry><title>RCE 7</title><link href="http://rcenvironment.de/rce-7.html" rel="alternate"></link><updated>2015-12-01T15:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-12-01:rce-7.html</id><summary type="html">&lt;p&gt;We are proud to announce RCE 7. A major release with a lot of features and various improvements. Below you find a selection of some features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Remote Tool Access via SSH Connections&lt;/h3&gt;
 &lt;p&gt;To access and execute tools across untrusted networks, we added support for tool access and execution via SSH, a secure network protocol. Please note that otherwise RCE is intended to be used in trusted networks only. &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7/ssh_connections.png" /&gt;&lt;/p&gt;
