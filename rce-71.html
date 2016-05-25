@@ -189,28 +189,24 @@
 
 							</footer><!-- /.entry-meta --> 
 							<div class="entry">
-								<p>With RCE 7.1 we release a new minor version with some major improvements for RCE. As always, here is a selection of some improvements.
-Please see <a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases">GitHub</a> for the full changelog.</p>
-<h3>Reworked Help System</h3>
-<p>In this release, we present the new RCE help system. You can open it by going to "Help -&gt; Help Contents" in the menu bar. There you find not only all of the component's help, but also Tool Integration help and the user and developer guides.
-The new system has a much better usability, being able to search through all help content and having a much better navigation. Also, the dynamic help for components got a unified and cleaner look.</p>
+								<p>We recently released RCE 7.1, a new minor version with several new features and many improvements. Below is a selection of some features. Please see <a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases">GitHub</a> for the full changelog.</p>
+<h3>Unified Access to Documentation in RCE</h3>
+<p>Documentation of RCE is spread over different places: component documentation is accessible from the workflow editor, documentation about tool integration is accessible from the tool integration dialog, and the user guide in PDF format. We introduced a new help system to make all of the documentation additionally accessible from one single place. Go to the menu bar under "Help -&gt; Help Contents". A window opens with all of the documentation and nice navigation and search capabilities.</p>
 <p><img alt="Photo" src="http://rcenvironment.de/images/release-7.1/help_system.png" /></p>
-<h3>Outline View</h3>
-<p>When workflows use many components, they get quite big. For keeping track of the workflow, we added a new outline view. This view displays the complete workflow in a small image and shows which area of the workflow is currently shown in the workflow editor.</p>
+<h3>Workflow Outline View</h3>
+<p>Workflows with many components get quite big. For keeping track of those workflows, we added a new outline view. It displays the complete workflow in a thumbnail format and highlights the area of the workflow which is currently shown in the workflow editor.</p>
 <p><img alt="Photo" src="http://rcenvironment.de/images/release-7.1/outline_view.png" /></p>
-<h3>Canceling of Component Runs</h3>
-<p>It is now possible, to cancel integrated components, the Script component and the Cluster component during their execution. This can be useful, if a script or tool runs for a very long time, but it is already clear that the results won't be valid for example. You can then cancel the worfklow and save resources and time.</p>
+<h3>Enhanced Workflow Canceling</h3>
+<p>In case a workflow is canceled (by the user or after a failure in the workflow), integrated tools as well as running Python scripts (executed by the Script component) are canceled imediately. It is no longer waited until they terminate itself. Also, jobs submitted to a cluster (by the Cluster component) are canceled imediately. In case of long running tools, scripts or cluster jobs, compute time is saved now.</p>
 <p><img alt="Photo" src="http://rcenvironment.de/images/release-7.1/canceled.png" /></p>
-<h3>SSH Remote Access Improvements</h3>
-<p>The SSH Remote Access was extended with the feature to use key file authentication. 
-Secondly, it is now possible to use published workflows via the remote access.</p>
-<h3>Component Improvements</h3>
-<p>Many components got some improvements, the most important are:</p>
-<p>In the <strong>XML Merger</strong>, the mapping file can now be sent to the XML Merger as an input.<br />
-The <strong>Output Writer</strong> got some new placeholders for naming the output file: "original filename" and "execution count".<br />
-Failure tolerant loops can now be used with the <strong>Evaluation Memory</strong>.<br />
-The data type "Matrix" is now available in the <strong>Script Component</strong>.<br />
-For the <strong>Converger</strong>, a new selection of behaviour if check limit is reached was added.  </p>  
+<h3>Extended SSH Remote Access</h3>
+<p>RCE provides an SSH interface to execute components and workflows (among others). Next to username and password, authentication via key files is now supported. Also, when connecting an RCE client to another RCE instance via SSH, not only remotely published components can be used in workflows, but also remotely published workflows appear in the workflow component palette ready to use in workflows.</p>
+<h3>Enhanced Workflow Components</h3>
+<p>We made enhancements to several workflow components such as:</p>
+<p>The mapping file required by the XML Merger can be sent as an input. This makes reloading the mapping file on each change obsolete.<br />
+The Evaluation Memory can be used in fault-tolerant loops as it is now able to treat loop failures properly.
+The behavior of the Converger can be defined in case convergence was not reached. Also, outputs are added which indicate convergence for every input separately.
+The Output Writer supports new placeholders: "original filename" and "execution count".  </p>  
 							</div><!-- /.entry --> 
 						</article>
 
