@@ -11,7 +11,7 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 * Install Pelican and supporting libraries
 
   ```
-pip install pelican
+pip install 4
 pip install markdown
 pip install fabric
 pip install ghp-import
@@ -49,6 +49,11 @@ fab serve
 fab reserve
 ```
 
+
+## Output
+
+See the website by entering "localhost:8001 in" your web browser.
+
 ## Deployment
 
 
@@ -72,7 +77,8 @@ Author: RCE
 
 
 ### Image sizes
- * Article image: 870x440 px
+
+ * Article image: 870x440 px (not for the image at the top)
  * Thumbnail large: 100x108
  * Thumbnail small: 67x73
 
