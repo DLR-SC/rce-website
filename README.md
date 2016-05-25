@@ -11,7 +11,7 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 * Install Pelican and supporting libraries
 
   ```
-pip install 4
+pip install pelican
 pip install markdown
 pip install fabric
 pip install ghp-import
