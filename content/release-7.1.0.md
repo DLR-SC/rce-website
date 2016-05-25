@@ -20,10 +20,17 @@ When workflows use many components, they get quite big. For keeping track of the
 
 ![Photo]({attach}images/release-7.1/outline_view.png)
 
+### Canceling of Component Runs
+
+It is now possible, to cancel integrated components, the Script component and the Cluster component during their execution. This can be useful, if a script or tool runs for a very long time, but it is already clear that the results won't be valid for example. You can then cancel the worfklow and save resources and time.
+
+![Photo]({attach}images/release-7.1/canceled.png)
+
 ### SSH Remote Access Improvements
 
 The SSH Remote Access was extended with the feature to use key file authentication. 
 Secondly, it is now possible to use published workflows via the remote access.
+
 
 ### Component Improvements
 
