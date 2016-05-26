@@ -17,10 +17,14 @@ pip install fabric
 pip install ghp-import
 ```
 
- * Clone rce-website
+* Clone rce-website
 
   ```
 git clone https://github.com/DLR-SC/rce-website
+```
+  or
+  ```
+git clone git@github.com:DLR-SC/rce-website.git
 ```
 * Change to ```rce-website/```
 
