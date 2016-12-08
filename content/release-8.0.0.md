@@ -2,7 +2,6 @@ Title: RCE 8.0
 Date: 2016-12-06 13:19
 Category: Releases
 Author: RCE
-Image: images/release-8.0.0/article-image.png
 
 We are proud to announce a new major release: RCE 8 - Red Snapper. It contains several new features and many improvements. Below is a selection of some features. Please see [GitHub](https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases) for the full changelog.
 
