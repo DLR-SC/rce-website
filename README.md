@@ -11,48 +11,50 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 * Install Pelican and supporting libraries
 
   ```
-pip install pelican
-pip install markdown
-pip install fabric
-pip install ghp-import
-```
+  pip install pelican
+  pip install markdown
+  pip install fabric
+  pip install ghp-import
+  ```
 
 * Clone rce-website
 
   ```
-git clone https://github.com/DLR-SC/rce-website
-```
+  git clone https://github.com/DLR-SC/rce-website
+  ```
   or
   ```
-git clone git@github.com:DLR-SC/rce-website.git
-```
-* Change to ```rce-website/```
+  git clone git@github.com:DLR-SC/rce-website.git
+  ```
+* Change to 
+  ```
+  rce-website/
+  ```
 
 ### Configuration
 
  * Set proper port for local testing which works on your machine in `fabfile.py`
-
   ```
-# Port for `serve`
-PORT = 8001
-```
+  # Port for `serve`
+  PORT = 8001
+  ```
 
 ## Build 
 
- * Generate website 
+* Generate website 
   ```
-fab build
-```
+  fab build
+  ```
 
- * Start local server for testing (accessible via http://localhost:[port]/)
+* Start local server for testing (accessible via http://localhost:[port]/)
   ```
-fab serve
-```
+  fab serve
+  ```
 
- * Convenience target for rebuild and starting local server
+* Convenience target for rebuild and starting local server
   ```
-fab reserve
-```
+  fab reserve
+  ```
 
 ## Deployment
 
