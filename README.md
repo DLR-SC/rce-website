@@ -58,6 +58,11 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 
 ## Deployment
 
+Deploy to github pages with
+  ```
+  fab gh_pages
+  ```
+
 ## Writing Content
 
 Use either [Markdown](http://daringfireball.net/projects/markdown/) or HTML for new articles, as described in [Writing content](http://docs.getpelican.com/en/3.6.3/content.html).
