@@ -72,16 +72,6 @@
 	<div class="pre-loader">
 		<div class="spinner"></div>
 	</div>
-
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-  		var js, fjs = d.getElementsByTagName(s)[0];
-  		if (d.getElementById(id)) return;
-  		js = d.createElement(s); js.id = id;
-  		js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.4&appId=173613849366965";
-  		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
 	<span id="page-top"></span>
 	<!-- Main Menu -->
 	<div class="main-menu-container navbar-fixed-top-">
@@ -188,10 +178,10 @@
 								<p>We are proud to announce a new major release: RCE 8 - Red Snapper. It contains several new features and many improvements. Below is a selection of some of them. Please see <a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases">GitHub</a> for the full changelog.</p>
 <h3>Manual Verification of Tool Results</h3>
 <p>In collaborative workflows, the tools involved are contributed by different persons and usually run at different sites within one organization or even accross multiple organizations. Tool results are passed from one tool to all succeeding ones. In a collaborative setup, one want to avoid passing wrong tool results to tools that belong to another person in order to avoid a waste of compute resources at another site. To allow a tool integrator to check tool results before they are passed to another tool, we have introduced the concept of manual verification of tool results. If enabled, the tool results are only passed to other tools if the tool integrator has approved them.</p>
-<p><img alt="Photo" src="http://rcenvironment.de/images/release-8.0.0/result_verification.png" /></p>
+<p><img alt="Photo" src="http://rcenvironment.de/images/release-8.0.0/result_verification.png"></p>
 <h3>Enhanced Workflow Editor</h3>
 <p>In order to prevent overlapping of small elements by larger ones, we have added a z-index ordering for workflow components and labels. Workflow labels can have a header now and we added automatic word wrap. If a workflow file is opened from the workflow data browser a read-only version of the workflow editor is opened now. It allows the comprehension of the workflow and the component configurations without the chance to modify it by mistake. Furthermore, enabling and disabling the so called 'Tool Run Imitation Mode' can be done with the help of the context menu now.</p>
-<p><img alt="Photo" src="http://rcenvironment.de/images/release-8.0.0/read_only_editor.png" /></p>
+<p><img alt="Photo" src="http://rcenvironment.de/images/release-8.0.0/read_only_editor.png"></p>
 <h3>Enhanced Nested Loop Support</h3>
 <p>RCE is capable of running workflows with nested loops. The creation of nested loops got easier. An additional connection beetween the workflow driver components (indicating whether the loop is terminated) is not required anymore. Furthermore, for each input and output of workflow driver components the information is given whether they are supposed to be connected to the loop driven by this workflow driver component or to the next upper loop.</p>
 <h3>Enhanced Workflow Components</h3>
