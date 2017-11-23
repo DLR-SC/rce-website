@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE</title><link href="http://rcenvironment.de/" rel="alternate"></link><link href="http://rcenvironment.de/feeds/all.atom.xml" rel="self"></link><id>http://rcenvironment.de/</id><updated>2017-07-14T13:53:00+02:00</updated><entry><title>RCE 8.1</title><link href="http://rcenvironment.de/rce-81.html" rel="alternate"></link><published>2017-07-14T13:53:00+02:00</published><updated>2017-07-14T13:53:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-07-14:/rce-81.html</id><summary type="html">&lt;p&gt;We just released RCE 8.1, which contains several new features and improvements. Here we present a selection of new features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE</title><link href="http://rcenvironment.de/" rel="alternate"></link><link href="http://rcenvironment.de/feeds/all.atom.xml" rel="self"></link><id>http://rcenvironment.de/</id><updated>2017-11-17T12:15:00+01:00</updated><entry><title>RCE 8.1.1</title><link href="http://rcenvironment.de/rce-811.html" rel="alternate"></link><published>2017-11-17T12:15:00+01:00</published><updated>2017-11-17T12:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-11-17:/rce-811.html</id><summary type="html">&lt;p&gt;We recently released RCE 8.1.1. It contains several bugfixes and minor improvements. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;h3&gt;Synopsis&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Internal improvements to enhance building RCE as external developer&lt;/li&gt;
+&lt;li&gt;Fixed some bugs regarding fault tolerant loops, SSH remote access and CPACS tool integration&lt;/li&gt;
+&lt;li&gt;Several minor fixes&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;p&gt;We recently released RCE 8.1.1. It contains several bugfixes and minor improvements. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;h3&gt;Synopsis&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Internal improvements to enhance building RCE as external developer&lt;/li&gt;
+&lt;li&gt;Fixed some bugs regarding fault tolerant loops, SSH remote access and CPACS tool integration&lt;/li&gt;
+&lt;li&gt;Several minor fixes&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>RCE 8.1</title><link href="http://rcenvironment.de/rce-81.html" rel="alternate"></link><published>2017-07-14T13:53:00+02:00</published><updated>2017-07-14T13:53:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-07-14:/rce-81.html</id><summary type="html">&lt;p&gt;We just released RCE 8.1, which contains several new features and improvements. Here we present a selection of new features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Workflow Editor&lt;/h3&gt;
 &lt;p&gt;In RCE 8.1, bidirectional connections between components are now depicted by separate connection lines, which allows a better overview …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We just released RCE 8.1, which contains several new features and improvements. Here we present a selection of new features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Workflow Editor&lt;/h3&gt;
