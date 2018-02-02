@@ -14,6 +14,4 @@ In this release we added a new workflow component: XML Values. This component al
 
 ### Exporting directly to projects
 
-* As a usability improvement we made it easier to export your data into projects. In the Workflow Data Browser simulation results can now be exported directly into a project. In the Output Writer component projects can be configured as the root location.
-
-* As a usability improvement we made it easier to export your data directly into projects. This comes into effect in the export of simulation results from the Workflow Data Browser and when writing data via the Output Writer component.
+As a usability improvement we made it easier to export your data directly into projects. This comes into effect in the export of simulation results from the Workflow Data Browser and when writing data via the Output Writer component.
