@@ -178,7 +178,7 @@ a:focus{
 }
 .background-bg {
 	background-attachment: fixed;
-	background-position: left top;
+	background-position: center;
 	background-repeat: repeat-y;
 	background-size: cover;
 }
