@@ -8,14 +8,7 @@ Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.
 &lt;p&gt;In this release we added a new workflow component: XML Values. This component allows you to easily access the content of XML files. Values can be inserted into a file or extracted from a file using the XPath notation as known from other components in RCE. Moreover the XPath chooser dialog was enhanced.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-8.2.0/xmlValues.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Exporting directly to projects&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;As a usability improvement we made it easier to export your data into projects. In the Workflow Data Browser simulation results can now be exported directly into a project. In the Output Writer component projects can be configured as the root location.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;As a usability improvement we made it easier to export your data directly into projects. This comes into effect in the export of simulation results from the Workflow Data Browser and when writing data via the Output Writer component.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>RCE 8.1.1</title><link href="http://rcenvironment.de/rce-811.html" rel="alternate"></link><published>2017-11-17T12:15:00+01:00</published><updated>2017-11-17T12:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-11-17:/rce-811.html</id><summary type="html">&lt;p&gt;We recently released RCE 8.1.1. It contains several bugfixes and minor improvements. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;p&gt;As a usability improvement we made it easier to export your data directly into projects. This comes into effect in the export of simulation results from the Workflow Data Browser and when writing data via the Output Writer component.&lt;/p&gt;</content></entry><entry><title>RCE 8.1.1</title><link href="http://rcenvironment.de/rce-811.html" rel="alternate"></link><published>2017-11-17T12:15:00+01:00</published><updated>2017-11-17T12:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-11-17:/rce-811.html</id><summary type="html">&lt;p&gt;We recently released RCE 8.1.1. It contains several bugfixes and minor improvements. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Synopsis&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Internal improvements to enhance building RCE as external developer&lt;/li&gt;
