@@ -26,7 +26,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Simulation and Software Technology', 'http://www.dlr.de/sc'),
-         ('Impressum', 'http://www.dlr.de/dlr/desktopdefault.aspx/tabid-10067/149_read-17/'),)
+         ('Imprint', 'https://www.dlr.de/dlr/en/desktopdefault.aspx/tabid-10067/149_read-17/'),)
 
 # Social widget
 SOCIAL = (('Twitter', 'https://twitter.com/RCEnvironment'),
