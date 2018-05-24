@@ -21,5 +21,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "rcenvironment"
-GOOGLE_ANALYTICS = "UA-25164892-2"
+# DISQUS_SITENAME = "rcenvironment"
+# GOOGLE_ANALYTICS = "UA-25164892-2"
