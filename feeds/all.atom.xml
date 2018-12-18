@@ -21,7 +21,7 @@ Moreover, tools can be assigned to the pre-defined "public" group, which models 
 The command &lt;code&gt;wf details&lt;/code&gt; lists detailed statistics for a workflow execution including its current status, the workflow controller used, and the number of executions of each component.
 When using the RCE GUI, the workflow execution can also be inspected via the command &lt;code&gt;wf open&lt;/code&gt;, which opens a graphical view displaying the number of executions and the current state of each component.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-9.0.0/wfdetails.png"&gt;&lt;/p&gt;
-&lt;h3&gt;Robustness Against Network Outages&lt;/h3&gt;
+&lt;h3&gt;Robustness Against Network Outages and High CPU Load&lt;/h3&gt;
 &lt;p&gt;In previous versions of RCE, all systems running any component of a distributed workflow had to be available both at the start of the workflow as well as during the whole duration of the workflow execution.
 Otherwise, i.e., if any machine involved became unavailable or unresponsive at any point during the execution of the workflow, the whole execution was canceled.
 With RCE 9.0, this is no longer the case:
