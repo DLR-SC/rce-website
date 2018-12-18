@@ -33,7 +33,7 @@ When using the RCE GUI, the workflow execution can also be inspected via the com
 
 ![Photo]({attach}images/release-9.0.0/wfdetails.png)
 
-### Robustness Against Network Outages
+### Robustness Against Network Outages and High CPU Load
 
 In previous versions of RCE, all systems running any component of a distributed workflow had to be available both at the start of the workflow as well as during the whole duration of the workflow execution.
 Otherwise, i.e., if any machine involved became unavailable or unresponsive at any point during the execution of the workflow, the whole execution was canceled.
