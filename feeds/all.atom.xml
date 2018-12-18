@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE</title><link href="http://rcenvironment.de/" rel="alternate"></link><link href="http://rcenvironment.de/feeds/all.atom.xml" rel="self"></link><id>http://rcenvironment.de/</id><updated>2018-12-04T14:00:00+01:00</updated><entry><title>RCE 8.2.4</title><link href="http://rcenvironment.de/rce-824.html" rel="alternate"></link><published>2018-12-04T14:00:00+01:00</published><updated>2018-12-04T14:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-12-04:/rce-824.html</id><summary type="html">&lt;p&gt;RCE 8.2.4 is out now. Unfortunately, as part of the security improvements in 8.2.3, a bug regarding long filenames slipped in. This is fixed in this release.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE</title><link href="http://rcenvironment.de/" rel="alternate"></link><link href="http://rcenvironment.de/feeds/all.atom.xml" rel="self"></link><id>http://rcenvironment.de/</id><updated>2018-12-17T14:00:00+01:00</updated><entry><title>RCE 9.0.0 beta</title><link href="http://rcenvironment.de/rce-900-beta.html" rel="alternate"></link><published>2018-12-17T14:00:00+01:00</published><updated>2018-12-17T14:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-12-17:/rce-900-beta.html</id><summary type="html">&lt;p&gt;We recently released a public beta version of RCE 9.0, which includes new features as well as improvements to existing ones.
+In the following, we give an overview over the highlights of this version.
+A full changelog will, as usual, be available together with the final release.&lt;/p&gt;
+&lt;p&gt;Being a …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We recently released a public beta version of RCE 9.0, which includes new features as well as improvements to existing ones.
+In the following, we give an overview over the highlights of this version.
+A full changelog will, as usual, be available together with the final release.&lt;/p&gt;
+&lt;p&gt;Being a beta version of the forthcoming RCE 9.0, this version contains nearly all functionality which is planned to be included in the full release.
+The documentation and the graphical interface, however, are not yet finished and are due to change before the release in early 2019.&lt;/p&gt;
+&lt;p&gt;Implementing the new features of RCE 9.0 required significant changes to the way the user profiles are stored.
+Hence, depending on your configuration, some manual steps may be necessary when upgrading existing profiles.
+If you would like to reinstate these settings, please consult the &lt;a href="pages/documentation/migration-guide.html"&gt;&lt;strong&gt;Migration Guide&lt;/strong&gt;&lt;/a&gt;.
+Moreover, the same changes required raising the minimal required Java version to Java 8u161.&lt;/p&gt;
+&lt;h3&gt;New Authorization System&lt;/h3&gt;
+&lt;p&gt;RCE now features a fine-grained publication system that allows granting access to published tools only to certain users.
+While previously, a published tool was accessible to all instances in the same RCE network, users can now create so-called "Authorization Groups" and restrict access to a published tool to members of certain groups.
+Moreover, tools can be assigned to the pre-defined "public" group, which models the old behavior of making a tool accessible to every visible RCE instance.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-9.0.0/authorization.png"&gt;&lt;/p&gt;
+&lt;h3&gt;New Command Line Commands&lt;/h3&gt;
+&lt;p&gt;We have implemented the new commands &lt;code&gt;wf details&lt;/code&gt; and &lt;code&gt;wf open&lt;/code&gt; to further inspect the execution of a workflow from the command line, e.g., when running RCE in headless mode or accessing an instance via SSH.
+The command &lt;code&gt;wf details&lt;/code&gt; lists detailed statistics for a workflow execution including its current status, the workflow controller used, and the number of executions of each component.
+When using the RCE GUI, the workflow execution can also be inspected via the command &lt;code&gt;wf open&lt;/code&gt;, which opens a graphical view displaying the number of executions and the current state of each component.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-9.0.0/wfdetails.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Robustness Against Network Outages&lt;/h3&gt;
+&lt;p&gt;In previous versions of RCE, all systems running any component of a distributed workflow had to be available both at the start of the workflow as well as during the whole duration of the workflow execution.
+Otherwise, i.e., if any machine involved became unavailable or unresponsive at any point during the execution of the workflow, the whole execution was canceled.
+With RCE 9.0, this is no longer the case:
+The workflow controller now waits for temporarily unavailable machines to reconnect or recover.
+Hence, the workflow execution can recover from temporary network disruptions and periods of high CPU load while executing workflow components.&lt;/p&gt;
+&lt;h3&gt;Enhanced Remote Access via SSH&lt;/h3&gt;
+&lt;p&gt;We have significantly improved the capabilities of SSH connections between RCE instances.
+Previously, only tools and workflows that satisfied strict requirements towards their inputs and outputs could be published via SSH.
+With this new release, these requirements are dropped and all tools that are published in the "public" group (see "New Authorization System" above) are accessible via SSH.
+Moreover, it is possible to publish arbitrary workflows via SSH.&lt;/p&gt;
+&lt;p&gt;Furthermore, SSH connections now support accessing tool documentation and automatically reconnect when a previously interrupted connection becomes available again.
+Finally, canceling a workflow now also cancels all currently running remote tools that are accessed via SSH connections.&lt;/p&gt;
+&lt;h3&gt;Known Issues&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The view "Cluster Job Monitor" does currently not work. This will be fixed in the final release.&lt;/li&gt;
+&lt;li&gt;It is not yet possible to unpublish a deactivated component. We will provide a mechanism to do so in the final release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Please see the &lt;a href="pages/documentation/migration-guide.html"&gt;&lt;strong&gt;Migration Guide&lt;/strong&gt;&lt;/a&gt; for documentation about profile migration to RCE 9.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.4</title><link href="http://rcenvironment.de/rce-824.html" rel="alternate"></link><published>2018-12-04T14:00:00+01:00</published><updated>2018-12-04T14:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-12-04:/rce-824.html</id><summary type="html">&lt;p&gt;RCE 8.2.4 is out now. Unfortunately, as part of the security improvements in 8.2.3, a bug regarding long filenames slipped in. This is fixed in this release.&lt;/p&gt;
 &lt;p&gt;Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</summary><content type="html">&lt;p&gt;RCE 8.2.4 is out now. Unfortunately, as part of the security improvements in 8.2.3, a bug regarding long filenames slipped in. This is fixed in this release.&lt;/p&gt;
 &lt;p&gt;Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.3</title><link href="http://rcenvironment.de/rce-823.html" rel="alternate"></link><published>2018-11-15T16:00:00+01:00</published><updated>2018-11-15T16:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-11-15:/rce-823.html</id><summary type="html">&lt;p&gt;We have just released RCE 8.2.3. It adresses several security issues and significantly reduces the RAM usage of workflow and component hosts. Furthermore, network timeouts in complex workflows during the initialization phase are prevented and we have fixed an issue which did not allow to cancel a workflow …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have just released RCE 8.2.3. It adresses several security issues and significantly reduces the RAM usage of workflow and component hosts. Furthermore, network timeouts in complex workflows during the initialization phase are prevented and we have fixed an issue which did not allow to cancel a workflow during this phase.&lt;/p&gt;
 &lt;p&gt;Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.2</title><link href="http://rcenvironment.de/rce-822.html" rel="alternate"></link><published>2018-05-30T14:15:00+02:00</published><updated>2018-05-30T14:15:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-05-30:/rce-822.html</id><summary type="html">&lt;p&gt;RCE 8.2.2 has been released that fixes an SSH connection issue that occurs due to changes in Java version 8u161.

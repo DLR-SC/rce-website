@@ -125,10 +125,10 @@
 		<div class="overlay">
 			<div class="container">
 				<h2 class="page-title m0">
-					Release 2.3.1 
+					RCE 9.0.0 beta 
 				</h2>
 				<div class="page-location">
-					<a href="http://rcenvironment.de/">Home</a> <a href="#">News</a> <span>Release 2.3.1</span>
+					<a href="http://rcenvironment.de/">Home</a> <a href="#">News</a> <span>RCE 9.0.0 beta</span>
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.overlay -->
@@ -148,7 +148,7 @@
 							</div>
 
 							<h2 class="post-title">
-								<a href="http://rcenvironment.de/release-231.html">Release 2.3.1</a>
+								<a href="http://rcenvironment.de/rce-900-beta.html">RCE 9.0.0 beta</a>
 							</h2> 
 
 							<footer class="entry-meta">
@@ -160,10 +160,10 @@
 								</span>
 								<span class="entry-date">
 									<i class="fa fa-calendar-o"></i>
-									<span class="date">Mo 14 Mai 2012</span>
+									<span class="date">Mo 17 Dezember 2018</span>
 								</span>
 								<span class="comments-link">
-									<a href="http://rcenvironment.de/release-231.html" rel="link">
+									<a href="http://rcenvironment.de/rce-900-beta.html" rel="link">
 										<i class="fa fa-link"></i>
 											Permalink
 									</a>
@@ -176,15 +176,45 @@
 
 							</footer><!-- /.entry-meta --> 
 							<div class="entry">
-								<h3>Changelog</h3>
+								<p>We recently released a public beta version of RCE 9.0, which includes new features as well as improvements to existing ones.
+In the following, we give an overview over the highlights of this version.
+A full changelog will, as usual, be available together with the final release.</p>
+<p>Being a beta version of the forthcoming RCE 9.0, this version contains nearly all functionality which is planned to be included in the full release.
+The documentation and the graphical interface, however, are not yet finished and are due to change before the release in early 2019.</p>
+<p>Implementing the new features of RCE 9.0 required significant changes to the way the user profiles are stored.
+Hence, depending on your configuration, some manual steps may be necessary when upgrading existing profiles.
+If you would like to reinstate these settings, please consult the <a href="pages/documentation/migration-guide.html"><strong>Migration Guide</strong></a>.
+Moreover, the same changes required raising the minimal required Java version to Java 8u161.</p>
+<h3>New Authorization System</h3>
+<p>RCE now features a fine-grained publication system that allows granting access to published tools only to certain users.
+While previously, a published tool was accessible to all instances in the same RCE network, users can now create so-called "Authorization Groups" and restrict access to a published tool to members of certain groups.
+Moreover, tools can be assigned to the pre-defined "public" group, which models the old behavior of making a tool accessible to every visible RCE instance.</p>
+<p><img alt="Photo" src="http://rcenvironment.de/images/release-9.0.0/authorization.png"></p>
+<h3>New Command Line Commands</h3>
+<p>We have implemented the new commands <code>wf details</code> and <code>wf open</code> to further inspect the execution of a workflow from the command line, e.g., when running RCE in headless mode or accessing an instance via SSH.
+The command <code>wf details</code> lists detailed statistics for a workflow execution including its current status, the workflow controller used, and the number of executions of each component.
+When using the RCE GUI, the workflow execution can also be inspected via the command <code>wf open</code>, which opens a graphical view displaying the number of executions and the current state of each component.</p>
+<p><img alt="Photo" src="http://rcenvironment.de/images/release-9.0.0/wfdetails.png"></p>
+<h3>Robustness Against Network Outages</h3>
+<p>In previous versions of RCE, all systems running any component of a distributed workflow had to be available both at the start of the workflow as well as during the whole duration of the workflow execution.
+Otherwise, i.e., if any machine involved became unavailable or unresponsive at any point during the execution of the workflow, the whole execution was canceled.
+With RCE 9.0, this is no longer the case:
+The workflow controller now waits for temporarily unavailable machines to reconnect or recover.
+Hence, the workflow execution can recover from temporary network disruptions and periods of high CPU load while executing workflow components.</p>
+<h3>Enhanced Remote Access via SSH</h3>
+<p>We have significantly improved the capabilities of SSH connections between RCE instances.
+Previously, only tools and workflows that satisfied strict requirements towards their inputs and outputs could be published via SSH.
+With this new release, these requirements are dropped and all tools that are published in the "public" group (see "New Authorization System" above) are accessible via SSH.
+Moreover, it is possible to publish arbitrary workflows via SSH.</p>
+<p>Furthermore, SSH connections now support accessing tool documentation and automatically reconnect when a previously interrupted connection becomes available again.
+Finally, canceling a workflow now also cancels all currently running remote tools that are accessed via SSH connections.</p>
+<h3>Known Issues</h3>
 <ul>
-<li>added support for sorting in workflow data management browser</li>
-<li>added support for data export to Excel in parametric study component</li>
-<li>unified configuration tabs in parametric and optimizer runtime graphical user interface</li>
-<li>restored "goal" option when editing variable in optimizer component configuration</li>
-<li>fixed start up validator for JSON configuration files</li>
-<li>fixed minor build infrastructure issues </li>
-</ul>  
+<li>The view "Cluster Job Monitor" does currently not work. This will be fixed in the final release.</li>
+<li>It is not yet possible to unpublish a deactivated component. We will provide a mechanism to do so in the final release.</li>
+</ul>
+<hr>
+<p>Please see the <a href="pages/documentation/migration-guide.html"><strong>Migration Guide</strong></a> for documentation about profile migration to RCE 9.</p>  
 							</div><!-- /.entry --> 
 						</article>
 
