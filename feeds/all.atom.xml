@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>RCE</title><link href="http://rcenvironment.de/" rel="alternate"></link><link href="http://rcenvironment.de/feeds/all.atom.xml" rel="self"></link><id>http://rcenvironment.de/</id><updated>2019-03-13T14:00:00+01:00</updated><entry><title>RCE 9.0</title><link href="http://rcenvironment.de/rce-90.html" rel="alternate"></link><published>2019-03-13T14:00:00+01:00</published><updated>2019-03-13T14:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2019-03-13:/rce-90.html</id><summary type="html">&lt;p&gt;We recently released RCE 9.0, which includes new features as well as improvements to existing ones.
-In the following, we give an overview over the highlights of this version.&lt;/p&gt;
-&lt;p&gt;Implementing the new features of RCE 9.0 required significant changes to the way the user profiles are stored.
-Hence …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We recently released RCE 9.0, which includes new features as well as improvements to existing ones.
-In the following, we give an overview over the highlights of this version.&lt;/p&gt;
+In the following, we give an overview over the highlights of this version.
+Please see &lt;a href="https://github.com/rcenvironment/rce/releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;p&gt;Implementing the new features of RCE 9.0 required significant changes to the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We recently released RCE 9.0, which includes new features as well as improvements to existing ones.
+In the following, we give an overview over the highlights of this version.
+Please see &lt;a href="https://github.com/rcenvironment/rce/releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;p&gt;Implementing the new features of RCE 9.0 required significant changes to the way the user profiles are stored.
 Hence, depending on your configuration, some manual steps may be necessary when upgrading existing profiles.
 If you would like to reinstate these settings, please consult the &lt;a href="pages/documentation/migration-guide.html"&gt;&lt;strong&gt;Migration Guide&lt;/strong&gt;&lt;/a&gt;.
@@ -53,7 +54,7 @@ Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.
 &lt;ul&gt;
 &lt;li&gt;Fixed a bug in the Optimizer component when using bounds of data type Vector&lt;/li&gt;
 &lt;li&gt;Minor internal fixes and improvements&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>RCE 8.2.0</title><link href="http://rcenvironment.de/rce-820.html" rel="alternate"></link><published>2018-02-02T10:15:00+01:00</published><updated>2018-02-02T10:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-02-02:/rce-820.html</id><summary type="html">&lt;p&gt;RCE 8.2 is out now. We realized various new features and improvements. Here we present a selection.
+&lt;/ul&gt;</content></entry><entry><title>RCE 8.2</title><link href="http://rcenvironment.de/rce-82.html" rel="alternate"></link><published>2018-02-02T10:15:00+01:00</published><updated>2018-02-02T10:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-02-02:/rce-82.html</id><summary type="html">&lt;p&gt;RCE 8.2 is out now. We realized various new features and improvements. Here we present a selection.
 Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;XML Values&lt;/h3&gt;
 &lt;p&gt;In this release we added a new workflow component: XML Values. This component allows you to easily access the content of XML files …&lt;/p&gt;</summary><content type="html">&lt;p&gt;RCE 8.2 is out now. We realized various new features and improvements. Here we present a selection.
