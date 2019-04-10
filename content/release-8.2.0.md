@@ -1,4 +1,4 @@
-Title: RCE 8.2.0
+Title: RCE 8.2
 Date: 2018-02-02 10:15
 Category: Releases
 Author: RCE

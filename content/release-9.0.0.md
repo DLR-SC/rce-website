@@ -5,6 +5,7 @@ Author: RCE
 
 We recently released RCE 9.0, which includes new features as well as improvements to existing ones.
 In the following, we give an overview over the highlights of this version.
+Please see [GitHub](https://github.com/rcenvironment/rce/releases) for the full changelog.
 
 Implementing the new features of RCE 9.0 required significant changes to the way the user profiles are stored.
 Hence, depending on your configuration, some manual steps may be necessary when upgrading existing profiles.
