@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE - Releases</title><link href="http://rcenvironment.de/" rel="alternate"></link><link href="http://rcenvironment.de/feeds/releases.atom.xml" rel="self"></link><id>http://rcenvironment.de/</id><updated>2019-03-13T14:00:00+01:00</updated><entry><title>RCE 9.0</title><link href="http://rcenvironment.de/rce-90.html" rel="alternate"></link><published>2019-03-13T14:00:00+01:00</published><updated>2019-03-13T14:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2019-03-13:/rce-90.html</id><summary type="html">&lt;p&gt;We recently released RCE 9.0, which includes new features as well as improvements to existing ones.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE - Releases</title><link href="https://rcenvironment.de/" rel="alternate"></link><link href="https://rcenvironment.de/feeds/releases.atom.xml" rel="self"></link><id>https://rcenvironment.de/</id><updated>2019-03-13T14:00:00+01:00</updated><entry><title>RCE 9.0</title><link href="https://rcenvironment.de/rce-90.html" rel="alternate"></link><published>2019-03-13T14:00:00+01:00</published><updated>2019-03-13T14:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2019-03-13:/rce-90.html</id><summary type="html">&lt;p&gt;We recently released RCE 9.0, which includes new features as well as improvements to existing ones.
 In the following, we give an overview over the highlights of this version.
 Please see &lt;a href="https://github.com/rcenvironment/rce/releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;p&gt;Implementing the new features of RCE 9.0 required significant changes to the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We recently released RCE 9.0, which includes new features as well as improvements to existing ones.
@@ -14,7 +14,7 @@ Moreover, the same changes required raising the minimal required Java version to
 While previously, a published tool was accessible to all instances in the same RCE network, users can now create so-called "Authorization Groups" and restrict access to a published tool to members of certain groups.
 Moreover, tools can be assigned to the pre-defined "public" group, which models the old behavior of making a tool accessible to every visible RCE instance.
 The Authorization Groups are managed via the new Component Publishing view.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-9.0.0/authorization.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-9.0.0/authorization.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Enhanced Remote Access via SSH&lt;/h3&gt;
 &lt;p&gt;We have significantly improved the capabilities of SSH connections between RCE instances.
 Previously, only tools and workflows that satisfied strict requirements towards their inputs and outputs could be published via SSH.
@@ -27,7 +27,7 @@ Finally, canceling a workflow now also cancels all currently running remote tool
 The command &lt;code&gt;wf details&lt;/code&gt; lists detailed statistics for a workflow execution including its current status, the workflow controller used, and the number of executions of each component.
 When using the RCE GUI, the workflow execution can also be inspected via the command &lt;code&gt;wf open&lt;/code&gt;, which opens a graphical view displaying the number of executions and the current state of each component.&lt;/p&gt;
 &lt;p&gt;Moreover, we have implemented the commands &lt;code&gt;auth&lt;/code&gt;, &lt;code&gt;auth create&lt;/code&gt;, &lt;code&gt;auth delete&lt;/code&gt;, &lt;code&gt;auth import&lt;/code&gt;, &lt;code&gt;auth export&lt;/code&gt;, and &lt;code&gt;auth list&lt;/code&gt; to manage the creation and distribution of Authorization Groups (see ''New Authorization System'' above). For more information on these new commands, please refer to the &lt;a href="pages/documentation/documentation.html"&gt;user guide&lt;/a&gt; or the built-in help system of the command console.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-9.0.0/wfdetails.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-9.0.0/wfdetails.png"&gt;&lt;/p&gt;
 &lt;h3&gt;New Naming Rules for Tools, Versions, and Group Names&lt;/h3&gt;
 &lt;p&gt;In order to improve cross-platform support for tools and to simplify internal handling, we have added strict validation of tool names and versions as well as group names. Existing tools that violate these rules are automatically deactivated and have to be activated before becoming available again.&lt;/p&gt;
 &lt;h3&gt;Robustness Against Network Outages and High CPU Load&lt;/h3&gt;
@@ -37,12 +37,12 @@ With RCE 9.0, this is no longer the case:
 The workflow controller now waits for temporarily unavailable machines to reconnect or recover.
 Hence, the workflow execution can recover from temporary network disruptions and periods of high CPU load while executing workflow components.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Please see the &lt;a href="pages/documentation/migration-guide.html"&gt;&lt;strong&gt;Migration Guide&lt;/strong&gt;&lt;/a&gt; for documentation about profile migration to RCE 9.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.4</title><link href="http://rcenvironment.de/rce-824.html" rel="alternate"></link><published>2018-12-04T14:00:00+01:00</published><updated>2018-12-04T14:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-12-04:/rce-824.html</id><summary type="html">&lt;p&gt;RCE 8.2.4 is out now. Unfortunately, as part of the security improvements in 8.2.3, a bug regarding long filenames slipped in. This is fixed in this release.&lt;/p&gt;
+&lt;p&gt;Please see the &lt;a href="pages/documentation/migration-guide.html"&gt;&lt;strong&gt;Migration Guide&lt;/strong&gt;&lt;/a&gt; for documentation about profile migration to RCE 9.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.4</title><link href="https://rcenvironment.de/rce-824.html" rel="alternate"></link><published>2018-12-04T14:00:00+01:00</published><updated>2018-12-04T14:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-12-04:/rce-824.html</id><summary type="html">&lt;p&gt;RCE 8.2.4 is out now. Unfortunately, as part of the security improvements in 8.2.3, a bug regarding long filenames slipped in. This is fixed in this release.&lt;/p&gt;
 &lt;p&gt;Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</summary><content type="html">&lt;p&gt;RCE 8.2.4 is out now. Unfortunately, as part of the security improvements in 8.2.3, a bug regarding long filenames slipped in. This is fixed in this release.&lt;/p&gt;
-&lt;p&gt;Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.3</title><link href="http://rcenvironment.de/rce-823.html" rel="alternate"></link><published>2018-11-15T16:00:00+01:00</published><updated>2018-11-15T16:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-11-15:/rce-823.html</id><summary type="html">&lt;p&gt;We have just released RCE 8.2.3. It adresses several security issues and significantly reduces the RAM usage of workflow and component hosts. Furthermore, network timeouts in complex workflows during the initialization phase are prevented and we have fixed an issue which did not allow to cancel a workflow …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have just released RCE 8.2.3. It adresses several security issues and significantly reduces the RAM usage of workflow and component hosts. Furthermore, network timeouts in complex workflows during the initialization phase are prevented and we have fixed an issue which did not allow to cancel a workflow during this phase.&lt;/p&gt;
-&lt;p&gt;Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.2</title><link href="http://rcenvironment.de/rce-822.html" rel="alternate"></link><published>2018-05-30T14:15:00+02:00</published><updated>2018-05-30T14:15:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-05-30:/rce-822.html</id><summary type="html">&lt;p&gt;RCE 8.2.2 has been released that fixes an SSH connection issue that occurs due to changes in Java version 8u161.
+&lt;p&gt;Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.3</title><link href="https://rcenvironment.de/rce-823.html" rel="alternate"></link><published>2018-11-15T16:00:00+01:00</published><updated>2018-11-15T16:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-11-15:/rce-823.html</id><summary type="html">&lt;p&gt;We have just released RCE 8.2.3. It adresses several security issues and significantly reduces the RAM usage of workflow and component hosts. Furthermore, network timeouts in complex workflows during the initialization phase are prevented and we have fixed an issue which did not allow to cancel a workflow …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have just released RCE 8.2.3. It adresses several security issues and significantly reduces the RAM usage of workflow and component hosts. Furthermore, network timeouts in complex workflows during the initialization phase are prevented and we have fixed an issue which did not allow to cancel a workflow during this phase.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.2</title><link href="https://rcenvironment.de/rce-822.html" rel="alternate"></link><published>2018-05-30T14:15:00+02:00</published><updated>2018-05-30T14:15:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-05-30:/rce-822.html</id><summary type="html">&lt;p&gt;RCE 8.2.2 has been released that fixes an SSH connection issue that occurs due to changes in Java version 8u161.
 Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</summary><content type="html">&lt;p&gt;RCE 8.2.2 has been released that fixes an SSH connection issue that occurs due to changes in Java version 8u161.
-Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.1</title><link href="http://rcenvironment.de/rce-821.html" rel="alternate"></link><published>2018-05-24T14:15:00+02:00</published><updated>2018-05-24T14:15:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-05-24:/rce-821.html</id><summary type="html">&lt;p&gt;RCE 8.2.1 has been released and comes with some improvements and fixes.
+Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;</content></entry><entry><title>RCE 8.2.1</title><link href="https://rcenvironment.de/rce-821.html" rel="alternate"></link><published>2018-05-24T14:15:00+02:00</published><updated>2018-05-24T14:15:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-05-24:/rce-821.html</id><summary type="html">&lt;p&gt;RCE 8.2.1 has been released and comes with some improvements and fixes.
 Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Synopsis&lt;/h3&gt;
 &lt;ul&gt;
@@ -54,16 +54,16 @@ Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.
 &lt;ul&gt;
 &lt;li&gt;Fixed a bug in the Optimizer component when using bounds of data type Vector&lt;/li&gt;
 &lt;li&gt;Minor internal fixes and improvements&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>RCE 8.2</title><link href="http://rcenvironment.de/rce-82.html" rel="alternate"></link><published>2018-02-02T10:15:00+01:00</published><updated>2018-02-02T10:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-02-02:/rce-82.html</id><summary type="html">&lt;p&gt;RCE 8.2 is out now. We realized various new features and improvements. Here we present a selection.
+&lt;/ul&gt;</content></entry><entry><title>RCE 8.2</title><link href="https://rcenvironment.de/rce-82.html" rel="alternate"></link><published>2018-02-02T10:15:00+01:00</published><updated>2018-02-02T10:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2018-02-02:/rce-82.html</id><summary type="html">&lt;p&gt;RCE 8.2 is out now. We realized various new features and improvements. Here we present a selection.
 Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;XML Values&lt;/h3&gt;
 &lt;p&gt;In this release we added a new workflow component: XML Values. This component allows you to easily access the content of XML files …&lt;/p&gt;</summary><content type="html">&lt;p&gt;RCE 8.2 is out now. We realized various new features and improvements. Here we present a selection.
 Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;XML Values&lt;/h3&gt;
 &lt;p&gt;In this release we added a new workflow component: XML Values. This component allows you to easily access the content of XML files. Values can be inserted into a file or extracted from a file using the XPath notation as known from other components in RCE. Moreover the XPath chooser dialog was enhanced.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-8.2.0/xmlValues.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-8.2.0/xmlValues.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Exporting directly to projects&lt;/h3&gt;
-&lt;p&gt;As a usability improvement we made it easier to export your data directly into projects. This comes into effect in the export of simulation results from the Workflow Data Browser and when writing data via the Output Writer component.&lt;/p&gt;</content></entry><entry><title>RCE 8.1.1</title><link href="http://rcenvironment.de/rce-811.html" rel="alternate"></link><published>2017-11-17T12:15:00+01:00</published><updated>2017-11-17T12:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-11-17:/rce-811.html</id><summary type="html">&lt;p&gt;We recently released RCE 8.1.1. It contains several bugfixes and minor improvements. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;p&gt;As a usability improvement we made it easier to export your data directly into projects. This comes into effect in the export of simulation results from the Workflow Data Browser and when writing data via the Output Writer component.&lt;/p&gt;</content></entry><entry><title>RCE 8.1.1</title><link href="https://rcenvironment.de/rce-811.html" rel="alternate"></link><published>2017-11-17T12:15:00+01:00</published><updated>2017-11-17T12:15:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-11-17:/rce-811.html</id><summary type="html">&lt;p&gt;We recently released RCE 8.1.1. It contains several bugfixes and minor improvements. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Synopsis&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Internal improvements to enhance building RCE as external developer&lt;/li&gt;
@@ -75,41 +75,41 @@ Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.
 &lt;li&gt;Internal improvements to enhance building RCE as external developer&lt;/li&gt;
 &lt;li&gt;Fixed some bugs regarding fault tolerant loops, SSH remote access and CPACS tool integration&lt;/li&gt;
 &lt;li&gt;Several minor fixes&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>RCE 8.1</title><link href="http://rcenvironment.de/rce-81.html" rel="alternate"></link><published>2017-07-14T13:53:00+02:00</published><updated>2017-07-14T13:53:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-07-14:/rce-81.html</id><summary type="html">&lt;p&gt;We just released RCE 8.1, which contains several new features and improvements. Here we present a selection of new features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;/ul&gt;</content></entry><entry><title>RCE 8.1</title><link href="https://rcenvironment.de/rce-81.html" rel="alternate"></link><published>2017-07-14T13:53:00+02:00</published><updated>2017-07-14T13:53:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2017-07-14:/rce-81.html</id><summary type="html">&lt;p&gt;We just released RCE 8.1, which contains several new features and improvements. Here we present a selection of new features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Workflow Editor&lt;/h3&gt;
 &lt;p&gt;In RCE 8.1, bidirectional connections between components are now depicted by separate connection lines, which allows a better overview …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We just released RCE 8.1, which contains several new features and improvements. Here we present a selection of new features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Workflow Editor&lt;/h3&gt;
 &lt;p&gt;In RCE 8.1, bidirectional connections between components are now depicted by separate connection lines, which allows a better overview over the workflow. Also we enhanced the zooming capabilities of the workflow editor and added the capability to export workflows as images.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-8.1.0/bidirectional_connections.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-8.1.0/bidirectional_connections.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Enhanced Workflow Components&lt;/h3&gt;
 &lt;p&gt;We made enhancements to several workflow components: 
 For all driver componennt, start values can be declared as constant. In the DOE Component, it is now possible to define a custom table as start input.&lt;/p&gt;
 &lt;h3&gt;Startup&lt;/h3&gt;
-&lt;p&gt;We added a dialog for selecting the profile to start RCE with. Furthermore we reduced the disk activity on startup to allow a more efficient start of RCE.&lt;/p&gt;</content></entry><entry><title>RCE 8.0</title><link href="http://rcenvironment.de/rce-80.html" rel="alternate"></link><published>2016-12-06T13:19:00+01:00</published><updated>2016-12-06T13:19:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2016-12-06:/rce-80.html</id><summary type="html">&lt;p&gt;We are proud to announce a new major release: RCE 8 - Red Snapper. It contains several new features and many improvements. Below is a selection of some of them. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;p&gt;We added a dialog for selecting the profile to start RCE with. Furthermore we reduced the disk activity on startup to allow a more efficient start of RCE.&lt;/p&gt;</content></entry><entry><title>RCE 8.0</title><link href="https://rcenvironment.de/rce-80.html" rel="alternate"></link><published>2016-12-06T13:19:00+01:00</published><updated>2016-12-06T13:19:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2016-12-06:/rce-80.html</id><summary type="html">&lt;p&gt;We are proud to announce a new major release: RCE 8 - Red Snapper. It contains several new features and many improvements. Below is a selection of some of them. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Manual Verification of Tool Results&lt;/h3&gt;
 &lt;p&gt;In collaborative workflows, the tools involved are contributed by …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are proud to announce a new major release: RCE 8 - Red Snapper. It contains several new features and many improvements. Below is a selection of some of them. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-8.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Manual Verification of Tool Results&lt;/h3&gt;
 &lt;p&gt;In collaborative workflows, the tools involved are contributed by different persons and usually run at different sites within one organization or even accross multiple organizations. Tool results are passed from one tool to all succeeding ones. In a collaborative setup, one want to avoid passing wrong tool results to tools that belong to another person in order to avoid a waste of compute resources at another site. To allow a tool integrator to check tool results before they are passed to another tool, we have introduced the concept of manual verification of tool results. If enabled, the tool results are only passed to other tools if the tool integrator has approved them.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-8.0.0/result_verification.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-8.0.0/result_verification.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Enhanced Workflow Editor&lt;/h3&gt;
 &lt;p&gt;In order to prevent overlapping of small elements by larger ones, we have added a z-index ordering for workflow components and labels. Workflow labels can have a header now and we added automatic word wrap. If a workflow file is opened from the workflow data browser a read-only version of the workflow editor is opened now. It allows the comprehension of the workflow and the component configurations without the chance to modify it by mistake. Furthermore, enabling and disabling the so called 'Tool Run Imitation Mode' can be done with the help of the context menu now.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-8.0.0/read_only_editor.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-8.0.0/read_only_editor.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Enhanced Nested Loop Support&lt;/h3&gt;
 &lt;p&gt;RCE is capable of running workflows with nested loops. The creation of nested loops got easier. An additional connection beetween the workflow driver components (indicating whether the loop is terminated) is not required anymore. Furthermore, for each input and output of workflow driver components the information is given whether they are supposed to be connected to the loop driven by this workflow driver component or to the next upper loop.&lt;/p&gt;
 &lt;h3&gt;Enhanced Workflow Components&lt;/h3&gt;
 &lt;p&gt;We have made several enhancements to workflow components such as:&lt;/p&gt;
-&lt;p&gt;The evaluation memory component is nested-loop-capable now. We have added a validation for the python executable location given by the user at workflow start for Script components. The Design of Experiments component has a new output that provides the number of design sets going to be sent.&lt;/p&gt;</content></entry><entry><title>RCE 7.1</title><link href="http://rcenvironment.de/rce-71.html" rel="alternate"></link><published>2016-05-24T15:00:00+02:00</published><updated>2016-05-24T15:00:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2016-05-24:/rce-71.html</id><summary type="html">&lt;p&gt;We recently released RCE 7.1, a new minor version with several new features and many improvements. Below is a selection of some features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+&lt;p&gt;The evaluation memory component is nested-loop-capable now. We have added a validation for the python executable location given by the user at workflow start for Script components. The Design of Experiments component has a new output that provides the number of design sets going to be sent.&lt;/p&gt;</content></entry><entry><title>RCE 7.1</title><link href="https://rcenvironment.de/rce-71.html" rel="alternate"></link><published>2016-05-24T15:00:00+02:00</published><updated>2016-05-24T15:00:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2016-05-24:/rce-71.html</id><summary type="html">&lt;p&gt;We recently released RCE 7.1, a new minor version with several new features and many improvements. Below is a selection of some features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Unified Access to Documentation in RCE&lt;/h3&gt;
 &lt;p&gt;Documentation of RCE is spread over different places: component documentation is accessible from …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We recently released RCE 7.1, a new minor version with several new features and many improvements. Below is a selection of some features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Unified Access to Documentation in RCE&lt;/h3&gt;
 &lt;p&gt;Documentation of RCE is spread over different places: component documentation is accessible from the workflow editor, documentation about tool integration is accessible from the tool integration dialog, and the user guide in PDF format. We introduced a new help system to make all of the documentation additionally accessible from one single place. Go to the menu bar under "Help -&amp;gt; Help Contents". A window opens with all of the documentation and nice navigation and search capabilities.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7.1/help_system.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7.1/help_system.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Workflow Outline View&lt;/h3&gt;
 &lt;p&gt;Workflows with many components get quite big. For keeping track of those workflows, we added a new outline view. It displays the complete workflow in a thumbnail format and highlights the area of the workflow which is currently shown in the workflow editor.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7.1/outline_view.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7.1/outline_view.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Enhanced Workflow Canceling&lt;/h3&gt;
 &lt;p&gt;In case a workflow is canceled (by the user or after a failure in the workflow), integrated tools as well as running Python scripts (executed by the Script component) are canceled imediately. It is no longer waited until they terminate itself. Also, jobs submitted to a cluster (by the Cluster component) are canceled imediately. In case of long running tools, scripts or cluster jobs, compute time is saved now.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7.1/canceled.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7.1/canceled.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Extended SSH Remote Access&lt;/h3&gt;
 &lt;p&gt;RCE provides an SSH interface to execute components and workflows (among others). Next to username and password, authentication via key files is now supported. Also, when connecting an RCE client to another RCE instance via SSH, not only remotely published components can be used in workflows, but also remotely published workflows appear in the workflow component palette ready to use in workflows.&lt;/p&gt;
 &lt;h3&gt;Enhanced Workflow Components&lt;/h3&gt;
@@ -117,26 +117,26 @@ For all driver componennt, start values can be declared as constant. In the DOE 
 &lt;p&gt;The mapping file required by the XML Merger can be sent as an input. This makes reloading the mapping file on each change obsolete.&lt;br&gt;
 The Evaluation Memory can be used in fault-tolerant loops as it is now able to treat loop failures properly.
 The behavior of the Converger can be defined in case convergence was not reached. Also, outputs are added which indicate convergence for every input separately.
-The Output Writer supports new placeholders: "original filename" and "execution count".  &lt;/p&gt;</content></entry><entry><title>RCE 7</title><link href="http://rcenvironment.de/rce-7.html" rel="alternate"></link><published>2015-12-01T15:00:00+01:00</published><updated>2015-12-01T15:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-12-01:/rce-7.html</id><summary type="html">&lt;p&gt;We are proud to announce RCE 7. A major release with a lot of features and various improvements. Below you find a selection of some features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
+The Output Writer supports new placeholders: "original filename" and "execution count".  &lt;/p&gt;</content></entry><entry><title>RCE 7</title><link href="https://rcenvironment.de/rce-7.html" rel="alternate"></link><published>2015-12-01T15:00:00+01:00</published><updated>2015-12-01T15:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-12-01:/rce-7.html</id><summary type="html">&lt;p&gt;We are proud to announce RCE 7. A major release with a lot of features and various improvements. Below you find a selection of some features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Remote Tool Access via SSH Connections&lt;/h3&gt;
 &lt;p&gt;To access and execute tools across untrusted networks, we added support …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are proud to announce RCE 7. A major release with a lot of features and various improvements. Below you find a selection of some features. Please see &lt;a href="https://github.com/rcenvironment/rce/wiki/Changelog:-7.x.x-Releases"&gt;GitHub&lt;/a&gt; for the full changelog.&lt;/p&gt;
 &lt;h3&gt;Remote Tool Access via SSH Connections&lt;/h3&gt;
 &lt;p&gt;To access and execute tools across untrusted networks, we added support for tool access and execution via SSH, a secure network protocol. Please note that otherwise RCE is intended to be used in trusted networks only. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7/ssh_connections.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7/ssh_connections.png"&gt;&lt;/p&gt;
 &lt;p&gt;Passwords for SSH accounts are configured as non-recoverable ("hashed") format now. We added a special configuration interface for SSH accounts ("rce --configure"). To support editing SSH accounts on servers, this UI can also be run in text mode.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7/ssh-account_config.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7/ssh-account_config.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Enhanced Workflow Logging&lt;/h3&gt;
 &lt;p&gt;We reviewed and improved all of the workflow-related log messages. We made them more suitable for end users. A log file is stored for each workflow component. Additionally, a log file for each workflow is stored with all of the error log messages related to the workflow. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7/workflow_logging.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7/workflow_logging.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Enhanced Workflow Examples&lt;/h3&gt;
 &lt;p&gt;We reworked the workflow examples so that they function as a kind of tutorial now.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7/workflow_examples.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7/workflow_examples.png"&gt;&lt;/p&gt;
 &lt;h3&gt;New Workflow Components&lt;/h3&gt;
 &lt;p&gt;We added two new workflow components. The 'Database' workflow component supports select, insert, update, and delete statements for MySQL and PostgreSQL databases. The 'Evaluation Memory' workflow component stores evaluation results of workflows for later re-use.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7/new_workflow_components.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7/new_workflow_components.png"&gt;&lt;/p&gt;
 &lt;h3&gt;System Monitoring for RCE Instances&lt;/h3&gt;
 &lt;p&gt;We added support for system monitoring. Information about CPU and RAM usage are provided: for the host system, for RCE itself, and for each each tool that is executed by RCE. The information can even be accessed for remote RCE instances.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo" src="http://rcenvironment.de/images/release-7/system_monitoring_and_ssh.png"&gt;&lt;/p&gt;</content></entry><entry><title>Release 6.3.0</title><link href="http://rcenvironment.de/release-630.html" rel="alternate"></link><published>2015-07-29T10:20:00+02:00</published><updated>2015-07-29T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-07-29:/release-630.html</id><summary type="html">&lt;h2&gt;Synopsis&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Photo" src="https://rcenvironment.de/images/release-7/system_monitoring_and_ssh.png"&gt;&lt;/p&gt;</content></entry><entry><title>Release 6.3.0</title><link href="https://rcenvironment.de/release-630.html" rel="alternate"></link><published>2015-07-29T10:20:00+02:00</published><updated>2015-07-29T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-07-29:/release-630.html</id><summary type="html">&lt;h2&gt;Synopsis&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;This release fixes a security issue; users that run components on untrusted machines should upgrade to 6.3.0 as soon as possible&lt;/li&gt;
 &lt;li&gt;Various minor bugfixes and improvements&lt;/li&gt;
@@ -189,7 +189,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Increased the heap size setting for RCE instances running on 32-bit Java by 20%&lt;/li&gt;
 &lt;li&gt;Various minor bugfixes and improvements&lt;/li&gt;
 &lt;li&gt;Reduced debug log output volume to make it easier to inspect&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 6.2.1</title><link href="http://rcenvironment.de/release-621.html" rel="alternate"></link><published>2015-06-24T10:20:00+02:00</published><updated>2015-06-24T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-06-24:/release-621.html</id><summary type="html">&lt;h2&gt;Synopsis&lt;/h2&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 6.2.1</title><link href="https://rcenvironment.de/release-621.html" rel="alternate"></link><published>2015-06-24T10:20:00+02:00</published><updated>2015-06-24T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-06-24:/release-621.html</id><summary type="html">&lt;h2&gt;Synopsis&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Fixed broken directory structure for files and directories, which are received as input values by the script component and by integrated tools&lt;/li&gt;
 &lt;li&gt;Removed reliably XSLT mapping files from working directories of integrated CPACS tools (in some cases they are left)&lt;/li&gt;
@@ -199,7 +199,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Removed reliably XSLT mapping files from working directories of integrated CPACS tools (in some cases they are left)&lt;/li&gt;
 &lt;li&gt;Endpoints can be deleted again even if they are currently connected&lt;/li&gt;
 &lt;li&gt;Due to some issues, the renaming option for files and directories received by integrated tools is removed (it is always "-As incoming-" now) &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 6.2.0</title><link href="http://rcenvironment.de/release-620.html" rel="alternate"></link><published>2015-06-12T10:20:00+02:00</published><updated>2015-06-12T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-06-12:/release-620.html</id><summary type="html">&lt;h2&gt;Synopsis&lt;/h2&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 6.2.0</title><link href="https://rcenvironment.de/release-620.html" rel="alternate"></link><published>2015-06-12T10:20:00+02:00</published><updated>2015-06-12T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-06-12:/release-620.html</id><summary type="html">&lt;h2&gt;Synopsis&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Improved usability of various graphical user elements including log messages&lt;/li&gt;
 &lt;li&gt;Extended and improved the access of tools and workflows via SSH (remote access)&lt;/li&gt;
@@ -272,7 +272,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;ul&gt;
 &lt;li&gt;Improved quality assurance by increasing unit test coverage&lt;/li&gt;
 &lt;li&gt;Refactor the code base responsible for loading, mapping, and saving XML files&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 6.1.0</title><link href="http://rcenvironment.de/release-610.html" rel="alternate"></link><published>2015-04-16T10:20:00+02:00</published><updated>2015-04-16T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-04-16:/release-610.html</id><summary type="html">&lt;h3&gt;Workflow Components&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 6.1.0</title><link href="https://rcenvironment.de/release-610.html" rel="alternate"></link><published>2015-04-16T10:20:00+02:00</published><updated>2015-04-16T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-04-16:/release-610.html</id><summary type="html">&lt;h3&gt;Workflow Components&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added new component: Switch &lt;ul&gt;
 &lt;li&gt;Directs data on the base of a condition to one of two outputs &lt;/li&gt;
@@ -377,22 +377,22 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Reduced callback attempts of a workflow component if its workflow controller is not reachable anymore; reduced number of error messages in the log&lt;/li&gt;
 &lt;li&gt;Increased the automated test coverage (especially, workflow engine, data management, workflow components)&lt;/li&gt;
 &lt;li&gt;Generation of "Output/autoExportOnStartup.json" is now optional (default: off) &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 6.0.3</title><link href="http://rcenvironment.de/release-603.html" rel="alternate"></link><published>2015-02-03T10:20:00+01:00</published><updated>2015-02-03T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-02-03:/release-603.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 6.0.3</title><link href="https://rcenvironment.de/release-603.html" rel="alternate"></link><published>2015-02-03T10:20:00+01:00</published><updated>2015-02-03T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-02-03:/release-603.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Reduced heap size (declared in rce.ini) for Windows 32bit version of RCE&lt;/li&gt;
 &lt;li&gt;Added configuration parameter for RCE profiles to the windows service installation script &lt;/li&gt;
 &lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;Reduced heap size (declared in rce.ini) for Windows 32bit version of RCE&lt;/li&gt;
 &lt;li&gt;Added configuration parameter for RCE profiles to the windows service installation script &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 6.0.2</title><link href="http://rcenvironment.de/release-602.html" rel="alternate"></link><published>2015-01-28T10:20:00+01:00</published><updated>2015-01-28T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-01-28:/release-602.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 6.0.2</title><link href="https://rcenvironment.de/release-602.html" rel="alternate"></link><published>2015-01-28T10:20:00+01:00</published><updated>2015-01-28T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-01-28:/release-602.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Fixed tool integration wizard, which failed to integrate a tool under some certain circumstances&lt;/li&gt;
 &lt;li&gt;Converger and optimizer component sent value, whether the loop was converged/optimized on each iteration again (In 6.0.0 and 6.0.1, it was sent only once at the end as loop was converged …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;Fixed tool integration wizard, which failed to integrate a tool under some certain circumstances&lt;/li&gt;
 &lt;li&gt;Converger and optimizer component sent value, whether the loop was converged/optimized on each iteration again (In 6.0.0 and 6.0.1, it was sent only once at the end as loop was converged/optimized) &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 6.0.1</title><link href="http://rcenvironment.de/release-601.html" rel="alternate"></link><published>2015-01-22T10:20:00+01:00</published><updated>2015-01-22T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-01-22:/release-601.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 6.0.1</title><link href="https://rcenvironment.de/release-601.html" rel="alternate"></link><published>2015-01-22T10:20:00+01:00</published><updated>2015-01-22T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-01-22:/release-601.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Fixed scheduling of script component - problem occured if it was enabled, that the script component should run on each new input value &lt;/li&gt;
 &lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;Fixed scheduling of script component - problem occured if it was enabled, that the script component should run on each new input value &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 6.0.0</title><link href="http://rcenvironment.de/release-600.html" rel="alternate"></link><published>2015-01-15T10:20:00+01:00</published><updated>2015-01-15T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-01-15:/release-600.html</id><summary type="html">&lt;h3&gt;Workflow Editor&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 6.0.0</title><link href="https://rcenvironment.de/release-600.html" rel="alternate"></link><published>2015-01-15T10:20:00+01:00</published><updated>2015-01-15T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2015-01-15:/release-600.html</id><summary type="html">&lt;h3&gt;Workflow Editor&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Components in a workflow can now be temporarily disabled: during workflow execution, these components and all their connections are treated as if they didn't exist&lt;/li&gt;
 &lt;li&gt;Added an option to show the number of connections represented by a line between two components&lt;/li&gt;
@@ -519,11 +519,11 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;On RCE startup, the last debug.log and warnings.log files are automatically preserved as *.previous.log&lt;/li&gt;
 &lt;li&gt;Various bugfixes&lt;/li&gt;
 &lt;li&gt;Various usability tweaks &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 5.2.1</title><link href="http://rcenvironment.de/release-521.html" rel="alternate"></link><published>2014-08-29T10:20:00+02:00</published><updated>2014-08-29T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-08-29:/release-521.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 5.2.1</title><link href="https://rcenvironment.de/release-521.html" rel="alternate"></link><published>2014-08-29T10:20:00+02:00</published><updated>2014-08-29T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-08-29:/release-521.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Fixed error when integrating a tool using a template of type 'Common' &lt;/li&gt;
 &lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;Fixed error when integrating a tool using a template of type 'Common' &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 5.2.0</title><link href="http://rcenvironment.de/release-520.html" rel="alternate"></link><published>2014-08-25T10:20:00+02:00</published><updated>2014-08-25T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-08-25:/release-520.html</id><summary type="html">&lt;h3&gt;General&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 5.2.0</title><link href="https://rcenvironment.de/release-520.html" rel="alternate"></link><published>2014-08-25T10:20:00+02:00</published><updated>2014-08-25T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-08-25:/release-520.html</id><summary type="html">&lt;h3&gt;General&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Improved clean up of RCE's temp directory &lt;/li&gt;
 &lt;/ul&gt;
@@ -574,7 +574,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;ul&gt;
 &lt;li&gt;Improved documentation of string security filter&lt;/li&gt;
 &lt;li&gt;Added documentation for placeholder value files used in headless mode &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 5.1.0</title><link href="http://rcenvironment.de/release-510.html" rel="alternate"></link><published>2014-07-25T10:20:00+02:00</published><updated>2014-07-25T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-07-25:/release-510.html</id><summary type="html">&lt;h3&gt;GUI&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 5.1.0</title><link href="https://rcenvironment.de/release-510.html" rel="alternate"></link><published>2014-07-25T10:20:00+02:00</published><updated>2014-07-25T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-07-25:/release-510.html</id><summary type="html">&lt;h3&gt;GUI&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added a view to execute RCE console commands&lt;/li&gt;
 &lt;li&gt;Added miscellaneous context menu entries for faster access to key features (such as integrating a new tool or creating the workflow examples project)&lt;/li&gt;
@@ -635,13 +635,13 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Added contextual help for all workflow components&lt;/li&gt;
 &lt;li&gt;Removed the standard Eclipse platform's help content from the integrated help center and replaced it with information about RCE's user guide&lt;/li&gt;
 &lt;li&gt;Extended the user guide with help for integrating tools in RCE &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 5.0.2</title><link href="http://rcenvironment.de/release-502.html" rel="alternate"></link><published>2014-06-26T10:20:00+02:00</published><updated>2014-06-26T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-06-26:/release-502.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 5.0.2</title><link href="https://rcenvironment.de/release-502.html" rel="alternate"></link><published>2014-06-26T10:20:00+02:00</published><updated>2014-06-26T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-06-26:/release-502.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Some fixes regarding the optimizer component &lt;/li&gt;
 &lt;li&gt;Minor fixes &lt;/li&gt;
 &lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;Some fixes regarding the optimizer component &lt;/li&gt;
 &lt;li&gt;Minor fixes &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 5.0.1</title><link href="http://rcenvironment.de/release-501.html" rel="alternate"></link><published>2014-06-12T10:20:00+02:00</published><updated>2014-06-12T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-06-12:/release-501.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 5.0.1</title><link href="https://rcenvironment.de/release-501.html" rel="alternate"></link><published>2014-06-12T10:20:00+02:00</published><updated>2014-06-12T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-06-12:/release-501.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Some fixes regarding the deletion of workflows&lt;/li&gt;
 &lt;li&gt;Some fixes regarding connections (auto-connect, copy&amp;amp;paste, ...)&lt;/li&gt;
 &lt;li&gt;Provided dynamic help in script component again &lt;/li&gt;
@@ -649,7 +649,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Some fixes regarding the deletion of workflows&lt;/li&gt;
 &lt;li&gt;Some fixes regarding connections (auto-connect, copy&amp;amp;paste, ...)&lt;/li&gt;
 &lt;li&gt;Provided dynamic help in script component again &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 5.0.0</title><link href="http://rcenvironment.de/release-500.html" rel="alternate"></link><published>2014-05-15T10:20:00+02:00</published><updated>2014-05-15T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-05-15:/release-500.html</id><summary type="html">&lt;h3&gt;Workflow components&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 5.0.0</title><link href="https://rcenvironment.de/release-500.html" rel="alternate"></link><published>2014-05-15T10:20:00+02:00</published><updated>2014-05-15T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-05-15:/release-500.html</id><summary type="html">&lt;h3&gt;Workflow components&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added an "Output Writer" component to write directories and files to the local file system &lt;/li&gt;
 &lt;li&gt;Optimizer&lt;ul&gt;
@@ -717,7 +717,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Switched to Java 7 (i.e., Java 7 or higher is required to execute RCE 5.0.0 and above)&lt;/li&gt;
 &lt;li&gt;Added a separate log file that only lists warnings and errors (warnings.log)&lt;/li&gt;
 &lt;li&gt;The location of the instance data directory (including the data management's storage) can now be freely configured; it is no longer restricted to be inside "&lt;user home&gt;/.rce" &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 4.2.0</title><link href="http://rcenvironment.de/release-420.html" rel="alternate"></link><published>2014-02-07T10:20:00+01:00</published><updated>2014-02-07T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-02-07:/release-420.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 4.2.0</title><link href="https://rcenvironment.de/release-420.html" rel="alternate"></link><published>2014-02-07T10:20:00+01:00</published><updated>2014-02-07T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2014-02-07:/release-420.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Added documentation for user and developer (see new documentation folder)&lt;/li&gt;
 &lt;li&gt;implemented IP whitelisting&lt;/li&gt;
 &lt;li&gt;implemented automatic network reconnect&lt;/li&gt;
@@ -731,7 +731,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;made upload block size configurable (see user guide)&lt;/li&gt;
 &lt;li&gt;added service/daemon scripts including installation scripts&lt;/li&gt;
 &lt;li&gt;General tweaks and bugfixes &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 4.1.0</title><link href="http://rcenvironment.de/release-410.html" rel="alternate"></link><published>2013-12-20T10:20:00+01:00</published><updated>2013-12-20T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-12-20:/release-410.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 4.1.0</title><link href="https://rcenvironment.de/release-410.html" rel="alternate"></link><published>2013-12-20T10:20:00+01:00</published><updated>2013-12-20T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-12-20:/release-410.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Component connections can now be directly selected and deleted in the workflow editor (required using the connection dialog before)&lt;/li&gt;
 &lt;li&gt;Improved automatic behaviour when connecting components in the editor&lt;/li&gt;
 &lt;li&gt;Improved handling of special cases in data management browser&lt;/li&gt;
@@ -744,7 +744,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Improved SSH command interface&lt;/li&gt;
 &lt;li&gt;Renamed embedded SSH server configuration file&lt;/li&gt;
 &lt;li&gt;General tweaks and bugfixes &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 4.0.1</title><link href="http://rcenvironment.de/release-401.html" rel="alternate"></link><published>2013-12-04T10:20:00+01:00</published><updated>2013-12-04T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-12-04:/release-401.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 4.0.1</title><link href="https://rcenvironment.de/release-401.html" rel="alternate"></link><published>2013-12-04T10:20:00+01:00</published><updated>2013-12-04T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-12-04:/release-401.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Fixed two issues missed in release testing&lt;ul&gt;
 &lt;li&gt;Restored configuration tabs for deprecated Simple Wrapper component&lt;/li&gt;
 &lt;li&gt;Restored context help for workflow components &lt;/li&gt;
@@ -756,7 +756,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Restored context help for workflow components &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 4.0.0</title><link href="http://rcenvironment.de/release-400.html" rel="alternate"></link><published>2013-11-29T10:20:00+01:00</published><updated>2013-11-29T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-11-29:/release-400.html</id><summary type="html">&lt;h3&gt;GUI&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 4.0.0</title><link href="https://rcenvironment.de/release-400.html" rel="alternate"></link><published>2013-11-29T10:20:00+01:00</published><updated>2013-11-29T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-11-29:/release-400.html</id><summary type="html">&lt;h3&gt;GUI&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added a wizard to simplify the creation of new workflows&lt;/li&gt;
 &lt;li&gt;Extended Network view&lt;ul&gt;
@@ -824,7 +824,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Improved internal event handling&lt;/li&gt;
 &lt;li&gt;Shortened path length of temporary files&lt;/li&gt;
 &lt;li&gt;General tweaks, bugfixes and performance improvements &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 3.2.0</title><link href="http://rcenvironment.de/release-320.html" rel="alternate"></link><published>2013-09-24T10:20:00+02:00</published><updated>2013-09-24T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-09-24:/release-320.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 3.2.0</title><link href="https://rcenvironment.de/release-320.html" rel="alternate"></link><published>2013-09-24T10:20:00+02:00</published><updated>2013-09-24T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-09-24:/release-320.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;improved handling of long-lasting remote component initializations&lt;/li&gt;
 &lt;li&gt;fixed validation errors not showing up in log&lt;/li&gt;
@@ -859,7 +859,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;minor usability improvements&lt;/li&gt;
 &lt;li&gt;improved test code coverage&lt;/li&gt;
 &lt;li&gt;various other bug fixes &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 3.1.0</title><link href="http://rcenvironment.de/release-310.html" rel="alternate"></link><published>2013-08-27T10:20:00+02:00</published><updated>2013-08-27T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-08-27:/release-310.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 3.1.0</title><link href="https://rcenvironment.de/release-310.html" rel="alternate"></link><published>2013-08-27T10:20:00+02:00</published><updated>2013-08-27T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-08-27:/release-310.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Fixed bug regarding boolean values sent within a workflow (workflow components always retrieved 'false' even the previous component sent 'true')&lt;/li&gt;
 &lt;li&gt;Added support for workflow control from within scripts executed with the Script component again&lt;/li&gt;
@@ -869,7 +869,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;Added support for workflow control from within scripts executed with the Script component again&lt;/li&gt;
 &lt;li&gt;GUI misc: mark GUI elements red if validation error exists (instead of yellow which is meant for validation warnings)&lt;/li&gt;
 &lt;li&gt;internal: added example workflow components demonstrating how to develop a RCE workflow component &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 3.0.0</title><link href="http://rcenvironment.de/release-300.html" rel="alternate"></link><published>2013-08-02T10:20:00+02:00</published><updated>2013-08-02T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-08-02:/release-300.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 3.0.0</title><link href="https://rcenvironment.de/release-300.html" rel="alternate"></link><published>2013-08-02T10:20:00+02:00</published><updated>2013-08-02T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-08-02:/release-300.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added support for remote upload of large files&lt;/li&gt;
 &lt;li&gt;Unified data types of input values and output values which are used by workflow components (Note: all workflow files created with RCE &amp;lt; 3.0.0 will be updated by RCE when opening them for the first time)&lt;/li&gt;
@@ -891,13 +891,13 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;More minor improvements &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.5.2</title><link href="http://rcenvironment.de/release-252.html" rel="alternate"></link><published>2013-06-21T10:20:00+02:00</published><updated>2013-06-21T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-06-21:/release-252.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.5.2</title><link href="https://rcenvironment.de/release-252.html" rel="alternate"></link><published>2013-06-21T10:20:00+02:00</published><updated>2013-06-21T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-06-21:/release-252.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;fixed problem in Excel component: it occurred if the Excel component was run in a distributed scenario &lt;/li&gt;
 &lt;/ul&gt;</summary><content type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;fixed problem in Excel component: it occurred if the Excel component was run in a distributed scenario &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.5.1</title><link href="http://rcenvironment.de/release-251.html" rel="alternate"></link><published>2013-06-10T10:20:00+02:00</published><updated>2013-06-10T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-06-10:/release-251.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.5.1</title><link href="https://rcenvironment.de/release-251.html" rel="alternate"></link><published>2013-06-10T10:20:00+02:00</published><updated>2013-06-10T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-06-10:/release-251.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;extended Converger component to add support for nested loops&lt;/li&gt;
 &lt;li&gt;added workflow status icons to workflow runtime tab&lt;/li&gt;
@@ -915,7 +915,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;fixed start up validators&lt;/li&gt;
 &lt;li&gt;added validation to the workflow connection editor: it prohibts a connection between an input and more than one output (this would result in scheduling problems)&lt;/li&gt;
 &lt;li&gt;minor fixes &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.5.0</title><link href="http://rcenvironment.de/release-250.html" rel="alternate"></link><published>2013-04-05T10:20:00+02:00</published><updated>2013-04-05T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-04-05:/release-250.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.5.0</title><link href="https://rcenvironment.de/release-250.html" rel="alternate"></link><published>2013-04-05T10:20:00+02:00</published><updated>2013-04-05T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-04-05:/release-250.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;A new component for submitting cluster jobs was added&lt;/li&gt;
 &lt;li&gt;Major rework of the optimizer component&lt;ul&gt;
@@ -938,7 +938,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;added data type array to merger component&lt;/li&gt;
 &lt;li&gt;passphrases for runtime configurations are stored in secure storage&lt;/li&gt;
 &lt;li&gt;minor GUI improvement and fixes &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.4.2</title><link href="http://rcenvironment.de/release-242.html" rel="alternate"></link><published>2013-03-13T10:20:00+01:00</published><updated>2013-03-13T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-03-13:/release-242.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.4.2</title><link href="https://rcenvironment.de/release-242.html" rel="alternate"></link><published>2013-03-13T10:20:00+01:00</published><updated>2013-03-13T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-03-13:/release-242.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added new workflow component "Input Provider": user can define input values for other components, like text, numbers, or files&lt;/li&gt;
 &lt;li&gt;improved workflow editor handling&lt;ul&gt;
@@ -965,7 +965,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;/li&gt;
 &lt;li&gt;improved error handling in Simple Wrapper component&lt;/li&gt;
 &lt;li&gt;reworked and extended RCE console commands (e.g., added one for version information) &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.4.1</title><link href="http://rcenvironment.de/release-241.html" rel="alternate"></link><published>2013-01-23T10:20:00+01:00</published><updated>2013-01-23T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-01-23:/release-241.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.4.1</title><link href="https://rcenvironment.de/release-241.html" rel="alternate"></link><published>2013-01-23T10:20:00+01:00</published><updated>2013-01-23T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2013-01-23:/release-241.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added boolean channeltype in Python component&lt;/li&gt;
 &lt;li&gt;added mechanism to support wildcard entries in publishedComponents configuration&lt;/li&gt;
@@ -981,7 +981,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;fixed various bugs in SimpleWrapper component (i.e. regarding the use of input channels in pre/post process)&lt;/li&gt;
 &lt;li&gt;fixed bug in converger&lt;/li&gt;
 &lt;li&gt;minor fixes and improvements &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.4.0</title><link href="http://rcenvironment.de/release-240.html" rel="alternate"></link><published>2012-12-17T10:20:00+01:00</published><updated>2012-12-17T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-12-17:/release-240.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.4.0</title><link href="https://rcenvironment.de/release-240.html" rel="alternate"></link><published>2012-12-17T10:20:00+01:00</published><updated>2012-12-17T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-12-17:/release-240.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Major rework of the network/communication system; changes include:&lt;ul&gt;
 &lt;li&gt;significant performance improvements&lt;/li&gt;
@@ -1005,7 +1005,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;cleaned up graphical user interface on very first start of RCE&lt;/li&gt;
 &lt;li&gt;fixed "Simple Wrapper" execution under Linux when using multi-line command configurations created on Windows&lt;/li&gt;
 &lt;li&gt;fixed handling of multiple arrays in Python component &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.8</title><link href="http://rcenvironment.de/release-238.html" rel="alternate"></link><published>2012-11-13T10:20:00+01:00</published><updated>2012-11-13T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-11-13:/release-238.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.8</title><link href="https://rcenvironment.de/release-238.html" rel="alternate"></link><published>2012-11-13T10:20:00+01:00</published><updated>2012-11-13T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-11-13:/release-238.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;add updating mechanism for workflow files containing at least one Python component (it is not upwards compatible)&lt;/li&gt;
 &lt;li&gt;fixed bug in Simple Wrapper component (occurred if used as first component within an workflow)&lt;/li&gt;
@@ -1017,7 +1017,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;fixed bug in Simple Wrapper component (occurred if used as first component within an workflow)&lt;/li&gt;
 &lt;li&gt;fixed bug in Python component regarding array inputs&lt;/li&gt;
 &lt;li&gt;fixed bug in SQL component regarding array inputs &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.7</title><link href="http://rcenvironment.de/release-237.html" rel="alternate"></link><published>2012-11-07T10:20:00+01:00</published><updated>2012-11-07T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-11-07:/release-237.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.7</title><link href="https://rcenvironment.de/release-237.html" rel="alternate"></link><published>2012-11-07T10:20:00+01:00</published><updated>2012-11-07T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-11-07:/release-237.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added new concept for sensitive workflow configuration values&lt;/li&gt;
 &lt;li&gt;re-designed Excel workflow component for stability and usability purposes&lt;/li&gt;
@@ -1034,7 +1034,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;fixed bug in input inspection view, which caused the GUI to freeze&lt;/li&gt;
 &lt;li&gt;added sorting in various component listings like workflow execution wizard, connection dialog, input inspection view&lt;/li&gt;
 &lt;li&gt;improved temp file handling in worklfow components to use less memory &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.6</title><link href="http://rcenvironment.de/release-236.html" rel="alternate"></link><published>2012-10-18T10:20:00+02:00</published><updated>2012-10-18T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-10-18:/release-236.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.6</title><link href="https://rcenvironment.de/release-236.html" rel="alternate"></link><published>2012-10-18T10:20:00+02:00</published><updated>2012-10-18T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-10-18:/release-236.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added option to create a workflow examples project (new -&amp;gt; other -&amp;gt; RCE)&lt;/li&gt;
 &lt;li&gt;fixed problems and inaccurate problem descriptions in optimizer component&lt;/li&gt;
@@ -1046,7 +1046,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;fixed problems and inaccurate problem descriptions in optimizer component&lt;/li&gt;
 &lt;li&gt;fixed some gui issues in optimizer component&lt;/li&gt;
 &lt;li&gt;fixed minor issues &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.5</title><link href="http://rcenvironment.de/release-235.html" rel="alternate"></link><published>2012-09-13T10:20:00+02:00</published><updated>2012-09-13T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-09-13:/release-235.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.5</title><link href="https://rcenvironment.de/release-235.html" rel="alternate"></link><published>2012-09-13T10:20:00+02:00</published><updated>2012-09-13T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-09-13:/release-235.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;fixed bug that caused an error in running a distributed workflow&lt;/li&gt;
 &lt;li&gt;fixed bug in merger component&lt;/li&gt;
@@ -1062,7 +1062,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;workflow data browser nodes can now be deleted&lt;/li&gt;
 &lt;li&gt;removed context menu entries for sorting of entries in workflow data browser&lt;/li&gt;
 &lt;li&gt;ixed minor issues &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.4</title><link href="http://rcenvironment.de/release-234.html" rel="alternate"></link><published>2012-08-10T10:20:00+02:00</published><updated>2012-08-10T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-08-10:/release-234.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.4</title><link href="https://rcenvironment.de/release-234.html" rel="alternate"></link><published>2012-08-10T10:20:00+02:00</published><updated>2012-08-10T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-08-10:/release-234.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added Design of Experiments component (test state)&lt;/li&gt;
 &lt;li&gt;added sorting order for workflow data browser&lt;/li&gt;
@@ -1080,7 +1080,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;textfields for commands in sql and simplewrapper component now resize when view gets resized&lt;/li&gt;
 &lt;li&gt;connection lines now use anti-aliasing&lt;/li&gt;
 &lt;li&gt;fixed minor issues &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.3</title><link href="http://rcenvironment.de/release-233.html" rel="alternate"></link><published>2012-07-04T10:20:00+02:00</published><updated>2012-07-04T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-07-04:/release-233.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.3</title><link href="https://rcenvironment.de/release-233.html" rel="alternate"></link><published>2012-07-04T10:20:00+02:00</published><updated>2012-07-04T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-07-04:/release-233.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added Converger component (test state)&lt;/li&gt;
 &lt;li&gt;added Merger component (test state)&lt;/li&gt;
@@ -1097,7 +1097,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;fixed input queue view showing pending inputs of components (shows input in wrong order if a lot of inputs were sent within a short time)&lt;/li&gt;
 &lt;li&gt;fixed deleting in- and output variables in Excel component&lt;/li&gt;
 &lt;li&gt;fixed minor issues &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.2</title><link href="http://rcenvironment.de/release-232.html" rel="alternate"></link><published>2012-06-14T10:20:00+02:00</published><updated>2012-06-14T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-06-14:/release-232.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.2</title><link href="https://rcenvironment.de/release-232.html" rel="alternate"></link><published>2012-06-14T10:20:00+02:00</published><updated>2012-06-14T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-06-14:/release-232.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added support for RCE headless mode: workflow execution without GUI&lt;/li&gt;
 &lt;li&gt;added workspace chooser at RCE start up&lt;/li&gt;
@@ -1115,7 +1115,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;extended start up validators: length of parent file system path, JVM settings&lt;/li&gt;
 &lt;li&gt;fixed copying of workflow nodes: copied workflow node is a real new clone now. Thus, workflow nodes don't receive configuration values of other nodes anymore)&lt;/li&gt;
 &lt;li&gt;fixed minor issues &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.1</title><link href="http://rcenvironment.de/release-231.html" rel="alternate"></link><published>2012-05-14T10:20:00+02:00</published><updated>2012-05-14T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-05-14:/release-231.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.1</title><link href="https://rcenvironment.de/release-231.html" rel="alternate"></link><published>2012-05-14T10:20:00+02:00</published><updated>2012-05-14T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-05-14:/release-231.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added support for sorting in workflow data management browser&lt;/li&gt;
 &lt;li&gt;added support for data export to Excel in parametric study component&lt;/li&gt;
@@ -1129,7 +1129,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;restored "goal" option when editing variable in optimizer component configuration&lt;/li&gt;
 &lt;li&gt;fixed start up validator for JSON configuration files&lt;/li&gt;
 &lt;li&gt;fixed minor build infrastructure issues &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.3.0</title><link href="http://rcenvironment.de/release-230.html" rel="alternate"></link><published>2012-04-19T10:20:00+02:00</published><updated>2012-04-19T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-04-19:/release-230.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.3.0</title><link href="https://rcenvironment.de/release-230.html" rel="alternate"></link><published>2012-04-19T10:20:00+02:00</published><updated>2012-04-19T10:20:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-04-19:/release-230.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added optimizer component (currently for Windows only)&lt;ul&gt;
 &lt;li&gt;Black-box optimization with Dakota&lt;/li&gt;
@@ -1176,7 +1176,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;added support for independent RCE editions &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.2.5</title><link href="http://rcenvironment.de/release-225.html" rel="alternate"></link><published>2012-02-08T10:20:00+01:00</published><updated>2012-02-08T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-02-08:/release-225.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.2.5</title><link href="https://rcenvironment.de/release-225.html" rel="alternate"></link><published>2012-02-08T10:20:00+01:00</published><updated>2012-02-08T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-02-08:/release-225.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added Simple Wrapper component (0006339, 0007079)&lt;/li&gt;
 &lt;li&gt;fixed Excel component: refresh formula after insertion of data (0007033)&lt;/li&gt;
@@ -1195,7 +1195,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;improved workflow editor: add grouping to component list (0007078)&lt;/li&gt;
 &lt;li&gt;improved Pioneer component to serve as a showcase for new GUI features (0006961, 0007029, 0006855)&lt;/li&gt;
 &lt;li&gt;improved SQL command component icon (0007022) &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.2.4</title><link href="http://rcenvironment.de/release-224.html" rel="alternate"></link><published>2012-01-04T10:20:00+01:00</published><updated>2012-01-04T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-01-04:/release-224.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.2.4</title><link href="https://rcenvironment.de/release-224.html" rel="alternate"></link><published>2012-01-04T10:20:00+01:00</published><updated>2012-01-04T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2012-01-04:/release-224.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;fixed unnecessary undo/redo steps in workflow editor (0006897)&lt;/li&gt;
 &lt;li&gt;fixed performance issues when connecting to multiple servers (0006904, 0006900)&lt;/li&gt;
@@ -1215,7 +1215,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;improved "cancel" icon (0006929)&lt;/li&gt;
 &lt;li&gt;removed obsolete "edit additional information" feature (0006775)&lt;/li&gt;
 &lt;li&gt;internal fixes and enhancements (0006902, 0006810) &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.2.3</title><link href="http://rcenvironment.de/release-223.html" rel="alternate"></link><published>2011-12-07T10:20:00+01:00</published><updated>2011-12-07T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2011-12-07:/release-223.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.2.3</title><link href="https://rcenvironment.de/release-223.html" rel="alternate"></link><published>2011-12-07T10:20:00+01:00</published><updated>2011-12-07T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2011-12-07:/release-223.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added automatic IP address detection for RCE clients, with fallback option (0006786, 0006843)&lt;/li&gt;
 &lt;li&gt;added support for placeholders and properties in JSON configuration files (0006818)&lt;/li&gt;
@@ -1225,7 +1225,7 @@ The Output Writer supports new placeholders: "original filename" and "execution 
 &lt;li&gt;added automatic IP address detection for RCE clients, with fallback option (0006786, 0006843)&lt;/li&gt;
 &lt;li&gt;added support for placeholders and properties in JSON configuration files (0006818)&lt;/li&gt;
 &lt;li&gt;internal fixes and enhancements (0006849, 0006687) &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Release 2.2.2</title><link href="http://rcenvironment.de/release-222.html" rel="alternate"></link><published>2011-11-15T10:20:00+01:00</published><updated>2011-11-15T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2011-11-15:/release-222.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>Release 2.2.2</title><link href="https://rcenvironment.de/release-222.html" rel="alternate"></link><published>2011-11-15T10:20:00+01:00</published><updated>2011-11-15T10:20:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2011-11-15:/release-222.html</id><summary type="html">&lt;h3&gt;Changelog&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;added support for xlsx files in Excel (0006760)&lt;/li&gt;
 &lt;li&gt;added jars related to apache.poi (0006759)&lt;/li&gt;
