@@ -6,15 +6,15 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 
 ## Local Installation
 
-* Install Python ([Anaconda](https://store.continuum.io/cshop/anaconda/) works perfectly)
+* Install Python2 ([Anaconda](https://store.continuum.io/cshop/anaconda/) works perfectly)
 
 * Install Pelican and supporting libraries
 
   ```
-  pip install pelican
-  pip install markdown
-  pip install fabric
-  pip install ghp-import
+  pip install pelican==3.7.1
+  pip install markdown==3.1
+  pip install fabric==1.14.1
+  pip install ghp-import==0.4.1
   ```
 
 * Clone rce-website
