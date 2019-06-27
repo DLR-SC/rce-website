@@ -3,6 +3,25 @@ Date: 2018-12-17 10:20
 Author: RCE
 status: hidden
 
+####Migration of TiGL Viewer to RCE 9.1
+
+In the past, TiGL Viewer was delivered together with RCE, which complicated the use of versions other than the one that was bundled with RCE.
+In order to make it easier for users to substitute novel versions of TiGL Viewer, we have decoupled TiGL Viewer and RCE, and made the path used for calling the external executable of TiGL viewer configurable via the well-known `configuration.json` file.
+Since the TiGL Viewer is only available on Windows, this migration only affects users running RCE on Windows and using the TiGL Viewer, either as a component as part of their workflow, or for data analysis during or after the execution of a workflow.
+
+In order to continue using TiGL Viewer in your workflows, please download and install it according to the instructions found at `https://dlr-sc.github.io/tigl/`.
+Subsequently, add the following lines to the top level of your `configuration.json`, which is usually found at `C:\Users\<user name>\.rce\<profile name>`:
+
+    "thirdPartyIntegration": {
+		"tiglViewer" : {
+			"binaryPath" : "<Tigl Viewer Installation Directory>\\tiglViewer.exe"
+		}
+	}
+	
+This constitutes the minimal configuration for the TiGL Viewer to work.
+You may set additional parameters defining the use of the TiGL Viewer in RCE.
+Please refer to the user guide or the reference configuration for more details.
+
 ####Profile migration to RCE 9
 
 As part of the new features introduced with RCE 9.0, we improved the way the RCE profiles are stored.
