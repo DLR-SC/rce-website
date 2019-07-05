@@ -3,14 +3,23 @@ Date: 2018-12-17 10:20
 Author: RCE
 status: hidden
 
+###Content
+####[RCE 9](#rce9)
+####[RCE 8](#rce8)
+
+***
+<a name="rce9"></a>
+
+###RCE 9
+
 ####Migration of TiGL Viewer to RCE 9.1
 
 In the past, TiGL Viewer was delivered together with RCE, which complicated the use of versions other than the one that was bundled with RCE.
 In order to make it easier for users to substitute novel versions of TiGL Viewer, we have decoupled TiGL Viewer and RCE, and made the path used for calling the external executable of TiGL viewer configurable via the well-known `configuration.json` file.
 Since the TiGL Viewer is only available on Windows, this migration only affects users running RCE on Windows and using the TiGL Viewer, either as a component as part of their workflow, or for data analysis during or after the execution of a workflow.
 
-In order to continue using TiGL Viewer in your workflows, please download and install it according to the instructions found at `https://dlr-sc.github.io/tigl/`.
-Subsequently, add the following lines to the top level of your `configuration.json`, which is usually found at `C:\Users\<user name>\.rce\<profile name>`:
+In order to continue using TiGL Viewer in your workflows, please download and install it according to the instructions found at [https://dlr-sc.github.io/tigl/](https://dlr-sc.github.io/tigl/){:target="_blank"}.
+Subsequently, add the following lines to the top level of your `configuration.json`, which is usually found at `<user home>\.rce\<profile name>`:
 
     "thirdPartyIntegration": {
 		"tiglViewer" : {
@@ -21,6 +30,7 @@ Subsequently, add the following lines to the top level of your `configuration.js
 This constitutes the minimal configuration for the TiGL Viewer to work.
 You may set additional parameters defining the use of the TiGL Viewer in RCE.
 Please refer to the user guide or the reference configuration for more details.
+
 
 ####Profile migration to RCE 9
 
@@ -51,3 +61,28 @@ In RCE 9.0, we have introduced the new components `SCP Input Loader` and `SCP Ou
 Since this novel system replaces the older one, you will have to adapt workflows published via SSH to use the new components in order to republish them.
 Please refer to the workflow `05_Remote_Access/Remote_Workflow_Access_Template.wf` for an example how to use the new components.
 More details are available in the user guide.
+
+***
+<a name="rce8"></a>   
+
+###RCE 8
+
+
+####Migration of TiGL Viewer to RCE 8.3
+
+In the past, TiGL Viewer was delivered together with RCE, which complicated the use of versions other than the one that was bundled with RCE.
+In order to make it easier for users to substitute novel versions of TiGL Viewer, we have decoupled TiGL Viewer and RCE, and made the path used for calling the external executable of TiGL viewer configurable via the well-known `configuration.json` file.
+Since the TiGL Viewer is only available on Windows, this migration only affects users running RCE on Windows and using the TiGL Viewer, either as a component as part of their workflow, or for data analysis during or after the execution of a workflow.
+
+In order to continue using TiGL Viewer in your workflows, please download and install it according to the instructions found at [https://dlr-sc.github.io/tigl/](https://dlr-sc.github.io/tigl/){:target="_blank"}.
+Subsequently, add the following lines to the top level of your `configuration.json`, which is usually found at `<user home>\.rce\<profile name>`:
+
+    "thirdPartyIntegration": {
+		"tiglViewer" : {
+			"binaryPath" : "<Tigl Viewer Installation Directory>\\tiglViewer.exe"
+		}
+	}
+	
+This constitutes the minimal configuration for the TiGL Viewer to work.
+You may set additional parameters defining the use of the TiGL Viewer in RCE.
+Please refer to the user guide or the reference configuration for more details.
