@@ -139,7 +139,30 @@
 		<div id="contents"> 
 			<div class="container section-padding"> 
 				<h2 class="section-title">Migration Guide</h2>
-				<h4>Profile migration to RCE 9</h4>
+				<h3>Content</h3>
+<h4><a href="#rce9">RCE 9</a></h4>
+<h4><a href="#rce8">RCE 8</a></h4>
+<hr>
+<p><a name="rce9"></a></p>
+<h3>RCE 9</h3>
+<h4>Migration of TiGL Viewer to RCE 9.1</h4>
+<p>In the past, TiGL Viewer was delivered together with RCE, which complicated the use of versions other than the one that was bundled with RCE.
+In order to make it easier for users to substitute novel versions of TiGL Viewer, we have decoupled TiGL Viewer and RCE, and made the path used for calling the external executable of TiGL viewer configurable via the well-known <code>configuration.json</code> file.
+Since the TiGL Viewer is only available on Windows, this migration only affects users running RCE on Windows and using the TiGL Viewer, either as a component as part of their workflow, or for data analysis during or after the execution of a workflow.</p>
+<p>In order to continue using TiGL Viewer in your workflows, please download and install it according to the instructions found at <a href="https://dlr-sc.github.io/tigl/" target="_blank">https://dlr-sc.github.io/tigl/</a>.
+Subsequently, add the following lines to the top level of your <code>configuration.json</code>, which is usually found at <code>&lt;user home&gt;\.rce\&lt;profile name&gt;</code>:</p>
+<div class="highlight"><pre><span></span>&quot;thirdPartyIntegration&quot;: {
+    &quot;tiglViewer&quot; : {
+        &quot;binaryPath&quot; : &quot;&lt;Tigl Viewer Installation Directory&gt;\\tiglViewer.exe&quot;
+    }
+}
+</pre></div>
+
+
+<p>This constitutes the minimal configuration for the TiGL Viewer to work.
+You may set additional parameters defining the use of the TiGL Viewer in RCE.
+Please refer to the user guide or the reference configuration for more details.</p>
+<h4>Profile migration to RCE 9</h4>
 <p>As part of the new features introduced with RCE 9.0, we improved the way the RCE profiles are stored.
 This, however, precludes us from automatically converting all settings made in user profiles created with older versions to the new format.
 Hence, in order to reinstate the settings made with older versions of RCE, please follow the steps below.</p>
@@ -172,6 +195,26 @@ Please refer to the workflow <code>05_Remote_Access/Remote_Workflow_Access_Templ
 More details are available in the user guide.</p>
 </li>
 </ul>
+<hr>
+<p><a name="rce8"></a>   </p>
+<h3>RCE 8</h3>
+<h4>Migration of TiGL Viewer to RCE 8.3</h4>
+<p>In the past, TiGL Viewer was delivered together with RCE, which complicated the use of versions other than the one that was bundled with RCE.
+In order to make it easier for users to substitute novel versions of TiGL Viewer, we have decoupled TiGL Viewer and RCE, and made the path used for calling the external executable of TiGL viewer configurable via the well-known <code>configuration.json</code> file.
+Since the TiGL Viewer is only available on Windows, this migration only affects users running RCE on Windows and using the TiGL Viewer, either as a component as part of their workflow, or for data analysis during or after the execution of a workflow.</p>
+<p>In order to continue using TiGL Viewer in your workflows, please download and install it according to the instructions found at <a href="https://dlr-sc.github.io/tigl/" target="_blank">https://dlr-sc.github.io/tigl/</a>.
+Subsequently, add the following lines to the top level of your <code>configuration.json</code>, which is usually found at <code>&lt;user home&gt;\.rce\&lt;profile name&gt;</code>:</p>
+<div class="highlight"><pre><span></span>&quot;thirdPartyIntegration&quot;: {
+    &quot;tiglViewer&quot; : {
+        &quot;binaryPath&quot; : &quot;&lt;Tigl Viewer Installation Directory&gt;\\tiglViewer.exe&quot;
+    }
+}
+</pre></div>
+
+
+<p>This constitutes the minimal configuration for the TiGL Viewer to work.
+You may set additional parameters defining the use of the TiGL Viewer in RCE.
+Please refer to the user guide or the reference configuration for more details.</p>
 			</div><!-- /.container -->
 		</div>
 	</section><!-- /#team -->
