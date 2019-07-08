@@ -9,7 +9,7 @@ Please see [GitHub](https://github.com/rcenvironment/rce/releases) for the full 
 
 Implementing the new features of RCE 9.0 required significant changes to the way the user profiles are stored.
 Hence, depending on your configuration, some manual steps may be necessary when upgrading existing profiles.
-If you would like to reinstate these settings, please consult the [**Migration Guide**](pages/documentation/migration-guide.html).
+If you would like to reinstate these settings, please consult the [**Migration Guide**](pages/documentation/migration-guide.html#rce9).
 Moreover, the same changes required raising the minimal required Java version to Java 8u161.
 
 ### New Authorization System
@@ -55,4 +55,4 @@ Hence, the workflow execution can recover from temporary network disruptions and
 
 
 ---
-Please see the [**Migration Guide**](pages/documentation/migration-guide.html) for documentation about profile migration to RCE 9.
+Please see the [**Migration Guide**](pages/documentation/migration-guide.html#rce9) for documentation about profile migration to RCE 9.
