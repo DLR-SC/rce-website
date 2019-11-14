@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RCE - News</title><link href="https://rcenvironment.de/" rel="alternate"></link><link href="https://rcenvironment.de/feeds/news.atom.xml" rel="self"></link><id>https://rcenvironment.de/</id><updated>2019-11-14T14:30:00+01:00</updated><entry><title>Newsletter Launch</title><link href="https://rcenvironment.de/newsletter-launch.html" rel="alternate"></link><published>2019-11-14T14:30:00+01:00</published><updated>2019-11-14T14:30:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2019-11-14:/newsletter-launch.html</id><summary type="html">&lt;p&gt;We are pleased to announce the launch of the RCE Newsletter.
+Via this newsletter we will inform interested users about new releases of RCE, to announce upcoming events, and for general information on current developments.
+You can find instructions for signing up &lt;a href="pages/newsletter.html"&gt;here&lt;/a&gt;.
+We hope this will be a welcome …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are pleased to announce the launch of the RCE Newsletter.
+Via this newsletter we will inform interested users about new releases of RCE, to announce upcoming events, and for general information on current developments.
+You can find instructions for signing up &lt;a href="pages/newsletter.html"&gt;here&lt;/a&gt;.
+We hope this will be a welcome addition to your inbox.&lt;/p&gt;</content></entry></feed>
