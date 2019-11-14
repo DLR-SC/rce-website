@@ -35,16 +35,15 @@
 								CPACS
 							</h2>
 							<p>
-								The <a href="https://cpacs.de/">Common Parametric Aircraft Configuration Schema (CPACS)</a> is a data definition for the air transportation system. 
-								CPACS enables engineers to exchange information between their tools. There are special wrapping functionalities for 
-								CPACS implemented in RCE, making the integration of CPACS compatible tools fairly easy. RCE's CPACS Writer component saves incoming CPACS content as an 
-								xml file on the local file system.
+								The <a href="https://cpacs.de/">Common Parametric Aircraft Configuration Schema (CPACS)</a> is a data format definition for the design and development of air transportation systems.
+								This schema enables engineers to exchange information between their design tools.
+								RCE provides special wrapping functionalities to simplify the integration of tools that use CPACS as their input or output format.
 							</p>
 						</div><!-- /.col-md-6 -->
 
 						<div class="col-md-6">
 							<div class="video-container">
-								<img width="570px" src="images/rce_integration.png"/>
+								<img width="570px" src="images/cpacs.png"/>
 
 							</div>
 						</div><!-- /.col-md-6 -->
@@ -63,9 +62,9 @@
 								TiGL
 							</h2>
 							<p>
-								The <a href="https://dlr-sc.github.io/tigl/">TiGL library</a> is an open source geometric library specially developed to handle CPACS files. 
-								It includes the TiGL-Viewer, an interactive user interface which can be used to inspect the CPACS geometry. Within RCE, the TiGL Viewer component 
-								opens a TiGL Viewer during workflow execution to provide an integrated 3D viewer for CPACS geometries.
+								The <a href="https://dlr-sc.github.io/tigl/">TiGL Geometry Library (TiGL)</a> is an open source geometric library that generates a geometric representation of aircraft described in a CPACS file.
+								This library includes the TiGL Viewer, an interactive user interface which can be used to inspect the constructed geometry.
+								RCE can be configured to use the TiGL viewer to display geometries used in a workflow.
 							</p>
 						</div><!-- /.col-md-6 -->
 
@@ -92,11 +91,10 @@
 								IslandViz
 							</h2>
 							<p>
-								The <a href="https://www.dlr.de/sc/desktopdefault.aspx/tabid-13797/23966_read-58127/">Island Visualization (IslandViz)</a> is a visualization tool 
-								for exploring modular software systems such as RCE in virtual reality. Using an island metaphor, IslandViz represents every module as a distinct island.
-								The resulting island system is displayed in the confines of a virtual table, where users can explore RCE on multiple levels of granularity. 
-								That allows users to get a first overview about the complexity of an OSGi-based software system 
-								by interactively exploring its modules as well as the dependencies between them.
+								The <a href="https://www.dlr.de/sc/desktopdefault.aspx/tabid-13797/23966_read-58127/">Island Visualization (IslandViz)</a> is a visualization tool for exploring modular software systems such as RCE in virtual reality.
+								IslandViz represents every module as a distinct island on a virtual table.
+								Users can then explore the module structure of RCE as well as the dependencies between the modules on multiple levels of granularity. 
+								That allows users to get a first overview about the complexity of an OSGi-based software system by interactively exploring its modules as well as the dependencies between them.
 							</p>
 						</div><!-- /.col-md-6 -->
 
