@@ -3,12 +3,12 @@ Date: 2019-11-22 08:00
 Category: Releases
 Author: RCE
 
-We are pleased to announce the recent release of RCE 10.0 (Green Monkey). In addition to a number of minor changes, this release adds a welcome screen that helps new users with their first steps with RCE, an icon caching mechanism that improves the usability of RCE when working with remote tools, and an experimental feature for securely connecting multiple internal networks via the Internet. We furthermore included a first draft of an Administrator Guide that aims to help network administrators with evaluating the security impact of RCE.
+We are pleased to announce the recent release of RCE 10.0 (Green Monkey). In addition to a number of minor changes, this release adds a welcome screen that helps new users with their first steps with RCE, an icon caching mechanism that improves the usability of RCE when working with remote tools, and an experimental feature for securely connecting multiple internal networks via the Internet. We furthermore included a first draft of an [**Administration Guide**](pages/documentation/documentation.html) that aims to help network administrators with evaluating the security impact of RCE.
 
 Please see [GitHub](https://github.com/rcenvironment/rce/releases) for the full changelog.
 
 ### Welcome Screen
-Previous versions of RCE greeted new users with a blank workflow editor upon their first startup. While there existed and still exists documentation for the first steps in the User guide as well as in the included example workflows, this information was not easily discoverable for first-time-users. To make RCE more welcoming to these users, RCE 10.0 includes a welcome screen that is shown on first startup and directs users towards the built-in example project and the user guide. It also contains links to our website and to the sign-up page for our newsletter. We hope that this initial welcoming aids users in their first steps with RCE.
+Previous versions of RCE greeted new users with a blank workflow editor upon their first startup. While there existed and still exists documentation for the first steps in the [**User Guide**](pages/documentation/documentation.html) as well as in the included example workflows, this information was not easily discoverable for first-time-users. To make RCE more welcoming to these users, RCE 10.0 includes a welcome screen that is shown on first startup and directs users towards the built-in example project and help system. It also contains links to our website and to the sign-up page for our newsletter. We hope that this initial welcoming aids users in their first steps with RCE.
 
 ![Photo]({attach}images/release-10.0.0/welcome.png)
 
