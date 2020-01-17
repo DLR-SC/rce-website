@@ -2,7 +2,6 @@ Title: RCE Startup Failures
 Date: 2020-01-17
 Category: News
 Author: RCE
-Hide: True
 
 We are currently investigating an issue occurring when running RCE on Windows 10.
 In certain configurations RCE is unable to start and instead produces an error log in its installation directory.
@@ -10,7 +9,8 @@ This error is due to a third-party-library that is incompatible with newer versi
 We are working on a fix for this issue which will be available towards the end of next week.
 This fix will *not be available via the RCE update mechanism*, but only for manual download on this website.
 
-When starting RCE on an affected system, the splash screen shows up for a couple of seconds and disappears without an error message before the user is asked for a workspace.
+When starting RCE on an affected system, the splash screen shows up for a couple of seconds and disappears before the user is asked for a workspace.
+No error message is shown.
 After the splash screen has disappeared, an error log with a name like `rce_errorXXXX.log` appears in the installation directory of RCE (i.e., in the directory containing the file `rce.exe`).
 This file starts with the following lines, where the JRE version and the Java VM indicate the versions installed on the user's machine.
 
