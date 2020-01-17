@@ -8,7 +8,7 @@
 
 
     <link href="https://rcenvironment.de/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="RCE Full Atom Feed" />
-    <link href="https://rcenvironment.de/feeds/releases.atom.xml" type="application/atom+xml" rel="alternate" title="RCE Categories Atom Feed" />
+    <link href="https://rcenvironment.de/feeds/news.atom.xml" type="application/atom+xml" rel="alternate" title="RCE Categories Atom Feed" />
 	
 	<!-- META DATA -->
 	<meta name="description" content="RCE is a distributed, workflow-driven integration environment." >
@@ -127,10 +127,10 @@
 		<div class="overlay">
 			<div class="container">
 				<h2 class="page-title m0">
-					Release 6.0.0 
+					RCE Startup Failures 
 				</h2>
 				<div class="page-location">
-					<a href="https://rcenvironment.de/">Home</a> <a href="#">News</a> <span>Release 6.0.0</span>
+					<a href="https://rcenvironment.de/">Home</a> <a href="#">News</a> <span>RCE Startup Failures</span>
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.overlay -->
@@ -150,7 +150,7 @@
 							</div>
 
 							<h2 class="post-title">
-								<a href="https://rcenvironment.de/release-600.html">Release 6.0.0</a>
+								<a href="https://rcenvironment.de/rce-startup-failures.html">RCE Startup Failures</a>
 							</h2> 
 
 							<footer class="entry-meta">
@@ -162,10 +162,10 @@
 								</span>
 								<span class="entry-date">
 									<i class="fa fa-calendar-o"></i>
-									<span class="date">Do 15 Januar 2015</span>
+									<span class="date">Fr 17 Januar 2020</span>
 								</span>
 								<span class="comments-link">
-									<a href="https://rcenvironment.de/release-600.html" rel="link">
+									<a href="https://rcenvironment.de/rce-startup-failures.html" rel="link">
 										<i class="fa fa-link"></i>
 											Permalink
 									</a>
@@ -173,135 +173,41 @@
  
 									<span class="cat-links">
 										<i class="fa fa-folder-o"></i>
-										<a href="https://rcenvironment.de/category/releases.html">Releases</a>
+										<a href="https://rcenvironment.de/category/news.html">News</a>
 									</span>
 
 							</footer><!-- /.entry-meta --> 
 							<div class="entry">
-								<h3>Workflow Editor</h3>
-<ul>
-<li>Components in a workflow can now be temporarily disabled: during workflow execution, these components and all their connections are treated as if they didn't exist</li>
-<li>Added an option to show the number of connections represented by a line between two components</li>
-<li>The connection editor dialog can now be opened by double-clicking a connection line, too</li>
-<li>Added shortcuts for "Draw Connection" mode (ALT + D) and "Selection" mode (ALT + S) </li>
-</ul>
-<h3>Connection Editor</h3>
-<ul>
-<li>Improved handling of workflows with many connections</li>
-<li>Inputs which are already connected to an output are now marked by a small arrow</li>
-<li>Added more filtering options for inputs and outputs (match exactly, start with, contain) </li>
-</ul>
-<h3>Workflow List</h3>
-<ul>
-<li>Pause/Resume/Cancel/Dispose can now be applied to multiple workflows at once </li>
-</ul>
-<h3>Timeline GUI</h3>
-<ul>
-<li>Added new feature that visualizes when each component was running during workflow execution </li>
-</ul>
-<h3>Configuration</h3>
-<ul>
-<li>Merged all previous configuration files (*.json) into a single file (configuration.json)</li>
-<li>Added option to open and edit this configuration file within the GUI (Help -&gt; Open Configuration File)</li>
-<li>Made example configurations and path information accessible from the GUI (Help -&gt; Open Configuration Information)</li>
-<li>Moved example configuration files to the easier-to-find "examples/configuration" folder</li>
-<li>The "instanceName" configuration entry now supports the placeholders ${systemUser} and ${hostName} for better default naming of RCE instances</li>
-<li>Added "connectOnStartup" option to network connections; the old behavior was to always connect when RCE starts, which is now optional </li>
-</ul>
-<h3>Multi-User Support</h3>
-<ul>
-<li>Added full support for multi-user operation, i.e. one RCE installation can be used by multiple users on the same system; the RCE installation directory can be set to "read-only" for all users</li>
-<li>Added support for multiple profiles per user, each with its own configuration, log files, and data storage</li>
-<li>On Linux, temporary file directories are now automatically separated (/tmp/rce-temp-<user id>) to prevent file ownership and permission problems; when customizing this path, the placeholder ${systemUser} is available </li>
-</ul>
-<h3>Installation and Release Signing</h3>
-<ul>
-<li>Provided .deb packages for Debian/Ubuntu/Mint</li>
-<li>Provided .rpm packages for CentOS/Red Hat/SUSE</li>
-<li>Provided a signed APT repository for Linux Debian/Ubuntu/Mint which allows installation via "apt-get" or package managers with GUI (e.g. Synaptic), as well as full integration with automatic system updates</li>
-<li>All .zip, .deb, and .rpm release packages now have digitally signed checksum files (SHA256SUMS.asc) </li>
-</ul>
-<h3>Linux Support</h3>
-<ul>
-<li>Completely reworked (and simplified) Linux daemon installation and handling ("rce-daemon" command)</li>
-<li>Improved Linux distribution compatibility; RCE is now regularly tested on Debian 7, SUSE 11 SP 2, and CentOS 7 (all 64 bit); it is also confirmed to run on Ubuntu 12 LTS, Ubuntu 14 LTS, Mint 17, and Red Hat Enterprise 6</li>
-<li>Added standard Linux desktop integration (application icon and basic menu entry) </li>
-</ul>
-<h3>Remote Tool/Workflow Access</h3>
-<ul>
-<li>Added a Remote Workflow Access template, which can also be used for out-of-the box testing</li>
-<li>Simplified the handling of input and output directories; when accessing them from script code, no additional sub-directory levels ("/input/") are required anymore</li>
-<li>Moved example script files to the easier-to-find "examples/remote_access" folder </li>
-</ul>
-<h3>Optimizer Component</h3>
-<ul>
-<li>Added an output that indicates whether gradients are requested by the optimizer method within the current iteration</li>
-<li>Updated integrated Dakota version from 5.1 to 6.0</li>
-<li>Added Dakota methods: SOGA, MOGA</li>
-<li>Added support for using precalculation files (reset files)</li>
-<li>Added support for failure-tolerant optimization loops (see Section "Workflow Engine" below) </li>
-</ul>
-<h3>Script API</h3>
-<ul>
-<li>Various improvements and extensions (e.g. support for "not a value", execution count, persistent state)</li>
-<li>Added option to close the outputs of tools in pre/postprocessing scripts of tool integration</li>
-<li>Removed deprecated parts of the API </li>
-</ul>
-<h3>Tool Integration</h3>
-<ul>
-<li>Made the script API accessible in pre/postprocessing</li>
-<li>Added an option to limit the number of parallel tool executions (e.g. to prevent excessive license usage) </li>
-</ul>
-<h3>Data Management</h3>
-<ul>
-<li>Major rework of the data management backend (data model and API) to increase performance and robustness</li>
-<li>Workflow Data Browser now shows input and output data of all components and additional workflow run information</li>
-<li>Workflow Data Browser now also shows the path to the working directories of integrated tools (for manual inspection) </li>
-</ul>
-<h3>Usability</h3>
-<ul>
-<li>Simplified resetting the "Don't ask again" setting of the workspace chooser. It can be reset via "Help -&gt; Open Configuration Information". </li>
-</ul>
-<h3>Batch mode (rce --batch)</h3>
-<ul>
-<li>Command execution output is now written to standard output as well, which makes it available from the invoking command line</li>
-<li>Improved robustness </li>
-</ul>
-<h3>Workflow Engine</h3>
-<ul>
-<li>Completely reworked workflow execution (as a prerequisite for single component run, restart after failure, and stepwise execution)</li>
-<li>Reworked scheduling options (initial, required, optional -&gt; constant, single, consumed and required, required if connected, not required). For details and migration path, see documentation.</li>
-<li>Provided better support for nested loops including reset of nested loops</li>
-<li>Made optimization and parametric study loops failure-tolerant, i.e. extended Python/Jython script API to allow to indicate that tool/script failed, but only because of invalid input parameters</li>
-<li>Added automatic writing of basic history data (inputs, outputs) to all components</li>
-<li>Fixed workflow console row writer to ensure no log rows are missing after workflow execution</li>
-<li>Added handling of system time differences between workflow controller and component</li>
-<li>Added handling of system time differences between workflow controller and component hosts</li>
-<li>Added support for limitation of parallel tool executions </li>
-</ul>
-<h3>Cluster</h3>
-<ul>
-<li>Added support for TORQUE 5.0 </li>
-</ul>
-<h3>Converger</h3>
-<ul>
-<li>Added possiblity to finish on first check for negative values </li>
-</ul>
-<h3>Commands</h3>
-<ul>
-<li>Added "–dispose" flag to "wf run" command to allow disposal after workflow execution</li>
-<li>Added "–dispose", "–pr" and "–sr" flags to "wf verify" command (for automated testing) </li>
-</ul>
-<h3>Other/Misc</h3>
-<ul>
-<li>Merged the three former RCE editions (Standard/CPACS/Transport) into a single one</li>
-<li>Improved branding (splash screen, about dialog, ...)</li>
-<li>Upgraded to Eclipse RCP 3.7.2</li>
-<li>Improved the cleanup mechanism for temporary files</li>
-<li>On RCE startup, the last debug.log and warnings.log files are automatically preserved as *.previous.log</li>
-<li>Various bugfixes</li>
-<li>Various usability tweaks </li>
-</ul>  
+								<p>We are currently investigating an issue occurring when running RCE on Windows 10.
+In certain configurations RCE is unable to start and instead produces an error log in its installation directory.
+This error is due to a third-party-library that is incompatible with newer versions of Windows 10.
+We are working on a fix for this issue which will be available towards the end of next week.
+This fix will <em>not be available via the RCE update mechanism</em>, but only for manual download on this website.</p>
+<p>When starting RCE on an affected system, the splash screen shows up for a couple of seconds and disappears without an error message before the user is asked for a workspace.
+After the splash screen has disappeared, an error log with a name like <code>rce_errorXXXX.log</code> appears in the installation directory of RCE (i.e., in the directory containing the file <code>rce.exe</code>).
+This file starts with the following lines, where the JRE version and the Java VM indicate the versions installed on the user's machine.</p>
+<div class="highlight"><pre><span></span><span class="o">#</span>
+<span class="o">#</span> <span class="n">A</span> <span class="n">fatal</span> <span class="n">error</span> <span class="n">has</span> <span class="n">been</span> <span class="n">detected</span> <span class="k">by</span> <span class="n">the</span> <span class="n">Java</span> <span class="n">Runtime</span> <span class="n">Environment</span><span class="p">:</span>
+<span class="o">#</span>
+<span class="o">#</span>  <span class="n">EXCEPTION_ACCESS_VIOLATION</span> <span class="p">(</span><span class="mi">0</span><span class="n">xc0000005</span><span class="p">)</span> <span class="k">at</span> <span class="n">pc</span><span class="o">=</span><span class="mi">0</span><span class="n">x0000000010014ed4</span><span class="p">,</span> <span class="n">pid</span><span class="o">=</span><span class="mi">5516</span><span class="p">,</span> <span class="n">tid</span><span class="o">=</span><span class="mi">0</span><span class="n">x0000000000002ec8</span>
+<span class="o">#</span>
+<span class="o">#</span> <span class="n">JRE</span> <span class="k">version</span><span class="p">:</span> <span class="n">OpenJDK</span> <span class="n">Runtime</span> <span class="n">Environment</span> <span class="p">(</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span><span class="n">_202</span><span class="o">-</span><span class="n">b08</span><span class="p">)</span> <span class="p">(</span><span class="n">build</span> <span class="mi">1</span><span class="p">.</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span><span class="n">_202</span><span class="o">-</span><span class="n">b08</span><span class="p">)</span>
+<span class="o">#</span> <span class="n">Java</span> <span class="n">VM</span><span class="p">:</span> <span class="n">OpenJDK</span> <span class="mi">64</span><span class="o">-</span><span class="nb">Bit</span> <span class="n">Server</span> <span class="n">VM</span> <span class="p">(</span><span class="mi">25</span><span class="p">.</span><span class="mi">202</span><span class="o">-</span><span class="n">b08</span> <span class="n">mixed</span> <span class="k">mode</span> <span class="n">windows</span><span class="o">-</span><span class="n">amd64</span> <span class="n">compressed</span> <span class="n">oops</span><span class="p">)</span>
+<span class="o">#</span> <span class="n">Problematic</span> <span class="n">frame</span><span class="p">:</span>
+<span class="o">#</span> <span class="k">C</span>  <span class="p">[</span><span class="n">sigar</span><span class="o">-</span><span class="n">amd64</span><span class="o">-</span><span class="n">winnt</span><span class="p">.</span><span class="n">dll</span><span class="o">+</span><span class="mi">0</span><span class="n">x14ed4</span><span class="p">]</span>
+</pre></div>
+
+
+<p>This issue merely prevents RCE to start and does not affect any personal data.
+The user's workspace and configuration are untouched.
+This behavior has only been observed on machines running Windows 10 and does not occur on machines running Linux.</p>
+<p>We use the third-party-library <a href="https://github.com/hyperic/sigar">SIGAR</a> in RCE to collect information on system load when running on Windows.
+There are no known issues with this library on Windows 7.
+On certain Windows 10 configurations, however, the library causes the enclosing JVM to terminate upon virtually every API call.
+Since this issue only affects certain configurations of Windows 10, this issue did not show up during testing of RCE 10.</p>
+<p>Our first solution is to release a hotfix for this issue in which we disable system monitoring.
+Since this fix removes functionality, we will not distribute it via the standard RCE update mechanism, but instead provide download links on <a href="https://rcenvironment.de">https://rcenvironment.de</a>.
+For future releases we are working on replacing SIGAR with a more modern library for system monitoring that does not exhibit such behavior.</p>  
 							</div><!-- /.entry --> 
 						</article>
 
