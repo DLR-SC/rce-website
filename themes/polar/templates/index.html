@@ -125,6 +125,7 @@
 						<div class="blog-page"> 
 
 							{% for article in articles_page.object_list %}
+							{% if not article.hide %}
 
 							<article class="type-post single-news single-post">
 								{% if article.image %} 
@@ -194,6 +195,7 @@
 								</div>
 
 							</article> 
+							{% endif %}
 							{% endfor %}
 
 
