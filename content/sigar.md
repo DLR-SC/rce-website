@@ -3,6 +3,14 @@ Date: 2020-01-17
 Category: News
 Author: RCE
 
+# Update January 22, 2020
+
+The fix is now available for RCE 9 as well as RCE 10 and can be downloaded [here (RCE 9)](https://software.dlr.de/updates/rce/9.x/products/standard/releases/9.1.1-hotfix/) and [here (RCE 10)](https://software.dlr.de/updates/rce/10.x/products/standard/releases/10.0.0-hotfix/) respectively.
+These versions of RCE will not be distributed via the normal RCE update mechanism and are only intended for users that experience issues with their currently running version of RCE.
+This fix will also be incorporated in future regular releases of RCE.
+
+# Original Post January 17, 2020
+
 We are currently investigating an issue occurring when running RCE on Windows 10.
 In certain configurations RCE is unable to start and instead produces an error log in its installation directory.
 This error is due to a third-party-library that is incompatible with newer versions of Windows 10.
