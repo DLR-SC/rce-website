@@ -7,3 +7,8 @@ before_script:
 build:
   script: invoke build
   stage: build
+  artifacts:
+    name : "rcenvironment.de-$CI_COMMIT_REF_NAME"
+    paths:
+      - output/
+    expire_in: 1 week
