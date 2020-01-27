@@ -1,0 +1,9 @@
+image: "python:3.8"
+
+before_script:
+  - pip install invoke
+  - pip install pelican[Markdown]
+  
+build:
+  script: invoke build
+  stage: build
