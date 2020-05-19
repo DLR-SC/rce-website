@@ -4,7 +4,7 @@ Category: Releases
 Author: RCE
 
 We are pleased to announce the recent release of RCE 10.1.0.
-In addition to general bug fixes and improves we have incorporated the hotfix for monitoring issues. 
+In addition to general bug fixes and improvements, we have incorporated a hotfix for monitoring issues. 
 We replaced the previously used SIGAR library with the successor library OSHI.
 This increases the stability on modern systems.
 Please find the downloadable artifacts on our [download page](https://rcenvironment.de/pages/download.html).
