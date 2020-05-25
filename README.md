@@ -6,30 +6,23 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 
 ## Local Installation
 
-* Install Python2 ([Anaconda](https://store.continuum.io/cshop/anaconda/) works perfectly)
+* Install Python3 ([Anaconda](https://store.continuum.io/cshop/anaconda/) works perfectly)
 
 * Install Pelican and supporting libraries
 
   ```
+  pip install invoke==1.4.1
   pip install pelican==3.7.1
-  pip install markdown==3.1
-  pip install fabric==1.14.1
-  pip install ghp-import==0.4.1
+  pip install markdown==3.1.1
   ```
+  
+* If you want to deploy the website after changing it, additionally install
+  ```
+  pip install ghp-import==0.5.5
+  ```
+  Deployment requires write access to the repository https://github.com/DLR-SC/rce-website.
 
-* Clone rce-website
-
-  ```
-  git clone https://github.com/DLR-SC/rce-website
-  ```
-  or
-  ```
-  git clone git@github.com:DLR-SC/rce-website.git
-  ```
-* Change to 
-  ```
-  rce-website/
-  ```
+* Clone this repository
 
 ### Configuration
 
@@ -43,25 +36,36 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 
 * Generate website 
   ```
-  fab build
+  invoke build
   ```
 
-* Start local server for testing (accessible via http://localhost:[port]/)
+* Start local server for testing (accessible via http://localhost:[PORT]/).
   ```
-  fab serve
+  invoke serve
   ```
+  This does not rebuild the website after changes, meaning you will have to manually stop the local server, rebuild the website using `invoke build`, and restart the testing server after each change.
 
-* Convenience target for rebuild and starting local server
+* If you want to automatically rebuild the website after each change and have that new build served by the testing server, use
   ```
-  fab reserve
+  invoke reserve
   ```
 
 ## Deployment
 
-Deploy to github pages with
-  ```
-  fab gh_pages
-  ```
+In order to deploy the website, please first make sure that you have no local branch named `gh-pages`.
+You can verify by executing `git branch` and checking the output for a line that contains `gh-pages`.
+If such a line exists, you can delete the existing local branch.
+*Please make sure that that branch contains no changes that you want to retain* before deleting it by executing `git branch -D gh-pages`.
+
+Once you have made sure that no local branch named `gh-pages` exists, execute the following commands to publish your changes.
+This requires write access to the repository at https://github.com/DLR-SC/rce-website.
+If you do not have such access, please contact one of the main developers at DLR for obtaining them.
+
+```
+git fetch https://github.com/DLR-SC/rce-website.git gh-pages:gh-pages
+ghp-import -b gh-pages output
+git push https://github.com/DLR-SC/rce-website.git gh-pages
+```
 
 ## Writing Content
 
