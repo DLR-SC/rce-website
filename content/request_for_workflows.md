@@ -45,6 +45,7 @@ Only the structure of the workflow should be used for this.
 To be able to do the work I need as many workflows as possible for evaluation.
 
 The workflows should have the following properties:
+
 - The workflow contains several components.
 - Components can be grouped semantically (e.g., as part of a simulation step).
 - In the best case, labels are already drawn (not strictly necessary).
@@ -86,6 +87,7 @@ Hierfür soll lediglich die Struktur des Workflows herangezogen werden.
 Damit ich die Arbeit durchführen kann benötige ich möglichst viele Workflows zur Evaluation.
 
 Die Workflows sollten folgende Eigenschaften haben:
+
 - Der Workflow enthält mehrere Komponenten.
 - Komponenten lassen sich semantisch gruppieren (z.B. als Teil eines Simulationsschrittes).
 - Markierungen sind im besten Fall schon eingezeichnet (nicht zwangsweise notwendig).
