@@ -9,7 +9,7 @@ While involvement in these projects allows for "keyhole insight" into the practi
 
 This overview is, however, necessary for continued user-focussed development of RCE.
 Thus, we have decided to start an ongoing call for workflow samples.
-If you have constructed or are currently constructing an RCE workflow, if you are free to share that workflow and if you would like to support further development of RCE, please send a copy of that workflow to [rce@dlr.de](mailto:rce@dlr.de).
+If you have constructed or are currently constructing an RCE workflow, if you are free to share that workflow, and if you would like to support further development of RCE, please send a copy of that workflow to [rce@dlr.de](mailto:rce@dlr.de).
 
 At this point we are only interested in the workflow file, i.e., the file ending in `.wf`.
 If you are using RCE via its GUI, you can access the properties of any workflow-file via right-clicking on it in the Project Explorer and selecting the entry "Properties".
