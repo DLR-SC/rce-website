@@ -7,7 +7,89 @@ Please find …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are pleased 
 In addition to general bug fixes and improvements, we have incorporated a hotfix for monitoring issues. 
 We replaced the previously used SIGAR library with the successor library OSHI.
 This increases the stability on modern systems.
-Please find the downloadable artifacts on our &lt;a href="https://rcenvironment.de/pages/download.html"&gt;download page&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>RCE Startup Issues</title><link href="https://rcenvironment.de/rce-startup-issues.html" rel="alternate"></link><published>2020-01-17T00:00:00+01:00</published><updated>2020-01-17T00:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2020-01-17:/rce-startup-issues.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Update January 22, 2020:&lt;/em&gt;
+Please find the downloadable artifacts on our &lt;a href="https://rcenvironment.de/pages/download.html"&gt;download page&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>We are Looking For Workflow Samples</title><link href="https://rcenvironment.de/we-are-looking-for-workflow-samples.html" rel="alternate"></link><published>2020-05-10T06:00:00+02:00</published><updated>2020-05-10T06:00:00+02:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2020-05-10:/we-are-looking-for-workflow-samples.html</id><summary type="html">&lt;p&gt;As part of the development of RCE, we are involved in a number of research projects.
+Colleagues working on these projects regularly construct workflows that are far larger and more intricate than anything we envisioned when we started development.
+While involvement in these projects allows for "keyhole insight" into the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As part of the development of RCE, we are involved in a number of research projects.
+Colleagues working on these projects regularly construct workflows that are far larger and more intricate than anything we envisioned when we started development.
+While involvement in these projects allows for "keyhole insight" into the practical use of RCE, we are yet missing a comprehensive overview over the types of workflows constructed in practical use of RCE.&lt;/p&gt;
+&lt;p&gt;This overview is, however, necessary for continued user-focussed development of RCE.
+Thus, we have decided to start an ongoing call for workflow samples.
+If you have constructed or are currently constructing an RCE workflow, if you are free to share that workflow and if you would like to support further development of RCE, please send a copy of that workflow to &lt;a href="mailto:rce@dlr.de"&gt;rce@dlr.de&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At this point we are only interested in the workflow file, i.e., the file ending in &lt;code&gt;.wf&lt;/code&gt;.
+If you are using RCE via its GUI, you can access the properties of any workflow-file via right-clicking on it in the Project Explorer and selecting the entry "Properties".
+The third line in that window indicates the location of that file on your computer.&lt;/p&gt;
+&lt;p&gt;While we are currently working on a concrete research project in which we require real-life workflows (see below), we intend to retain these workflows for future research.
+If you have already sent us a workflow for research purposes and would like to have it removed from our collection, please send an email to &lt;a href="mailto:rce@dlr.de"&gt;rce@dlr.de&lt;/a&gt;.
+We will remove that workflow as soon as possible.
+Please be aware that the workflow file contains the names as well as the configurations of all components used in that workflow.
+This includes, in particular, the python scripts executed by Script components.&lt;/p&gt;
+&lt;p&gt;In the following we showcase one concrete project that requires such real-life workflows.
+As part of his Bachelor Thesis, a student working at our institute is researching ways to automatically determine structures in RCE workflows.
+It is our hope that this work will lead to better methods for understanding workflows.
+We attach his call below in both English and German.&lt;/p&gt;
+&lt;h1&gt;English Version&lt;/h1&gt;
+&lt;p&gt;Dear users of RCE,&lt;/p&gt;
+&lt;p&gt;my name is Dominik Schneider.
+I am a dual student at DLR and have been working on RCE for three years now.
+My study time is slowly coming to an end, the last step is now writing my bachelor thesis.&lt;/p&gt;
+&lt;p&gt;In my bachelor thesis I am trying to use different graph clustering methods to break up RCE workflows into groups.
+The idea is based on the RCE feature that allows placing colored labels within a workflow.
+In sample workflows as well as in workflows in productive use, these labels are used to identify related components.&lt;/p&gt;
+&lt;p&gt;Currently, these labels are created manually.
+For this, the semantic meaning of the individual components and their interrelationships must be known.
+My goal is to check whether components can be grouped without knowing the semantic meaning of the components.
+Only the structure of the workflow should be used for this.
+To be able to do the work I need as many workflows as possible for evaluation.&lt;/p&gt;
+&lt;p&gt;The workflows should have the following properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The workflow contains several components.&lt;/li&gt;
+&lt;li&gt;Components can be grouped semantically (e.g., as part of a simulation step).&lt;/li&gt;
+&lt;li&gt;In the best case, labels are already drawn (not strictly necessary).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are uncertain whether a workflow fulfills these properties, I would still kindly ask you to send me the workflow.
+The size of the workflows is not relevant for these experiments.
+For the bachelor thesis it is certainly advantageous to examine workflows with a strongly varying number of components and deviations from the desired properties.&lt;/p&gt;
+&lt;p&gt;For my research only a workflow file with file extension &lt;code&gt;.wf&lt;/code&gt; is necessary.
+I do not require any associated tools, toolintegrations, files, logs or other outputs.
+I am only concerned with the structure of the workflows, which is completely represented by the workflow files.
+I ultimately only process the names of the components as well as connections between components including the used data types and the defined constraints.
+The content of the data which is exchanged between the components does not matter (apart from the data types) and is not needed for the analysis.&lt;/p&gt;
+&lt;p&gt;If the attempt is successful, the project may even become a new feature of RCE.
+Automated labeling of workflows could make working with RCE even more comfortable.&lt;/p&gt;
+&lt;p&gt;Thank you very much and best regards&lt;/p&gt;
+&lt;p&gt;Dominik Schneider&lt;/p&gt;
+&lt;h1&gt;German Version&lt;/h1&gt;
+&lt;p&gt;Hallo Nutzerinnen und Nutzer von RCE,&lt;/p&gt;
+&lt;p&gt;mein Name ist Dominik Schneider.
+Ich bin dualer Student beim DLR und arbeite mittlerweile seit drei Jahren an RCE.
+Meine Studienzeit nähert sich langsam dem Ende, der letzte Schritt ist nun das Schreiben meiner Bachelorarbeit.&lt;/p&gt;
+&lt;p&gt;Im Rahmen meiner Bachelorarbeit versuche ich, mit verschiedenen Graph Clustering Methoden RCE Workflows in Gruppen aufzugliedern.
+Die Idee basiert auf dem RCE Feature, farbige Markierungen innerhalb eines Workflows anzubringen.
+Diese Markierungen werden in RCE als "Labels" bezeichnet.
+Sowohl in Beispielworkflows als auch in Workflows im produktiven Einsatz werden diese Markierungen verwendet um zusammengehörige Komponenten zu kennzeichnen.&lt;/p&gt;
+&lt;p&gt;Diese Markierungen werden bisher manuell erstellt.
+Hierfür muss die semantische Bedeutung der einzelnen Komponenten und ihrer Zusammenhänge bekannt sein.
+Mein Ziel ist es zu prüfen, ob Komponenten gruppiert werden können, ohne dass die semantische Bedeutung der Komponenten bekannt ist.
+Hierfür soll lediglich die Struktur des Workflows herangezogen werden.
+Damit ich die Arbeit durchführen kann benötige ich möglichst viele Workflows zur Evaluation.&lt;/p&gt;
+&lt;p&gt;Die Workflows sollten folgende Eigenschaften haben:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Der Workflow enthält mehrere Komponenten.&lt;/li&gt;
+&lt;li&gt;Komponenten lassen sich semantisch gruppieren (z.B. als Teil eines Simulationsschrittes).&lt;/li&gt;
+&lt;li&gt;Markierungen sind im besten Fall schon eingezeichnet (nicht zwangsweise notwendig).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solltet ihr euch nicht sicher sein, ob ein Workflow diese Eigenschaften erfüllt, würde ich euch trotzdem bitten, mir den Workflow zukommen zu lassen.
+Die Größe der Workflows ist nicht unbedingt relevant.
+Für die Bachelorarbeit ist es sicherlich von Vorteil auch Workflows mit stark unterschiedlicher Komponentenanzahl und Abweichungen von den gewünschten Eigenschaften zu untersuchen.&lt;/p&gt;
+&lt;p&gt;Für meine Untersuchung ist lediglich eine Workflowdatei mit Dateiendung &lt;code&gt;.wf&lt;/code&gt; notwendig.
+Ich benötige keine zugehörigen Tools, Toolintegrationen, Dateien, Logs oder sonstige Outputs.
+Es geht mir lediglich um die Struktur der Workflows, welche vollständig durch die Workflowdateien abgebildet wird.
+Die Informationen, die ich letztendlich verarbeite, sind die Namen der Komponenten sowie Verbindungen zwischen Komponenten inklusive der verwendeten Datentypen und der festgelegten Constraints.
+Welche Daten zwischen den Komponenten ausgetauscht werden spielt keine Rolle (abgesehen von den Datentypen) und werden nicht für die Analyse benötigt.&lt;/p&gt;
+&lt;p&gt;Wenn der Versuch erfolgreich ist, wird aus dem Projekt eventuell sogar ein neues Feature von RCE.
+Automatisiertes Labeling von Workflows könnte das Arbeiten mit RCE noch angenehmer gestalten.&lt;/p&gt;
+&lt;p&gt;Vielen Dank und viele Grüße&lt;/p&gt;
+&lt;p&gt;Dominik Schneider&lt;/p&gt;</content></entry><entry><title>RCE Startup Issues</title><link href="https://rcenvironment.de/rce-startup-issues.html" rel="alternate"></link><published>2020-01-17T00:00:00+01:00</published><updated>2020-01-17T00:00:00+01:00</updated><author><name>RCE</name></author><id>tag:rcenvironment.de,2020-01-17:/rce-startup-issues.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Update January 22, 2020:&lt;/em&gt;
 The fix is now available for RCE 9 as well as RCE 10 and can be downloaded &lt;a href="https://software.dlr.de/updates/rce/9.x/products/standard/releases/9.1.1-hotfix/"&gt;here (RCE 9)&lt;/a&gt; and &lt;a href="https://software.dlr.de/updates/rce/10.x/products/standard/releases/10.0.0-hotfix/"&gt;here (RCE 10)&lt;/a&gt; respectively.
 These versions of RCE will not be distributed via the normal RCE update mechanism and are only intended for users that …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Update January 22, 2020:&lt;/em&gt;
 The fix is now available for RCE 9 as well as RCE 10 and can be downloaded &lt;a href="https://software.dlr.de/updates/rce/9.x/products/standard/releases/9.1.1-hotfix/"&gt;here (RCE 9)&lt;/a&gt; and &lt;a href="https://software.dlr.de/updates/rce/10.x/products/standard/releases/10.0.0-hotfix/"&gt;here (RCE 10)&lt;/a&gt; respectively.
