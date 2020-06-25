@@ -14,7 +14,7 @@ Colleagues working on these projects regularly construct workflows that are far 
 While involvement in these projects allows for "keyhole insight" into the practical use of RCE, we are yet missing a comprehensive overview over the types of workflows constructed in practical use of RCE.&lt;/p&gt;
 &lt;p&gt;This overview is, however, necessary for continued user-focussed development of RCE.
 Thus, we have decided to start an ongoing call for workflow samples.
-If you have constructed or are currently constructing an RCE workflow, if you are free to share that workflow and if you would like to support further development of RCE, please send a copy of that workflow to &lt;a href="mailto:rce@dlr.de"&gt;rce@dlr.de&lt;/a&gt;.&lt;/p&gt;
+If you have constructed or are currently constructing an RCE workflow, if you are free to share that workflow, and if you would like to support further development of RCE, please send a copy of that workflow to &lt;a href="mailto:rce@dlr.de"&gt;rce@dlr.de&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;At this point we are only interested in the workflow file, i.e., the file ending in &lt;code&gt;.wf&lt;/code&gt;.
 If you are using RCE via its GUI, you can access the properties of any workflow-file via right-clicking on it in the Project Explorer and selecting the entry "Properties".
 The third line in that window indicates the location of that file on your computer.&lt;/p&gt;
