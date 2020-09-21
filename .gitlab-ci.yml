@@ -7,7 +7,8 @@ before_script:
 build:
   script: invoke build
   stage: build
-  tags: docker
+  tags:
+    - docker
   artifacts:
     name : "rcenvironment.de-$CI_COMMIT_REF_NAME"
     paths:
