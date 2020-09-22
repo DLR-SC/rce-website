@@ -45,7 +45,7 @@ def regenerate(context):
 @task
 def serve(context):
     """Serve site at http://localhost:8000/"""
-    os.chdir(deploy_path)
+    os.chdir(DEPLOY_PATH)
 
     class AddressReuseTCPServer(socketserver.TCPServer):
         allow_reuse_address = True
