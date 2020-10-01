@@ -1,4 +1,4 @@
-# Website for RCE
+# Website for RCE An amazing project
 
 Homepage (landing page) and announcements for RCE (http://rcenvironment.de).
 
