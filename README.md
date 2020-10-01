@@ -1,8 +1,8 @@
 # Website for RCE
 
-Homepage (landing page) and announcements for RCE (http://rcenvironment.de).
+Homepage (landing pages) and announcements for RCE (http://rcenvironment.de).
 
-Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [CodePassenger](http://www.codepassenger.com/).
+Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar themes by [CodePassenger](http://www.codepassenger.com/).
 
 ## Local Installation
 
