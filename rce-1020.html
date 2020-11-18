@@ -127,10 +127,10 @@
 		<div class="overlay">
 			<div class="container">
 				<h2 class="page-title m0">
-					RCE 10.0 
+					RCE 10.2.0 
 				</h2>
 				<div class="page-location">
-					<a href="https://rcenvironment.de/">Home</a> <a href="#">News</a> <span>RCE 10.0</span>
+					<a href="https://rcenvironment.de/">Home</a> <a href="#">News</a> <span>RCE 10.2.0</span>
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.overlay -->
@@ -150,7 +150,7 @@
 							</div>
 
 							<h2 class="post-title">
-								<a href="https://rcenvironment.de/rce-100.html">RCE 10.0</a>
+								<a href="https://rcenvironment.de/rce-1020.html">RCE 10.2.0</a>
 							</h2> 
 
 							<footer class="entry-meta">
@@ -162,10 +162,10 @@
 								</span>
 								<span class="entry-date">
 									<i class="fa fa-calendar-o"></i>
-									<span class="date">Fr 22 November 2019</span>
+									<span class="date">Mo 16 November 2020</span>
 								</span>
 								<span class="comments-link">
-									<a href="https://rcenvironment.de/rce-100.html" rel="link">
+									<a href="https://rcenvironment.de/rce-1020.html" rel="link">
 										<i class="fa fa-link"></i>
 											Permalink
 									</a>
@@ -178,22 +178,62 @@
 
 							</footer><!-- /.entry-meta --> 
 							<div class="entry">
-								<p>We are pleased to announce the recent release of RCE 10.0 (Green Monkey). In addition to a number of minor changes, this release adds a welcome screen that helps new users with their first steps with RCE, an icon caching mechanism that improves the usability of RCE when working with remote tools, and an experimental feature for securely connecting multiple internal networks via the Internet. We furthermore included a first draft of an <a href="pages/documentation/documentation.html"><strong>Administration Guide</strong></a> that aims to help network administrators with evaluating the security impact of RCE.</p>
+								<p>We are happy to announce the recent release of RCE 10.2 (Green Monkey).
+In addition to a number of minor improvements to both the user interface and the internal workings of RCE, this release includes a more powerful Switch component that allows forwarding inputs to an arbitrary number of succeeding components.
+We have furthermore extended the script API available to tool integrators in the pre- and postscript and to workflow designers via the Script component.
+Moreover, the Script component can now be configured to retain a single long-lived instance of a Python interpreter that executes all scripts used in a given workflow.</p>
+<p>In addition to these production-ready features we introduce experimental support for integrating workflows as components.
+We also included a number of robustness and stability improvements for the experimental SSH uplink connections.
+We anticipate production-ready releases of both features in the upcoming RCE 11.0.</p>
 <p>Please see <a href="https://github.com/rcenvironment/rce/releases">GitHub</a> for the full changelog.</p>
-<h3>Welcome Screen</h3>
-<p>Previous versions of RCE greeted new users with a blank workflow editor upon their first startup. While there existed and still exists documentation for the first steps in the <a href="pages/documentation/documentation.html"><strong>User Guide</strong></a> as well as in the included example workflows, this information was not easily discoverable for first-time-users. To make RCE more welcoming to these users, RCE 10.0 includes a welcome screen that is shown on first startup and directs users towards the built-in example project and help system. It also contains links to our website and to the sign-up page for our newsletter. We hope that this initial welcoming aids users in their first steps with RCE.</p>
-<p><img alt="Photo" src="https://rcenvironment.de/images/release-10.0.0/welcome.png"></p>
-<h3>Icon Caching</h3>
-<p>A central feature of RCE is the seamless integration of remote tools into a local workflow. When editing a workflow, all tools are displayed with their name and, if set, with an icon identifying this tool. For remote tools, however, the icon was only shown if the tool was available when the workflow was loaded. Otherwise, the icon was replaced with a default RCE icon. This led to usability issues when working with large workflows, as the user would have to be connected with all remote tool suppliers in order to be able to easily navigate and inspect the workflow. Starting with RCE 10.0, RCE caches the icons of remote components and thus displays such icons even when offline.</p>
-<h3>Experimental Secure Uplink</h3>
-<p>The standard network connections of RCE are only intended for use within a local, trustworthy network. Since RCE 7.0, we have furthermore offered secure SSH connections that allow connecting such networks via an unsecure intermediary, such as the Internet. Until now, each connection could only be used to connect two such networks, i.e., to construct a point-to-point connection between networks. This obviously led to a large setup overhead when working with tool providers in multiple networks. RCE 10.0 includes an experimental feature that allows an instance to function as a secure uplink server. Such an uplink server accepts secure connections from multiple clients and interconnects all these clients. This greatly simplifies setting up RCE networks between multiple collaborators that do not share local, secure networks.</p>
-<p>See the RCE 10 <a href="pages/documentation/documentation.html"><strong>User Guide</strong></a> (Section 3.6.2) for more information on how to set up a secure uplink server.</p>
-<p><img alt="Photo" src="https://rcenvironment.de/images/release-10.0.0/uplink.png"></p>
-<p>This feature will be fully released soon.</p>
-<h3>Administration Guide</h3>
-<p>When using RCE to set up connections via the internet, it has to be evaluated how this connection impacts the security of the local network. In order to aid network administrators in this task, we have published a first draft of a <a href="pages/documentation/documentation.html"><strong>guide</strong></a> for administrators that covers the technical details of the implementation of RCE's network connections. It is furthermore intended to serve as a collection of best practices when setting up and configuring RCE networks.</p>
-<h3>Technical Improvements</h3>
-<p>We have fixed and improved a number of technical issues and inconveniences in RCE. Please refer either to Github for a summary of these changes, or to our public issue tracker for a more detailed overview.</p>  
+<h1>Re-Designed Switch Component</h1>
+<p>The Switch component is one of the foundational building blocks of many RCE workflows, as it allows routing data to different components depending on some condition.
+Previous versions of RCE restricted the Switch component to a single condition and routed data to one of at most two outputs if the condition evaluated to true or false, respectively.</p>
+<p>In RCE 10.2 we lift this restriction and allow users to define an arbitrary number of conditions and corresponding outputs in a switch component.
+Each output is associated with a condition and receives the input data if that condition evaluates to true.
+Furthermore, the user may opt to only forward the data to the first output whose condition evaluates to true.
+If no condition evaluates to true, then the component forwards the data to a default output.</p>
+<p>As usual with component upgrades, this extension requires no action on the part of the user when opening workflows created with older versions.
+Workflows containing old versions of the Script component will be updated when they are first opened with RCE 10.2 or later.
+The original version will be stored in a backup for future use with older versions RCE.</p>
+<h1>Input File Factory in Python Module</h1>
+<p>When working with tools written in Python, tool integrators often use the pre-script of the tool integration to write a simple Python script to disk.
+These scripts are in turn imported by the integrated tool in order to set some variables.
+This process is inherently cumbersome and error-prone, since it amounts to implementing a small-scale code generator as part of the pre-script.
+To simplify this process, we have extended the RCE Python-module with an "Input File Factory".
+This factory facilitates the creation of such input files without resorting to manipulation of plain strings.</p>
+<p>The module is available both in pre- and post-scripts as well as in scripts executed via the Script component in a workflow.
+Please refer to the <a href="https://rcenvironment.de/pages/documentation/documentation.html">user guide</a> or to the online help of the Script component for further information on the API of the Input File Factory.</p>
+<h1>Python Script Execution via Agent</h1>
+<p>One of the most widely used built-in RCE-components is the script component.
+This component allows users to execute arbitrary Python scripts, e.g., for small data conversions.
+Previous versions of RCE offered the user two methods for executing such scripts:
+Either via the Java-based Python implementation <a href="https://www.jython.org/">Jython</a> or by using an external Python interpreter.</p>
+<p>Both methods have drawbacks.
+On the one hand, Jython supports only a limited subset of the complete Python ecosystem and only supports Python 2.7 for the foreseeable future.
+On the other hand, using an external Python interpreter allows the developer to use custom-made Python interpreters and access to the expressive power of the complete Python language and its ecosystem.
+This, however, comes at a severe runtime penalty, since RCE spawns a new instance of the interpreter for each execution of a script.
+This serves to isolate subsequent script executions against one another.</p>
+<p>In order to alleviate both shortcomings, we have introduced a new method for executing Python scripts in RCE 10.2, called the "Python Agent."
+Users can select this agent as the execution method in the properties of each script component.
+If at least one script component in an executed workflow uses this novel Python Agent for execution, RCE will spawn a single instance of an external Python interpreter for that workflow execution.
+It will then execute all Python scripts that have the Python Agent set as their execution method using this single long-running process.
+Thus, scripts can benefit from the complete Python ecosystem and custom-made interpreters while only suffering from a very minor overhead incurred by starting that interpreter.</p>
+<h1>Workflow as Component (Experimental Feature)</h1>
+<p>One of the most commonly requested features is the possibility to not only build a workflow out of integrated tools, but to also include other workflows as components in a larger workflow.
+This is often useful if a larger workflow comprises multiple disciplines, each of which communicates with others only via a well-defined and small interface.
+Including each and every individual tool in one large workflow makes the resulting workflow hard to read, understand, and maintain.</p>
+<p>Thus, in RCE 10.2, we have implemented a first prototype of functionality that allows the user to integrate a workflow as a component and to use that component just like any other tool in a workflow.
+This functionality is currently only accessible via the command console, namely via the command <code>wf integrate</code>.
+For more information, please refer to the <a href="https://rcenvironment.de/pages/documentation/documentation.html">user guide</a>.</p>
+<p>Please be aware that this feature is currently experimental and not intended for productive use.
+Details of the implementation are subject to change without prior notice which may lead to breaking workflows that use this feature.</p>
+<p>For future versions we are working on a graphical interface which will make this feature more easily accessible.</p>
+<h1>SSH Uplink Robustness</h1>
+<p>We have improved the resilience of SSH uplink connections against failed connection attempts and unstable network connections.
+Due to the experimental nature of the SSH uplink in RCE 10, some failure conditions led to dangling network connections and problems with reconnecting.
+This has been fixed in RCE 10.2.
+While the SSH Uplink feature remains experimental and is still not recommended for use in production, with this update we have severely increased its usefulness for evaluation.</p>  
 							</div><!-- /.entry --> 
 						</article>
 
