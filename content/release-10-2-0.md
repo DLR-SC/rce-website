@@ -15,7 +15,7 @@ We anticipate production-ready releases of both features in the upcoming RCE 11.
 Please see [GitHub](https://github.com/rcenvironment/rce/releases) for the full changelog.
 
 
-# Re-Designed Switch Component
+### Re-Designed Switch Component
 
 The Switch component is one of the foundational building blocks of many RCE workflows, as it allows routing data to different components depending on some condition.
 Previous versions of RCE restricted the Switch component to a single condition and routed data to one of at most two outputs if the condition evaluated to true or false, respectively.
@@ -27,9 +27,9 @@ If no condition evaluates to true, then the component forwards the data to a def
 
 As usual with component upgrades, this extension requires no action on the part of the user when opening workflows created with older versions.
 Workflows containing old versions of the Script component will be updated when they are first opened with RCE 10.2 or later.
-The original version will be stored in a backup for future use with older versions RCE.
+The original version will be stored in a backup for future use with older versions of RCE.
 
-# Input File Factory in Python Module
+### Input File Factory in Python Module
 
 When working with tools written in Python, tool integrators often use the pre-script of the tool integration to write a simple Python script to disk.
 These scripts are in turn imported by the integrated tool in order to set some variables.
@@ -40,7 +40,7 @@ This factory facilitates the creation of such input files without resorting to m
 The module is available both in pre- and post-scripts as well as in scripts executed via the Script component in a workflow.
 Please refer to the [user guide](https://rcenvironment.de/pages/documentation/documentation.html) or to the online help of the Script component for further information on the API of the Input File Factory.
 
-# Python Script Execution via Agent
+### Python Script Execution via Agent
 
 One of the most widely used built-in RCE-components is the script component.
 This component allows users to execute arbitrary Python scripts, e.g., for small data conversions.
@@ -59,7 +59,7 @@ If at least one script component in an executed workflow uses this novel Python 
 It will then execute all Python scripts that have the Python Agent set as their execution method using this single long-running process.
 Thus, scripts can benefit from the complete Python ecosystem and custom-made interpreters while only suffering from a very minor overhead incurred by starting that interpreter.
 
-# Workflow as Component (Experimental Feature)
+### Workflow as Component (Experimental Feature)
 
 One of the most commonly requested features is the possibility to not only build a workflow out of integrated tools, but to also include other workflows as components in a larger workflow.
 This is often useful if a larger workflow comprises multiple disciplines, each of which communicates with others only via a well-defined and small interface.
@@ -74,7 +74,7 @@ Details of the implementation are subject to change without prior notice which m
 
 For future versions we are working on a graphical interface which will make this feature more easily accessible.
 
-# SSH Uplink Robustness
+### SSH Uplink Robustness
 
 We have improved the resilience of SSH uplink connections against failed connection attempts and unstable network connections.
 Due to the experimental nature of the SSH uplink in RCE 10, some failure conditions led to dangling network connections and problems with reconnecting.
