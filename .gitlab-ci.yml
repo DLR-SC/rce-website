@@ -1,11 +1,10 @@
 image: "python:3.8"
-
-before_script:
-  - pip install invoke
-  - pip install pelican[Markdown]
   
 build:
-  script: invoke build
+  script: 
+    - pip install invoke
+    - pip install pelican[Markdown]
+    - invoke build
   stage: build
   tags:
     - docker
@@ -14,3 +13,11 @@ build:
     paths:
       - output/
     expire_in: 1 week
+    
+pages:
+  script: mv output public
+  tags:
+    - docker
+  artifacts:
+    paths:
+      - public
