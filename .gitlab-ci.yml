@@ -14,14 +14,28 @@ build:
       - output/
     expire_in: 1 week
     
-pages:
-  script:
+build-glpages:
+  script: 
     - pip install invoke
     - pip install pelican[Markdown]
     - invoke buildglpages
+  stage: build
+  tags:
+    - docker
+  artifacts:
+    paths:
+      - output/
+    expire_in: 1 week
+    
+pages:
+  dependencies:
+    - build-glpages
+  stage: deploy
+  script:
     - mv output public
   tags:
     - docker
+  stage: test
   artifacts:
     paths:
       - public
