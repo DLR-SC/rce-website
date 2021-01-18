@@ -30,6 +30,11 @@ def clean(context):
 def build(context):
     """Build local version of site"""
     run('pelican -s pelicanconf.py')
+	
+@task
+def buildglpages(context):
+    """Build Gitlab pages version of site"""
+    run('pelican -s gitlabpagesconf.py')
 
 @task
 def rebuild(context):

@@ -15,7 +15,11 @@ build:
     expire_in: 1 week
     
 pages:
-  script: mv output public
+  script:
+    - pip install invoke
+    - pip install pelican[Markdown]
+    - invoke buildglpages
+    - mv output public
   tags:
     - docker
   artifacts:
