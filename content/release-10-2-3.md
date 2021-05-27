@@ -5,6 +5,7 @@ Author: RCE
 
 We are pleased to announce the recent release of RCE 10.2.3.
 In this maintenance release, we further improved the stability of uplink connections, particularly in situations with large amounts of transferred data or with low available bandwidth.
+Moreover, we fixed some minor issues in the generic optimizer.
 You can find the technical changelog on [github](https://github.com/rcenvironment/rce/releases/tag/release-10.2.3).
 
 If you are using RCE 10.x you can update your installation using "Help -> Check for Updates".
