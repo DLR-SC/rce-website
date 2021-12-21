@@ -1492,6 +1492,14 @@ article.type-post {
 
 /* 16 - Blog Page 
 ******************************************************/
+
+.row.about-us::after {
+	border-bottom: 1px solid lightgray;
+	display: inline-block;
+	width: 100%;
+	margin: -15px 0;
+}
+
 .blog-page>article {
 	padding-bottom: 50px;
 }
