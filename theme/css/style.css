@@ -92,6 +92,15 @@ a:focus,
 a:hover {
 	text-decoration: none;
 } 
+
+ul {
+	font-size: 0.9375em;
+	line-height: 25px;
+}
+
+li {
+	margin-bottom: 15px;
+}
 .btn,
 button,
 a:focus{

@@ -171,39 +171,44 @@
  
 									<span class="cat-links">
 										<i class="fa fa-folder-o"></i>
-										<a href="/category/security.html">Security</a>
+										<a href="/category/news.html">News</a>
 									</span>
 
 							</footer><!-- /.entry-meta --> 
 							<div class="entry">
-								<p>TODO add introduction</p>
+								<p>While we regularly recommend upgrading RCE to the latest release, we would like to introduce more explicit information about RCE's upgrade and versioning policy.
+This is intended to support RCE users and administrators in their upgrade decisions and planning.</p>
+<p>Please note that this policy will be refined and adapted as needed.
+In the near future, we will also provide this information on a dedicated page on this website to make it easy to locate.</p>
 <h3>Preface: RCE Versioning and Compatibility</h3>
-<p>From a user's perspective, the most relevant part of RCE's versioning is the distinction between "major" and "minor" upgrades.
-A "major" upgrade is one that changes the first part of the version number, e.g. 9.1.1 -&gt; 10.3.0.
-A "minor" upgrade, for the scope of this text, is one that only changes the second or third part of it, e.g. 10.2.0 -&gt; 10.2.4 or 10.2.0 -&gt; 10.3.0.</p>
+<p>From a user's perspective, the most relevant part of RCE's versioning is the distinction between "major" and "minor" upgrades.<br>
+A "major" upgrade is one that changes the first part of the version number, e.g. 9.1.1 &#8594; 10.3.0.<br>
+A "minor" upgrade, for the scope of this text, is one that only changes the second or third part of it, e.g. 10.2.0 &#8594; 10.2.4 or 10.2.0 &#8594; 10.3.0.</p>
 <p>The RCE team strives to maintain network compatiblity between all releases of the same major version.
 This means that, for example, all users of any 10.x.x release can perform "minor" upgrades on their RCE installations independently, and still connect to each other and interoperate.
 This network compatibility is actively tested as part of our release and quality assurance process.</p>
 <p>Direct network connections between RCE releases of a different major version (e.g. connecting a 10.x.x client to a 11.x.x server), on the other hand, are not supported and will be rejected by the server side.
 Locally opening workflow files and profiles using a newer major version, however, is possible, and is in fact the recommended upgrade path.</p>
-<h3>Security Baseline and EOL Status of current RCE releases</h3>
+<h3>Security Baseline and EOL Status of Current RCE Releases</h3>
 <p>We always recommend that all RCE users upgrade to the latest release of an actively maintained major release cycle.
 Currently, the only actively maintained major release cycle is 10.x.x.
 All older major release cycles (9.x and before) are unmaintained and should be considered end-of-life (EOL).</p>
 <p>While we always recommend upgrading RCE to get the latest improvements and fixes, not every release is necessary from a security standpoint.
 We will adress this in the near future by clarifying which releases are considered important regarding IT security.
 While this information is already included in our release changelogs, we will make this distinction more accessible for users and administrators.</p>
-<p>Until we publish this information, please use this as preliminary baselines:
-- All versions older than RCE 10.1.1 are end-of-life (EOL) due to important security fixes in that release.
-- While there are no known remote vulnerabilities in RCE 10.1.1 and 10.2.x, upgrading to 10.3.0 is still highly recommended.</p>
+<p>Until we publish this information, please use this as preliminary baselines:</p>
+<ul>
+<li>All versions older than RCE 10.1.1 are end-of-life (EOL) due to important security fixes in that release.</li>
+<li>While there are no known remote vulnerabilities in RCE 10.1.1 and 10.2.x, upgrading to 10.3.0 is still highly recommended.</li>
+</ul>
 <p>All end-of-life (EOL) versions of RCE should be upgraded as soon as possible.</p>
 <h3>Recommendations for Choosing a Java Version</h3>
-<p>The minimum requirement for running any recent RCE version is currently Java 8.x.
-Please note that future upgrades (e.g. for third-party libraries) may require us to raise this minimum requirement.
-As we only test RCE against long-term-support (LTS) Java versions, this will most likely mean Java 11.x as a baseline.
-Additionally, RCE 11.x.x releases will definitely require a Java version of 11.x or higher.</p>
-<p>Therefore, we recommend all users to upgrade your Java installations to either 11.x or 17.x as a preparation.
-If you have other software still requiring Java 8.x, please note that both versions can usually be installed in parallel.</p>  
+<p>The minimum Java version needed for running all recent RCE releases is currently 8.x.
+Please note that future RCE upgrades (e.g. for third-party libraries) may require us to raise this version requirement.
+As we only test RCE against long-term-support (LTS) Java versions, this will most likely mean Java 11.x as the new minimum.
+Additionally, all RCE 11.x.x releases will definitely require a Java version of 11.x or higher.</p>
+<p>Therefore, we recommend all users to upgrade your Java installations to either 11.x or 17.x (LTS) as a preparation, and configure RCE to use it.
+If you have other software specifically requiring Java 8.x, please note that multiple versions can usually be installed in parallel.</p>  
 							</div><!-- /.entry --> 
 						</article>
 
@@ -256,11 +261,6 @@ If you have other software still requiring Java 8.x, please note that both versi
 									<li class="recentcomments">
 										<span class="comment-author-link">
 											<a href="/category/releases.html">Releases</a>
-										</span> 
-									</li>
-									<li class="recentcomments">
-										<span class="comment-author-link">
-											<a href="/category/security.html">Security</a>
 										</span> 
 									</li>
    
