@@ -15,7 +15,7 @@
 
 Table of Contents 
 ***************************************************** / 
-* 1 - Google Font 
+* 1 - Open Sans Font 
 * 2 - General Styles 
 * 3 - Main Menu
 * 4 - Top Slider
@@ -55,10 +55,10 @@ Table of Contents End
 ******************************************************/  
 
 
-/* 1 - Google Font 
+/* 1 - Open Sans Font 
 ******************************************************/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
-/* 1 - Google Font 
+@import "open-sans-fonts.css";
+/* 1 - Open Sans Font 
 ******************************************************/
 
 /* 2 - General Styles 
