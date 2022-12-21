@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-		<meta charset="UTF-8">
+	<meta charset="UTF-8">
 	
 	<!-- TITLE OF SITE -->
-	<title>Screenshots</title>
-
+	<title>RCE</title>
 
 
 	
@@ -108,7 +107,7 @@
             					<li><a class="not-in-home" href="/pages/newsletter.html">Newsletter</a></li>
             					<li><a class="not-in-home" href="/pages/related-software.html">Related Software</a></li>
             					<li><a class="not-in-home" href="/pages/updatessecurity.html">Updates/Security</a></li>
-            					<li class="active"><a class="not-in-home" href="/pages/screenshots.html">Screenshots</a></li>
+            					<li><a class="not-in-home" href="/pages/screenshots.html">Screenshots</a></li>
             					<li><a class="not-in-home" href="/pages/documentation\documentation.html">Documentation</a></li>
 
 
@@ -127,74 +126,151 @@
 		<div class="overlay">
 			<div class="container">
 				<h2 class="page-title m0">
-					Screenshots
+					RCE 10.4.0 
 				</h2>
 				<div class="page-location">
-					<a href="/">Home</a> <span> Screenshots </span>
+					<a href="/">Home</a> <a href="#">News</a> <span>RCE 10.4.0</span>
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.overlay -->
 	</div><!-- /.page-name -->
 
 
+	<div id="contents"> 
+		<div class="container section-padding"> 
+			<div class="row">
+				<div class="col-md-9">
+					<div class="news-single"> 
+						<article class="type-post single-news single-post">
 
-	<section id="team"> 
-		<div id="contents"> 
-			<div class="container section-padding"> 
-				<h2 class="section-title"></h2>
-				
-  		
 
-        <div class="container section-padding"> 
-            <div id="gallery">
-                <div class="isotope-filters text-center">
-                    <button data-filter="" class="active">All</button> 
-<!--                     <button data-filter=".cat-aeronautics" >Aeronautics</button>
-                    <button data-filter=".cat-space">Space</button> 
-                    <button data-filter=".cat-transportaion">Transportation</button>  -->
-                </div> <!-- /.portfolioFilter -->
+							<div class="post-author-avatar">
+								<img src="/images/authors/RCE.jpg" alt="Post Author Avatar">
+							</div>
 
-                <div class="isotope">
-                    <div class="item height14x cat-space">
-                        <div class="galerry-item">
-                            <img src="images/screenshots/RCE_screenshot_140827-600x320px.png" alt="img 1">
-                            <a href="images/screenshots/RCE_screenshot_140827-HighRes.png" class="boxer"><span class="item-title">Optimizing the thermal management system of the SpaceLiner with RCE</span></a>
-                        </div>
-                    </div><!-- /.item --> 
+							<h2 class="post-title">
+								<a href="/rce-1040.html">RCE 10.4.0</a>
+							</h2> 
 
-                    <div class="item squire cat-aeronautics">
-                        <div class="galerry-item">
-                            <img src="images/screenshots/RCE_mdo-600x370.png" alt="img 1">
-                            <a href="images/screenshots/RCE_mdo-HighRes.png" class="boxer"><span class="item-title">Aerospace design optimization with RCE</span></a>
-                        </div>
-                    </div><!-- /.item -->
+							<footer class="entry-meta">
+								<span class="author">
+									<a href="/author/rce.html" rel="author">
+										<i class="fa fa-user"></i>
+										RCE
+									</a> 
+								</span>
+								<span class="entry-date">
+									<i class="fa fa-calendar-o"></i>
+									<span class="date">Di 20 Dezember 2022</span>
+								</span>
+								<span class="comments-link">
+									<a href="/rce-1040.html" rel="link">
+										<i class="fa fa-link"></i>
+											Permalink
+									</a>
+								</span>
+ 
+									<span class="cat-links">
+										<i class="fa fa-folder-o"></i>
+										<a href="/category/releases.html">Releases</a>
+									</span>
 
-                    <div class="item squire cat-aeronautics">
-                        <div class="galerry-item">
-                            <img src="images/screenshots/RCE_release_7_complete_600x330px.png" alt="img 1">
-                            <a href="images/screenshots/RCE_release_7_complete-HighRes.png" class="boxer"><span class="item-title">RCE Release 7</span></a>
-                        </div>
-                    </div><!-- /.item -->
+							</footer><!-- /.entry-meta --> 
+							<div class="entry">
+								<p>We are happy to announce the release of RCE 10.4.0 (Green Monkey).
+This release includes the brand new Workflow Integration Editor, a new and improved console command parser, a preview of the new Event Log, and a number of bug fixes and minor improvements.</p>
+<p>Please see <a href="https://github.com/rcenvironment/rce/releases">GitHub</a> for the full changelog.</p>
+<p>If you are using RCE 10.x you can update your installation using "Help -&gt; Check for Updates".
+Otherwise, please find the downloadable artifacts on our <a href="https://rcenvironment.de/pages/download.html">download page</a>.</p>
+<h3>Workflow Integration Editor</h3>
+<p>The new graphical Workflow Integration Editor guides users through the process of integrating a RCE workflow as a workflow component.
+To do so, users can integrate entire workflows by selecting a workflow file in the Project Explorer, or integrate parts of workflows by selecting components of a workflow in the Workflow Editor. 
+The Workflow Integration Editor also offers the possibility to configure meta information about the component, as well as the inputs and outputs.
+For this purpose, inputs and outputs of the inner workflow are mapped to inputs and outputs of the resulting component.
+In addition, a special workflow editor supports deselecting (disabling) individual connections or components that should not be part of the integrated workflow.</p>
+<h3>Command Parser</h3>
+<p>The infrastructure that parses and executes console commands (e.g. "wf run ...") was fully reworked.
+Parameters and flags are now accepted in any order, and support for command-specific help output has been added, e.g. "help wf".
+Furthermore, larger parts of the command help output is now auto-generated, and the command reference in the user and developer guides is now generated directly from the code.
+This improves the consistency of the documentation.
+Please note that some of the new help descriptions are not completely reviewed yet; this will be improved in the next releases.</p>
+<h3>Event Log (Preview)</h3>
+<p>We added a first draft of the new RCE Event Log, which is meant to give users and administrators a concise and helpful overview of relevant events in an RCE instance.
+This preview does not cover all planned event types yet.
+In particular, workflow and component/tool execution is not fully covered yet.
+For this reason, there is no prominent Event Log access in the GUI yet - this will be added in a future release.
+To access the preview data, see the "Event Log" section in the User Guide.</p>
+<h3>Security</h3>
+<p>We upgraded several third-party libraries as listed in the full changelog.</p>
+<h3>Update/Security Information for RCE Releases</h3>
+<p>To support RCE users and administrators in their upgrade descisions and planning, we have added update and security information for RCE releases to our website.
+Please see <a href="https://rcenvironment.de/update-status.html">Update/Security Information for RCE Releases</a>.</p>  
+							</div><!-- /.entry --> 
+						</article>
 
-					<div class="item squire cat-aeronautics">
-                        <div class="galerry-item">
-                            <img src="images/screenshots/RCE_release_81_screenshot-600x324.png" alt="img 1">
-                            <a href="images/screenshots/RCE_release_81_screenshot-HighRes.png" class="boxer"><span class="item-title">RCE Release 8.1</span></a>
-                        </div>
-                    </div><!-- /.item -->
+						<!--<div class="follow-us follow-share social-share">
+							<div class="follow-title">
+								<span>Share on Social Network</span>
+							</div>
+							<div class="social-btn text-center">
+								<a href="#" class="facebook">
+									<i class="fa fa-facebook"></i>
+									<span>Facebook</span>
+								</a>
+								<a href="#" class="google-plus">
+									<i class="fa fa-google-plus"></i>
+									<span>Google +</span>
+								</a>
+								<a href="#" class="twitter">
+									<i class="fa fa-twitter"></i>
+									<span>Twitter</span>
+								</a>
+								<a href="#" class="linked-in">
+									<i class="fa fa-linkedin"></i>
+									<span>linked in</span>
+								</a>
+								<a href="#" class="instagram">
+									<i class="fa fa-instagram"></i>
+									<span>Instagram</span>		
+								</a>
+							</div><!-- /.social-btn --> 
+						</div><!-- /.follow-us --> 
+
+
+
+					</div><!-- /.news-single -->
 					
-                </div><!-- /.isotope -->
-            </div><!--  /.gallery --> 
-        </div><!-- /.container -->
+				</div><!-- /.col-md-9 -->
+
+				<div class="col-md-3">
+					<div class="sidebar">
+						<aside class="widget widget_recent_comments">
+							<h3 class="widget-title">
+								Categories
+							</h3><!-- /.widget-title -->
+							<ul id="recentcomments">
+									<li class="recentcomments">
+										<span class="comment-author-link">
+											<a href="/category/news.html">News</a>
+										</span> 
+									</li>
+									<li class="recentcomments">
+										<span class="comment-author-link">
+											<a href="/category/releases.html">Releases</a>
+										</span> 
+									</li>
+   
+							</ul>
+						</aside><!-- /.widget -->
 
 
-    
-			</div><!-- /.container -->
-		</div>
-	</section><!-- /#team -->
+
+					</div><!-- /.sidebar -->
+				</div><!-- /.col-md-3 --> 
 
 
-	
+		</div><!-- /.container -->  
+	</div><!-- /.contents -->
 
 
 </section><!-- /#content -->
