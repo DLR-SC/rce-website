@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-		<meta charset="UTF-8">
+	<meta charset="UTF-8">
 	
 	<!-- TITLE OF SITE -->
-	<title>Updates/Security</title>
+	<title>RCE</title>
 
 
-
-	<link href="/theme/css/custom-update-status.css" rel="stylesheet"> 
 	
 	<!-- META DATA -->
 	<meta name="description" content="RCE is a distributed, workflow-driven integration environment." >
@@ -108,7 +106,7 @@
             					<li><a class="not-in-home" href="/pages/features.html">Features</a></li>
             					<li><a class="not-in-home" href="/pages/newsletter.html">Newsletter</a></li>
             					<li><a class="not-in-home" href="/pages/related-software.html">Related Software</a></li>
-            					<li class="active"><a class="not-in-home" href="/pages/updatessecurity.html">Updates/Security</a></li>
+            					<li><a class="not-in-home" href="/pages/updatessecurity.html">Updates/Security</a></li>
             					<li><a class="not-in-home" href="/pages/screenshots.html">Screenshots</a></li>
             					<li><a class="not-in-home" href="/pages/documentation\documentation.html">Documentation</a></li>
 
@@ -128,90 +126,146 @@
 		<div class="overlay">
 			<div class="container">
 				<h2 class="page-title m0">
-					Updates/Security
+					RCE 10.5.0 
 				</h2>
 				<div class="page-location">
-					<a href="/">Home</a> <span> Updates/Security </span>
+					<a href="/">Home</a> <a href="#">News</a> <span>RCE 10.5.0</span>
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.overlay -->
 	</div><!-- /.page-name -->
 
 
-
-	<section id="team"> 
-		<div id="contents"> 
-			<div class="container section-padding"> 
-				<h2 class="section-title">Update/Security Information for RCE Releases</h2>
-				<h2>Security and Bugfix Status of RCE Releases</h2>
-<p>As we constantly update the third-party software (e.g. libraries) included in RCE, we generally recommend <strong>always upgrading RCE to the latest available release</strong>.
-However, not every update might be strictly necessary.
-To allow RCE users and administrators to make informed decisions, this page provides an overview of the status of all public RCE releases.
-In particular, this includes information about how important it is to update from a certain RCE version.</p>
-<p>If a version of RCE is marked as <strong>"End of Life" (EOL)</strong>, it should not be used in a typical organization or similar networked environments anymore.
-Using them locally (i.e., without connections to other RCE instances) and/or in a particularly secure environment MIGHT be acceptable.
-Please make sure to observe any IT regulations that apply to you if you decide to use this approach.
-For most users, simply updating to a non-EOL version is recommended instead.</p>
-<p>The development RCE team puts significant effort into making sure that all RCE versions of the same major release cycle (e.g. all 10.x.x versions) are <strong>network compatible</strong>.
-This means that, for example, all users of a 10.x.x release can update to the latest 10.x.x release <em>independently</em> and still connect to the other instances and interoperate with them.
-This compatibility is actively tested as part of our release and quality assurance process.</p>
-<table>
-<thead>
-<tr>
-<th>Release(s)</th>
-<th>End of Life</th>
-<th>Third-Party Software</th>
-<th>Recommendation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10.5.x (current)</td>
-<td>-</td>
-<td>actively monitored</td>
-<td>-</td>
-</tr>
-<tr>
-<td>10.4.1 or older</td>
-<td>yes</td>
-<td>outdated</td>
-<td>important security issues; upgrading MANDATORY</td>
-</tr>
-</tbody>
-</table>
-<h2>Java Runtime (JRE) Version Compatibility</h2>
-<p>Due to our limited resources, we only test RCE against long-term support (LTS) versions of the Java Runtime Environment (JRE).
-Non-LTS versions may work as well, but we cannot give recommendations or feedback on them.
-Due to restrictions of certain third-party software (e.g. libraries) that we include, only certain LTS version are recommended.
-To support your installation decisions, the table below shows the compatibility situation of RCE releases.</p>
-<table>
-<thead>
-<tr>
-<th>Java Version Family</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>8.x</td>
-<td>supported up to RCE 10.4.1</td>
-</tr>
-<tr>
-<td>11.x</td>
-<td>required for all current releases</td>
-</tr>
-<tr>
-<td>17.x</td>
-<td>not officially supported and tested yet; planned for RCE 11.x</td>
-</tr>
-</tbody>
-</table>
-			</div><!-- /.container -->
-		</div>
-	</section><!-- /#team -->
+	<div id="contents"> 
+		<div class="container section-padding"> 
+			<div class="row">
+				<div class="col-md-9">
+					<div class="news-single"> 
+						<article class="type-post single-news single-post">
 
 
-	
+							<div class="post-author-avatar">
+								<img src="/images/authors/RCE.jpg" alt="Post Author Avatar">
+							</div>
+
+							<h2 class="post-title">
+								<a href="/rce-1050.html">RCE 10.5.0</a>
+							</h2> 
+
+							<footer class="entry-meta">
+								<span class="author">
+									<a href="/author/rce.html" rel="author">
+										<i class="fa fa-user"></i>
+										RCE
+									</a> 
+								</span>
+								<span class="entry-date">
+									<i class="fa fa-calendar-o"></i>
+									<span class="date">Di 21 November 2023</span>
+								</span>
+								<span class="comments-link">
+									<a href="/rce-1050.html" rel="link">
+										<i class="fa fa-link"></i>
+											Permalink
+									</a>
+								</span>
+ 
+									<span class="cat-links">
+										<i class="fa fa-folder-o"></i>
+										<a href="/category/releases.html">Releases</a>
+									</span>
+
+							</footer><!-- /.entry-meta --> 
+							<div class="entry">
+								<p>RCE 10.5.0 (Green Monkey) has been released.
+This release includes usability improvements, technical changes, several third-party library upgrades and a number of bug fixes.</p>
+<p>This page provides a compact summary of the changes.
+The full technical changelog can be found on the <a href="https://github.com/rcenvironment/rce-main/releases/tag/10.5.0">GitHub release page</a>.</p>
+<p>Please note two important aspects regarding this release:
+- Starting with this release, RCE requires Java 11 to run. For most users, this will not change anything, 
+  as most organizations are pre-installing Java 11 already.
+- RCE 10.5.0 fixes an important security issue in a network library. This makes upgrading strongly recommended 
+  for all users, and mandatory for administrators of RCE servers (e.g. "relays"). </p>
+<p>If you are using RCE 10.x as a graphical (GUI) installation you can update your installation using "Help -&gt; Check for Updates".
+Otherwise, please find the downloadable artifacts on our <a href="https://rcenvironment.de/pages/download.html">download page</a>.</p>
+<h3>Tool/Workflow Integration and GUI</h3>
+<p>This release contains various stability and usability improvements.</p>
+<h3>Components</h3>
+<p>There are some improvements regarding the Evaluation Memory, Optimizer and Output Writer workflow components.
+If you plan to use the Database component, please note that there is no MySQL JDBC database connector shipped with RCE anymore.
+The RCE User Guide and the integrated Database component help explains how to install one if needed.</p>
+<h3>Technical Changes</h3>
+<p>Beside some internal improvements, the minimum required Java version is now Java 11. </p>
+<h3>Security</h3>
+<p>We upgraded several third-party libraries as listed in the full changelog.
+Since this also adressed a potentially significant security vulnerability in one of these libraries, upgrading is strongly recommended.</p>
+<p>Please also refer to the <a href="https://rcenvironment.de/update-status.html">Update/Security Information for RCE Releases</a>.</p>  
+							</div><!-- /.entry --> 
+						</article>
+
+						<!--<div class="follow-us follow-share social-share">
+							<div class="follow-title">
+								<span>Share on Social Network</span>
+							</div>
+							<div class="social-btn text-center">
+								<a href="#" class="facebook">
+									<i class="fa fa-facebook"></i>
+									<span>Facebook</span>
+								</a>
+								<a href="#" class="google-plus">
+									<i class="fa fa-google-plus"></i>
+									<span>Google +</span>
+								</a>
+								<a href="#" class="twitter">
+									<i class="fa fa-twitter"></i>
+									<span>Twitter</span>
+								</a>
+								<a href="#" class="linked-in">
+									<i class="fa fa-linkedin"></i>
+									<span>linked in</span>
+								</a>
+								<a href="#" class="instagram">
+									<i class="fa fa-instagram"></i>
+									<span>Instagram</span>		
+								</a>
+							</div><!-- /.social-btn --> 
+						</div><!-- /.follow-us --> 
+
+
+
+					</div><!-- /.news-single -->
+					
+				</div><!-- /.col-md-9 -->
+
+				<div class="col-md-3">
+					<div class="sidebar">
+						<aside class="widget widget_recent_comments">
+							<h3 class="widget-title">
+								Categories
+							</h3><!-- /.widget-title -->
+							<ul id="recentcomments">
+									<li class="recentcomments">
+										<span class="comment-author-link">
+											<a href="/category/news.html">News</a>
+										</span> 
+									</li>
+									<li class="recentcomments">
+										<span class="comment-author-link">
+											<a href="/category/releases.html">Releases</a>
+										</span> 
+									</li>
+   
+							</ul>
+						</aside><!-- /.widget -->
+
+
+
+					</div><!-- /.sidebar -->
+				</div><!-- /.col-md-3 --> 
+
+
+		</div><!-- /.container -->  
+	</div><!-- /.contents -->
 
 
 </section><!-- /#content -->
