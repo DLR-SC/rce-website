@@ -3193,6 +3193,12 @@ article.news-container  .entry {
 		left: 0;
 		top: -5px;
 	}
+	
+}
+@media (min-width: 992px) {
+	.col-md-4 {
+		margin-bottom: 30px;
+	}
 }
 /* 35 - Responsive  End 
 ******************************************************/
