@@ -49,7 +49,8 @@ Table of Contents
 * 33 - Footer
 * 34 - Go to Top
 * 35 - Responsive 
-* 36 - Background Images    
+* 36 - Background Images 
+* 37 - Download Page   
 
 Table of Contents End
 ******************************************************/  
@@ -3253,4 +3254,16 @@ article.news-container  .entry {
 	background-image: url('../../images/page-name-bg.jpg'); 
 }
 /* 36 - Background Images End
+******************************************************/
+
+
+/* 37 - Download Page 
+******************************************************/
+
+.download-links, .documentation-links {
+  line-height: 12px;
+  padding-top: 14px;
+}
+
+/* 37 - Download Page End
 ******************************************************/
