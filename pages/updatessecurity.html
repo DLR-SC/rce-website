@@ -143,69 +143,107 @@
 		<div id="contents"> 
 			<div class="container section-padding"> 
 				<h2 class="section-title">Update/Security Information for RCE Releases</h2>
-				<h2>Security and Bugfix Status of RCE Releases</h2>
-<p>As we constantly update the third-party software (e.g. libraries) included in RCE, we generally recommend <strong>always upgrading RCE to the latest available release</strong>.
-However, not every update might be strictly necessary.
-To allow RCE users and administrators to make informed decisions, this page provides an overview of the status of all public RCE releases.
-In particular, this includes information about how important it is to update from a certain RCE version.</p>
-<p>If a version of RCE is marked as <strong>"End of Life" (EOL)</strong>, it should not be used in a typical organization or similar networked environments anymore.
-Using them locally (i.e., without connections to other RCE instances) and/or in a particularly secure environment MIGHT be acceptable.
-Please make sure to observe any IT regulations that apply to you if you decide to use this approach.
-For most users, simply updating to a non-EOL version is recommended instead.</p>
-<p>The development RCE team puts significant effort into making sure that all RCE versions of the same major release cycle (e.g. all 10.x.x versions) are <strong>network compatible</strong>.
-This means that, for example, all users of a 10.x.x release can update to the latest 10.x.x release <em>independently</em> and still connect to the other instances and interoperate with them.
-This compatibility is actively tested as part of our release and quality assurance process.</p>
+				<h2>Quick Overview / Q&amp;A</h2>
+<p>This section provides answers to the most typical questions about upgrading RCE.</p>
+<hr>
+<h3>"Do I need to upgrade if I am using RCE version ...?"</h3>
+<p>We generally recommend always using the latest release of RCE to get all improvements and bugfixes.
+Still, not every new release may be equally important for everyone.
+This table provides the information <strong>whether you should upgrade for critical bugfixes or security-related reasons</strong>.</p>
 <table>
 <thead>
 <tr>
-<th>Release(s)</th>
-<th>End of Life</th>
-<th>Third-Party Software</th>
-<th>Recommendation</th>
+<th>RCE Release(s)</th>
+<th>Status</th>
+<th>Recommended Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>10.6.x (current)</td>
+<td>10.7.0</td>
+<td>✅ Up to date, no action required.</td>
 <td>-</td>
-<td>actively monitored</td>
-<td>-</td>
+</tr>
+<tr>
+<td>10.6.0</td>
+<td>If you are connecting with RCE to an SSH or Uplink server, upgrading is ❌ <strong>strongly recommended</strong> due to an update of an important third-party component.<br>For all other RCE installations, upgrading is still ⚠️ <strong>recommended</strong> to get general third-party security updates.</td>
+<td>10.7.0</td>
 </tr>
 <tr>
 <td>10.5.0 or older</td>
-<td>yes</td>
-<td>outdated</td>
-<td>important security issues; upgrading MANDATORY</td>
+<td>These versions have important security issues, and are considered <strong>"end of life"</strong> (EOL).<br>❌ <strong>Upgrading from these versions is mandatory</strong> for both clients and servers!</td>
+<td>10.7.0</td>
 </tr>
 </tbody>
 </table>
-<h2>Java Runtime (JRE) Version Compatibility</h2>
-<p>Due to our limited resources, we only test RCE against long-term support (LTS) versions of the Java Runtime Environment (JRE).
-Non-LTS versions may work as well, but we cannot give recommendations or feedback on them.
-Due to restrictions of certain third-party software (e.g. libraries) that we include, only certain LTS version are recommended.
-To support your installation decisions, the table below shows the compatibility situation of RCE releases.</p>
+<hr>
+<h3>"Which version of Java can I (or should I) use?"</h3>
+<p>Due to our limited resources, we only test RCE against certain long-term support (LTS) versions of the Java Runtime Environment (JRE).
+Other versions may work as well, but we cannot give recommendations or feedback on them.
+The table below shows the compatibility situation of Java versions and RCE releases.</p>
 <table>
 <thead>
 <tr>
-<th>Java Version Family</th>
+<th>Java Version</th>
 <th>Status</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>8.x</td>
-<td>supported up to RCE 10.4.1</td>
+<td>❌ This was only supported up to RCE 10.4.1, which is "end of life" (EOL), so using this is not possible.</td>
 </tr>
 <tr>
 <td>11.x</td>
-<td>required for all current releases</td>
+<td>✅ Recommended for all current RCE releases; this is the most thoroughly tested version.</td>
 </tr>
 <tr>
 <td>17.x</td>
-<td>not officially supported and tested yet; planned for RCE 11.x</td>
+<td>⚠️ Not explicitly tested; it will most likely still work, though.</td>
+</tr>
+<tr>
+<td>21.x</td>
+<td>✅ Tested to work for RCE 10.6.0 and higher, although not as thoroughly as Java 11.x.</td>
 </tr>
 </tbody>
 </table>
+<hr>
+<h3>"Will my data or configuration be affected when I upgrade?"</h3>
+<p>Upgrading <strong>within the same major version</strong> (e.g. 10.x.x to a higher 10.x.x) should always be <strong>easy and safe</strong>.
+Just stop all running RCE installations, install the new version via one of the supported methods and start RCE again.</p>
+<p>Upgrading to <strong>a new major version</strong> (e.g. from 10.x.x to 11.x.x) may sometimes require some extra steps or small adaptations.
+Check the upgrade notes for details.</p>
+<hr>
+<h3>"I am connecting to an RCE network with project partners who may use different versions of RCE. Will there be problems if I upgrade?"</h3>
+<p>The RCE team puts significant effort into ensuring that all releases within the same major version (e.g. all 10.x.x releases)
+are <em>network compatible</em>.
+This means that within the same major version, <strong>all partners can upgrade their RCE installations independently</strong> at any time,
+and interacting within the same RCE network will continue to work as usual.</p>
+<p>In very rare cases, important bugfixes may require that both sides upgrade their installations, but this is not the case 
+for any 10.x.x releases.</p>
+<p>RCE versions of different major versions (e.g. one 10.x.x and one 11.x.x) can generally NOT connect to the same shared network.
+All partners connecting to such a common RCE network must agree to use the same major version.
+We generally recommend migrating to the latest major version of RCE as soon as practically possible.</p>
+<hr>
+<h2>Technical Details</h2>
+<h3>Our Third-Party Security Process</h3>
+<p>Every RCE release is checked with a vulnerability (CVE) scanner before release.
+Each open CVE in a third-party component is manually investigated.
+Preferably, we address each CVE by upgrading the affected component.
+We also regularly upgrade particularly security-exposed components (network, cryptography, ...) proactively, even if there are no open CVEs.</p>
+<p>Note that some CVEs that are flagged by security scanners may not in fact be a problem, for example because the vulnerable code is not reachable in RCE due to how the library is used.
+We typically try to fix these non-critical CVEs anyway by upgrading the component, just like for critical CVEs.
+In some cases, however, this is either impossible, e.g. due to incompatibilities or simply because no fixed version exists.
+Sometimes, such a non-critical upgrade would be too complex and time-consuming to justify for something that poses no threat.
+For these cases, we keep an internal list of acceptable (typically non-exploitable) CVEs.
+We aim to make this list public in a future upgrade for transparency.</p>
+<h3>Reporting Security Issues</h3>
+<p>If you think you have identified a security issue in RCE that goes deeper than "a CVE scanner flagged something" (see the section above), please contact us at <a href="mailto:rce@dlr.de">rce@dlr.de</a>.
+In particular, we welcome any feedback about issues affecting "RCE Uplink", as this feature is — by its very nature — typically used to connect across unsafe networks like the internet.
+We take all security reports seriously, and thank you in advance for any sincere input.</p>
+<h4>"AI"-generated Reports</h4>
+<p>Please note that while using so-called "AI" code inspection tools may be used for inspiration, 
+we kindly request any reports to be based on a human's assessment that the issue does in fact exist, and is reasonably relevant.</p>
 			</div><!-- /.container -->
 		</div>
 	</section><!-- /#team -->
